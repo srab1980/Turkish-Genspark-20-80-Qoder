@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrected Fetch Binding Test</title>
+</head>
+<body>
+    <h1>Corrected Fetch Binding Test</h1>
+    <div id="results"></div>
+    <button onclick="testFetchBinding()">Run Test</button>
+
+    <!-- The script that is being tested -->
+    <script src="/static/visual-ux-system.js"></script>
+
+    <script>
+        const resultsDiv = document.getElementById('results');
+
+        function logResult(test, status, message) {
+            const div = document.createElement('div');
+            div.style.border = '1px solid black';
+            div.style.padding = '5px';
+            div.style.margin = '5px';
+            div.style.backgroundColor = status === 'pass' ? '#d1fae5' : '#fee2e2';
+            div.innerHTML = `<strong>${test}: ${status.toUpperCase()}</strong><br>${message}`;
+            resultsDiv.appendChild(div);
+        }
+
+        async function testFetchBinding() {
+            resultsDiv.innerHTML = ''; // Clear previous results
+            logResult('Fetch Binding Test', 'info', 'Starting test...');
+            try {
+                const testFetch = window.fetch;
+                const response = await testFetch.apply(window, ['/api/test']);
+
+                if (response instanceof Response) {
+                    logResult('Fetch Binding Test', 'pass', 'Fetch call returned a valid Response object.');
+                } else {
+                    logResult('Fetch Binding Test', 'fail', `Fetch call returned an invalid object of type ${typeof response}, not a Response. The fetch wrapper might be swallowing errors.`);
+                }
+
+            } catch (error) {
+                if (error.message.includes('Illegal invocation')) {
+                    logResult('Fetch Binding Test', 'fail', 'Original fetch binding issue still present');
+                } else {
+                    logResult('Fetch Binding Test', 'pass', `Fetch call failed as expected (e.g., network error), but did not cause an illegal invocation. Error: ${error.message}`);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
