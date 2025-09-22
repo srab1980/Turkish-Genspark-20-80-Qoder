@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Test</title>
+    <script>
+    function testPhrase() {
+        fetch('https://8787-ivbmlm8vqak2xzzv33jm5-6532622b.e2b.dev/')
+        .then(response => response.text())
+        .then(html => {
+            const hasPhrase = html.includes('data-section="phrase"');
+            const hasButton = html.includes('العبارات');
+            document.getElementById('result').innerHTML = 
+                `Phrase mode button found: ${hasPhrase}<br>
+                 Arabic text found: ${hasButton}<br>
+                 ${hasPhrase && hasButton ? '✅ Navigation updated!' : '❌ Navigation needs update'}`;
+        });
+    }
+    </script>
+</head>
+<body onload="testPhrase()">
+    <h1>Navigation Test</h1>
+    <div id="result">Testing...</div>
+</body>
+</html>

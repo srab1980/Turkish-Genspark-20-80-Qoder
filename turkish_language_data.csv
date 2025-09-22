@@ -1,0 +1,1805 @@
+Word,Difficulty Level,Vowel Harmony Rule,Arabic Translation,Usage Sentence (Turkish),Usage Sentence (Arabic)
+ılık,B1,I-type (back),دافئ,Ilık bir gün,يوم دافئ
+gün,A1,E-type (front),يوم,Güzel bir gün,يوم جميل
+temmuz,A1,I-type (back),يوليو,Temmuz çok sıcak.,يوليو حار جداً.
+çiy,B2,E-type,ندى,Çiçeklerde çiy var,يوجد ندى على الزهور
+tuz,A1,I-type (back),ملح,Yemekte tuz var.,يوجد ملح في الطعام.
+tuz,A1,I-type (back),ملح,Yemekte tuz var.,يوجد ملح في الطعام.
+çanta,A2,I-type (back),حقيبة يد,Çantamda anahtar var.,يوجد مفتاح في حقيبة يدي
+bardak,A2,I-type (back),كوب,Bardakta su var.,يوجد ماء في الكوب
+masa,A1,I-type (back),مكتب,Masada kitap var.,يوجد كتاب على المكتب.
+masa,A1,I-type (back),طاولة,Masada kitap var.,يوجد كتاب على الطاولة.
+masa,A1,I-type (back),طاولة,Masada kitap var.,يوجد كتاب على الطاولة
+çekmece,B1,E-type (front),درج,Çekmecede kalem var.,يوجد قلم في الدرج
+virüs,B2,E-type (front),فيروس,Bilgisayarda virüs var.,يوجد فيروس في الحاسوب.
+donanım,B2,I-type (back),عتاد,Donanım arızası var.,يوجد عطل في العتاد
+alın,B2,I-type (back),جبهة,Alnında ter var.,يوجد عرق على جبهته
+kuş,A1,I-type (back),طائر,Bahçede kuşlar var.,يوجد طيور في الحديقة.
+buzdolabı,B1,I-type (back),ثلاجة,Buzdolabında yemek var.,يوجد طعام في الثلاجة
+dal,A1,I-type (back),غصن,Dalda kuş var.,يوجد طائر على الغصن.
+dal,A1,I-type (back),غصن,Dalda kuş var.,يوجد طائر على الغصن.
+balık,A2,I-type (back),سمك,Akvaryumda balık var.,يوجد سمك في الحوض
+göl,A1,I-type (back),بحيرة,Gölde balık var.,يوجد سمك في البحيرة.
+göl,A1,I-type (back),بحيرة,Gölde balık var.,يوجد سمك في البحيرة.
+kekik,A2,E-type (front),زعتر,Kekte kekik var.,يوجد زعتر في الكعكة.
+ders,A1,E-type (front),درس,Matematik dersi var.,يوجد درس رياضيات
+masa,A1,I-type (back),مكتب,Masamda bilgisayar var.,يوجد حاسوب على مكتبي
+çöl,A2,I-type (back),صحراء,Çölde deve var.,يوجد جمل في الصحراء.
+alçak,A2,I-type (back),منخفض,Alçak bir duvar var.,يوجد جدار منخفض.
+seksen,A1,E-type (front),ثمانون,Seksen öğrenci var.,يوجد ثمانون طالباً.
+sınıf,A1,I-type (back),فصل,Sınıfta otuz öğrenci var.,يوجد ثلاثون طالباً في الفصل.
+iki,A1,E-type (front),اثنان,İki elma var.,يوجد تفاحتان.
+ev,A1,E-type (front),بيت,Güzel bir ev var.,يوجد بيت جميل.
+yeşil,A1,E-type (front),أخضر,Yeşil yapraklar var.,يوجد أوراق خضراء.
+bin,A1,E-type (front),ألف,Bin tane var.,يوجد ألف قطعة.
+meydan,A2,I-type (back),ميدان,Meydanda insanlar var.,يوجد أشخاص في الميدان.
+konferans salonu,B1,Mixed,قاعة المحاضرات,Konferans salonunda toplantı var.,يوجد اجتماع في قاعة المحاضرات.
+yavaş,A2,I-type (back),بطيء,Yavaş yürüyor.,يمشي ببطء
+kasım,A1,I-type (back),نوفمبر,Kasım rüzgarlı geçiyor.,يمر نوفمبر بالرياح.
+jeoloji,C1,E-type (front),جيولوجيا,Jeoloji araştırması yapıyor.,يقوم ببحث جيولوجي
+ibadet,B2,I-type (back),عبادة,İbadet yapıyor.,يقوم بالعبادة
+köşe,B1,I-type (back),زاوية,Odanın köşesinde duruyor.,يقف في زاوية الغرفة.
+şarkı,A1,I-type (back),أغنية,Güzel şarkı söylüyor.,يغني أغنية جميلة.
+fakir,A1,I-type (back),فقير,Fakir bir mahallede yaşıyor.,يعيش في حي فقير.
+şirket,B1,E-type (front),شركة,Büyük bir şirkette çalışıyor.,يعمل في شركة كبيرة
+tekerlekli sandalye,B2,Mixed,كرسي متحرك,Tekerlekli sandalye kullanıyor.,يستخدم الكرسي المتحرك.
+siyah,A1,I-type (back),أسود,Siyah ayakkabı giyiyor.,يرتدي حذاء أسود.
+el,A1,E-type (front),يد,Sıcak el,يد دافئة
+römork,B1,E-type (front),مقطورة,Römork çekiyor.,يجر المقطورة.
+ilaç,A2,I-type (back),دواء,İlaç içmek zorundayım.,يجب أن آخذ الدواء
+yapmak,A1,I-type (back),يفعل/يعمل,Ödev yapmak zorundayım.,يجب أن أعمل الواجب المنزلي.
+kemer,B1,E-type (front),حزام,Kemer takmak zorundayım.,يجب أن أضع الحزام
+un,A1,I-type (back),دقيق,Un almak lazım.,يجب أن أشتري الدقيق.
+takım elbise,B2,I-type (back),بدلة,Takım elbise giymek zorundayım.,يجب أن أرتدي بدلة
+aşı,B1,I-type (back),لقاح,Aşı olmak gerek,يجب أخذ اللقاح
+mart,A1,I-type (back),مارس,Mart ayında bahar başlar.,يبدأ الربيع في شهر مارس.
+anlaşma,B2,I-type (back),اتفاقية,İki ülke anlaşma imzaladı.,وقعت الدولتان اتفاقية.
+boş,A2,I-type (back),فارغ,Boş zaman,وقت فارغ
+tencere,A2,E-type (front),وعاء طبخ,Tencere büyük.,وعاء الطبخ كبير.
+defne yaprağı,B1,Mixed,ورق غار,Defne yaprağı koydum.,وضعت ورق الغار.
+dolap,A2,I-type (back),خزانة,Elbiselerimi dolaba koydum.,وضعت ملابسي في الخزانة
+nokta,B1,I-type (back),نقطة,Haritada nokta işaretledim.,وضعت علامة نقطة على الخريطة
+şeker,A2,E-type (front),سكر,Çaya şeker koydum.,وضعت سكر في الشاي
+tuz,A1,I-type (back),ملح,Tuz koydum.,وضعت الملح.
+sehpa,B2,E-type (front),طاولة صغيرة,Sehpaya bardak koydum.,وضعت الكوب على الطاولة الصغيرة
+kimyon,B1,E-type (front),كمون,Kimyon koydum.,وضعت الكمون.
+sirke,A2,E-type (front),خل,Sirke salataya koydum.,وضعت الخل في السلطة.
+buz,A1,I-type (back),ثلج,Buz koydum.,وضعت الثلج.
+demlik,A2,E-type (front),إبريق صغير,Demlik çaya koydum.,وضعت الإبريق الصغير للشاي.
+normal,A2,I-type (back),طبيعي,Normal durum,وضع طبيعي
+ambulans,A2,I-type (back),إسعاف,Ambulans geldi.,وصلت الإسعاف.
+yumuşak,A2,I-type (back),ناعم,Yumuşak yastık,وسادة ناعمة
+yastık,A1,I-type (back),وسادة,Yumuşak yastık,وسادة ناعمة
+ağırlık,A2,I-type,وزن,Beş kilo ağırlık,وزن خمسة كيلوغرامات
+damar,B2,I-type (back),وريد,Kan damarı,وريد الدم
+yeşil,A1,E-type,أخضر,Yeşil yaprak,ورقة خضراء
+ince,A2,E-type (front),رفيع,İnce kağıt,ورق رفيع
+sarma,A2,I-type (back),ورق عنب,Sarma çok lezzetli.,ورق العنب لذيذ جداً.
+pembe,A1,E-type,وردي,Pembe gül,وردة وردية
+üzgün,A1,E-type (front),حزين,Üzgün yüz,وجه حزين
+vadi,B1,I-type (back),وادي,Derin vadi,وادي عميق
+o,A1,I-type (back),هو/هي,O benim arkadaşım.,هو/هي صديقي.
+gitar,B1,I-type (back),جيتار,Gitar çalabiliyor musun?,هل تستطيع العزف على الجيتار؟
+piramit,B2,E-type,هرم,Taş piramit,هرم حجري
+şarkı,A2,I-type (back),أغنية,Bu şarkı çok güzel.,هذه الأغنية جميلة جداً
+alet,B1,E-type (front),أداة,Bu alet çok faydalı.,هذه الأداة مفيدة جداً
+ucuz,A1,I-type (back),رخيص,Bu çok ucuz.,هذا رخيص جداً.
+ucuz,A2,I-type (back),رخيص,Bu çok ucuz.,هذا رخيص جداً
+gelenek,B2,E-type (front),تقليد,Bu eski bir gelenek.,هذا تقليد قديم
+konu,B1,I-type (back),موضوع,Bu konu çok ilginç.,هذا الموضوع مثير للاهتمام جداً
+renk,A2,E-type (front),لون,Bu renk çok güzel.,هذا اللون جميل جداً.
+iyi,A1,E-type (front),جيد,Bu kitap çok iyi.,هذا الكتاب جيد جداً.
+ay,A1,I-type (back),شهر,Bu ay çok soğuk.,هذا الشهر بارد جداً.
+şekil,B1,E-type (front),شكل,Bu şekil çok güzel.,هذا الشكل جميل جداً.
+kolay,A1,I-type (back),سهل,Bu soru çok kolay.,هذا السؤال سهل جداً.
+bozuk,A2,I-type (back),معطل,Bozuk telefon,هاتف معطل
+telefon,A1,E-type (front),هاتف,Akıllı telefon,هاتف ذكي
+enerji,B2,E-type (front),طاقة,Enerji tasarrufu yapıyoruz.,نوفر الطاقة
+izotop,C2,I-type (back),نظير,İzotop çeşidi,نوع النظير
+atom,B2,I-type (back),ذرة,Atom çekirdeği,نواة الذرة
+nehir,A2,E-type,نهر,Uzun nehir,نهر طويل
+mikroskop,C1,I-type (back),مجهر,Mikroskopla bakıyoruz.,ننظر بالمجهر
+istasyon,B1,I-type (back),محطة,İstasyonda trenimizi bekliyoruz.,ننتظر قطارنا في المحطة
+havaalanı,B1,I-type (back),مطار,Havaalanında bekliyoruz.,ننتظر في المطار
+çadır,A2,I-type (back),خيمة,Çadırda uyuduk.,نمنا في الخيمة.
+karınca,A2,I-type,نملة,Çalışkan karınca,نملة مجتهدة
+kaplan,A2,I-type,نمر,Çizgili kaplan,نمر مخطط
+futbol,A2,I-type (back),كرة القدم,Futbol oynuyoruz.,نلعب كرة القدم
+park,A1,I-type (back),منتزه,Parkta oynuyoruz,نلعب في المنتزه
+sokak,A1,I-type (back),زقاق,Sokakta oynuyoruz.,نلعب في الزقاق.
+park,A1,I-type (back),حديقة,Parkta oynuyoruz.,نلعب في الحديقة.
+park,A1,I-type (back),حديقة,Parkta oynuyoruz.,نلعب في الحديقة.
+park,A1,I-type (back),حديقة,Parkta oynuyoruz.,نلعب في الحديقة.
+tenis,A1,E-type (front),تنس,Tenis oynuyoruz.,نلعب التنس.
+otel,A2,I-type (back),فندق,Otelde kalıyoruz.,نقيم في الفندق
+nokta,A2,I-type,نقطة,Küçük nokta,نقطة صغيرة
+villa,A2,I-type (back),فيلا,Villada tatil yapıyoruz.,نقضي إجازة في الفيلا.
+iyot,C1,I-type (back),يود,İyot eksikliği,نقص اليود
+kalsiyum,B2,I-type (back),كالسيوم,Kalsiyum eksikliği,نقص الكالسيوم
+vitamin,B1,E-type (front),فيتامين,Vitamin eksikliği,نقص الفيتامين
+demir,B1,E-type (front),حديد,Demir eksikliği,نقص الحديد
+pil,A2,E-type (front),بطارية,Pil bitti.,نفدت البطارية.
+bilgisayar sınıfı,B1,Mixed,فصل الحاسوب,Bilgisayar sınıfında çalışıyoruz.,نعمل في فصل الحاسوب.
+laboratuvar,B2,I-type (back),مختبر,Laboratuvarda çalışıyoruz.,نعمل في المختبر
+süpürge,A2,E-type (front),مكنسة,Süpürge ile temizledim.,نظفت بالمكنسة.
+ayna,A1,I-type (back),مرآة,Aynaya baktım.,نظرت في المرآة.
+kurutma makinesi,B1,I-type (back),نشافة ملابس,Hızlı kurutma makinesi,نشافة ملابس سريعة
+düz,A2,E-type (front),مستقيم,Düz yol gidiyoruz.,نسير في طريق مستقيم
+şifre,A2,E-type (front),كلمة مرور,Şifre unuttum.,نسيت كلمة المرور.
+şifre,B1,E-type (front),كلمة مرور,Şifremi unuttum.,نسيت كلمة المرور.
+pasaport,B1,I-type (back),جواز سفر,Pasaportumu unuttum.,نسيت جواز سفري
+ceket,A2,E-type (front),سترة,Ceket giymeyi unuttum.,نسيت أن أرتدي السترة
+kartal,B1,I-type,نسر,Yüksek kartal,نسر عالي
+nem oranı,B2,E-type,نسبة الرطوبة,Nem oranı yüksek,نسبة الرطوبة عالية
+tren,A2,E-type (front),قطار,Trenle seyahat ediyoruz.,نسافر بالقطار
+don,B2,I-type (back),صقيع,Don düştü,نزل الصقيع
+dolu,B1,I-type (back),برد,Dolu yağdı,نزل البرد
+ağustos,A1,I-type (back),أغسطس,Ağustos tatile gidiyoruz.,نذهب في إجازة في أغسطس.
+hastane,A2,E-type (front),مستشفى,Hastaneye gidiyoruz.,نذهب إلى المستشفى
+kamp,B1,I-type (back),مخيم,Kampa gidiyoruz.,نذهب إلى المخيم
+eğlence,B1,E-type (front),ترفيه,Eğlence için sinemaya gidiyoruz.,نذهب إلى السينما للترفيه
+sinema,A2,E-type (front),سينما,Sinemaya gidiyoruz.,نذهب إلى السينما
+yaz,A2,I-type (back),صيف,Yazın denize gideriz.,نذهب إلى البحر في الصيف.
+arı,A2,I-type,نحلة,Bal arısı,نحلة العسل
+çatal,A1,I-type (back),شوكة,Çatal ve bıçak lazım.,نحتاج الشوكة والسكين.
+parlak,B1,I-type (back),لامع,Parlak yıldızlar.,نجوم لامعة
+salon,A1,I-type (back),صالة,Salonda oturuyoruz.,نجلس في الصالة.
+deney,B2,E-type (front),تجربة,Deney başarılı oldu.,نجحت التجربة
+biyopsi,C1,E-type (front),خزعة,Biyopsi sonucu,نتيجة الخزعة
+sonra,A1,I-type (back),بعد ذلك,Sonra görüşürüz,نتحدث بعد ذلك
+kapalı,A1,I-type (back),مغلق,Kapalı pencere,نافذة مغلقة
+dikdörtgen,B2,E-type (front),مستطيل,Dikdörtgen pencere.,نافذة مستطيلة
+pencere,A1,E-type (front),نافذة,Büyük pencere,نافذة كبيرة
+ocak,A2,I-type (back),موقد,Gazlı ocak,موقد غاز
+önemsiz,B1,E-type (front),غير مهم,Önemsiz konu,موضوع غير مهم
+dikey,B2,E-type (front),عمودي,Dikey konum,موضع عمودي
+müzisyen,B2,E-type (front),موسيقي,Yetenekli bir müzisyen.,موسيقي موهوب
+prizma,B2,E-type,منشور,Üçgen prizma,منشور مثلثي
+sen,A1,E-type (front),أنت,Sen nerelisin?,من أين أنت؟
+koridor,A2,I-type (back),ممر,Uzun koridor,ممر طويل
+milyon,A2,E-type (front),مليون,Bir milyon insan.,مليون شخص.
+tuzlamak,B2,I-type (back),يمّلح,Balığı tuzladım.,ملحت السمك
+çarşaf,A2,I-type (back),ملاءة,Temiz çarşaf,ملاءة نظيفة
+klima,A2,I-type (back),مكيف هواء,Soğuk klima,مكيف هواء بارد
+ütü,A2,E-type (front),مكواة,Elektrikli ütü,مكواة كهربائية
+süpürge,A2,E-type (front),مكنسة,Elektrikli süpürge,مكنسة كهربائية
+çinko,C1,E-type (front),زنك,Çinko takviyesi,مكمل الزنك
+güvenli,A2,E-type (front),آمن,Güvenli yer,مكان آمن
+cıva,C1,I-type (back),زئبق,Cıva termometre,مقياس حرارة زئبقي
+şarkıcı,A2,I-type (back),مغني/مغنية,Ünlü bir şarkıcı.,مغني/مغنية مشهور/ة
+yanlış,A1,I-type (back),خطأ,Yanlış bilgi,معلومة خاطئة
+öğretmen,A1,E-type (front),معلم,Öğretmenim çok nazik.,معلمي لطيف جداً
+fosfor,C1,I-type (back),فوسفور,Fosfor minerali,معدن الفوسفور
+titanyum,C1,I-type (back),تيتانيوم,Titanyum metal,معدن التيتانيوم
+asit,B2,E-type (front),حامض,Asit yağmuru,مطر حمضي
+mutfak,A1,I-type (back),مطبخ,Modern mutfak,مطبخ حديث
+kuaför,A2,E-type (front),مصفف شعر,Kuaför saçımı yaptı.,مصفف الشعر صفف شعري.
+potasyum,C1,I-type (back),بوتاسيوم,Potasyum kaynağı,مصدر البوتاسيوم
+vadi,A2,I-type (back),وادي,Vadide yürüdük.,مشينا في الوادي.
+kilometre,A2,E-type (front),كيلومتر,On kilometre yürüdük,مشينا عشرة كيلومترات
+altmış,A1,I-type (back),ستون,Altmış kilometre yürüdüm.,مشيت ستين كيلومتراً.
+zor,A1,I-type (back),صعب,Zor problem,مشكلة صعبة
+paspas,A2,I-type (back),ممسحة,Paspas ile sildim.,مسحت بالممسحة.
+silgi,A2,E-type (front),ممحاة,Silgi ile sildim.,مسحت بالممحاة.
+bez,B1,E-type (front),قماش,Bezle masayı sildim.,مسحت الطاولة بالقماش
+dikdörtgen,B1,E-type,مستطيل,Uzun dikdörtgen,مستطيل طويل
+satış danışmanı,B1,Mixed,مستشار مبيعات,Satış danışmanı yardım etti.,مستشار المبيعات ساعد.
+araştırma görevlisi,B2,Mixed,مساعد باحث,Araştırma görevlisi tez hazırlıyor.,مساعد الباحث يحضر الأطروحة.
+alan,B1,I-type,مساحة,Geniş alan,مساحة واسعة
+şeker,A1,E-type (front),سكر,Şeker hastası,مريض السكر
+vantilator,B1,I-type (back),مروحة,Tavan vantilatörü,مروحة السقف
+pomad,B2,I-type (back),مرهم,Yara pomadı,مرهم الجرح
+merkez,B1,E-type,مركز,Şehir merkezi,مركز المدينة
+merkez,B1,E-type (front),مركز,Dairenin merkezi.,مركز الدائرة.
+dirsek,B2,E-type (front),مرفق,Dirseğim çok ağrıyor.,مرفقي يؤلمني كثيراً.
+polis arabası,A2,Mixed,سيارة شرطة,Polis arabası geçti.,مرت سيارة الشرطة.
+doksan,A1,I-type (back),تسعون,Doksan gün geçti.,مرت تسعون يوماً.
+kare,A2,I-type,مربع,Kırmızı kare,مربع أحمر
+kolesterol,B2,E-type (front),كولسترول,Kolesterol kontrolü,مراقبة الكولسترول
+sodyum,C1,I-type (back),صوديوم,Sodyum kontrolü,مراقبة الصوديوم
+koni,B2,E-type,مخروط,Buz koni,مخروط ثلج
+biyoloji,B2,E-type (front),أحياء,Biyoloji laboratuvarı büyük.,مختبر الأحياء كبير
+çevre,B1,E-type,محيط,Şehir çevresi,محيط المدينة
+silgi,A1,E-type (front),ممحاة,Silgiyle sildim.,محوت بالممحاة.
+silgi,A2,E-type (front),ممحاة,Silgiyle sildim.,محوت بالممحاة
+baz,B2,I-type (back),قاعدة,Baz çözelti,محلول قاعدي
+tramvay,B1,I-type (back),ترام,Tramvay durağı yakın.,محطة الترام قريبة.
+istiridye,B2,E-type (front),محارة,Deniz istiridyesi,محارة البحر
+üçgen,A2,E-type,مثلث,Eşkenar üçgen,مثلث متساوي الأضلاع
+yüksek,A1,E-type (front),عالي,Yüksek bina,مبنى عالي
+gram,A2,I-type (back),غرام,Yüz gram şeker,مائة غرام من السكر
+mikrodalga,B1,I-type (back),مايكروويف,Hızlı mikrodalga,مايكروويف سريع
+keçi,A1,E-type,ماعز,Dağ keçisi,ماعز جبلي
+opak,B2,I-type,معتم,Opak madde,مادة معتمة
+opak,C1,I-type (back),معتم,Opak malzeme.,مادة معتمة
+radioaktif,C1,I-type (back),مشع,Radioaktif madde,مادة مشعة
+katı,B1,I-type (back),صلب,Katı madde,مادة صلبة
+mineral,B2,E-type (front),معدن,Mineral su,ماء معدني
+tuzlu,A2,I-type (back),مالح,Tuzlu su,ماء مالح
+tuz,A1,I-type (back),ملح,Tuzlu su,ماء مالح
+renksiz,B2,E-type (front),عديم اللون,Renksiz su.,ماء عديم اللون
+durgun,B1,I-type (back),ساكن,Durgun su,ماء ساكن
+soğuk,A1,I-type (back),بارد,Soğuk su,ماء بارد
+para,A1,I-type (back),نقود,Param yok.,ليس لدي نقود.
+düşman,B2,E-type (front),عدو,Düşmanım yok.,ليس لدي عدو
+yok,A1,I-type (back),لا يوجد/ليس لديه,Bugün dersim yok.,ليس لدي درس اليوم.
+resim,B1,E-type (front),لوحة/صورة,Güzel bir resim.,لوحة جميلة
+tablet,A2,I-type (back),لوحة إلكترونية,Küçük tablet,لوحة إلكترونية صغيرة
+sıfır,A1,I-type (back),صفر,Sıfırdan başlayalım.,لنبدأ من الصفر.
+dosya,A2,I-type (back),ملف,Dosya kaydedemedim.,لم أستطع حفظ الملف.
+voleybol,A2,I-type (back),كرة الطائرة,Voleybol oynadık.,لعبنا كرة الطائرة.
+spor salonu,A2,Mixed,صالة رياضة,Spor salonunda basketbol oynadık.,لعبنا كرة السلة في الصالة الرياضية.
+eğlence merkezi,A2,E-type (front),مركز ترفيهي,Eğlence merkezinde oyun oynadık.,لعبنا ألعاباً في المركز الترفيهي.
+yüz,A2,E-type (front),وجه,Güzel bir yüzü var.,لديه وجه جميل
+zengin,A1,E-type (front),غني,Zengin bir ailesi var.,لديه عائلة غنية.
+kirpik,B2,E-type (front),رمش,Uzun kirpikleri var.,لديه رموش طويلة
+misafir,B1,I-type (back),ضيف,Bu akşam misafirimiz var.,لدينا ضيف هذا المساء
+meşgul,A2,E-type (front),مشغول,Meşgul günüm var,لدي يوم مشغول
+soğukalgınlığı,B1,I-type (back),نزلة برد,Soğuk algınlığı var,لدي نزلة برد
+genç,A1,E-type (front),شاب,Genç bir öğretmenim var.,لدي معلم شاب.
+tanıdık,B2,I-type (back),معارف,Birçok tanıdığım var.,لدي معارف كثيرون
+küçük,A1,E-type (front),صغير,Küçük bir kedim var.,لدي قطة صغيرة.
+eski,A1,E-type (front),قديم,Eski bir dostum var.,لدي صديق قديم.
+başağrısı,B1,I-type (back),صداع,Başağrısı var,لدي صداع
+uzun,A1,I-type (back),طويل,Uzun saçlarım var.,لدي شعر طويل.
+var,A1,I-type (back),يوجد/لديه,Benim bir arabam var.,لدي سيارة.
+öksürük,A2,E-type (front),سعال,Öksürüğüm var.,لدي سعال.
+soğuk algınlığı,A2,I-type (back),زكام,Soğuk algınlığım var.,لدي زكام.
+ateş,A1,E-type (front),حمى,Ateşim var.,لدي حمى.
+ateş,A2,E-type (front),حمى,Ateşim var,لدي حمى
+hesap,B1,E-type (front),حساب,Banka hesabım var.,لدي حساب بنكي
+ağrı,A1,I-type (back),ألم,Başımda ağrı var.,لدي ألم في رأسي.
+ağrı,A1,I-type (back),ألم,Başımda ağrı var.,لدي ألم في رأسي.
+ağrı,B1,I-type (back),ألم,Başımda ağrı var.,لدي ألم في رأسي
+gözağrısı,B1,E-type (front),ألم العين,Göz ağrısı var,لدي ألم في العين
+dört,A1,I-type (back),أربعة,Dört arkadaşım var.,لدي أربعة أصدقاء.
+kardeş,A1,E-type (front),أخ/أخت,Benim iki kardeşim var.,لدي أخان/أختان.
+kardeş,A2,E-type (front),أخ/أخت,İki kardeşim var.,لدي أخان
+erkek kardeş,A2,Mixed,أخ,Erkek kardeşim var,لدي أخ
+pişmiş,A2,E-type (front),مطبوخ,Pişmiş et,لحم مطبوخ
+yorgan,A2,I-type (back),لحاف,Sıcak yorgan,لحاف دافئ
+internet,A2,E-type (front),إنترنت,İnternet bağlantısı yok.,لا يوجد اتصال إنترنت.
+dosya,B1,I-type (back),ملف,Dosyayı açamıyorum.,لا أستطيع فتح الملف
+sosyal medya,B2,I-type (back),وسائل التواصل الاجتماعي,Sosyal medya kullanmıyorum.,لا أستخدم وسائل التواصل الاجتماعي.
+hardal,A2,I-type (back),خردل,Hardal sosunu sevmem.,لا أحب صوص الخردل.
+dolu,A2,I-type (back),مليء,Dolu bardak,كوب مليء
+ay,A1,I-type (back),شهر,Geçen ay İstanbul'daydım.,كنت في إسطنبول الشهر الماضي.
+geçen,A1,E-type (front),الماضي,Geçen hafta tatildeydim.,كنت في إجازة الأسبوع الماضي.
+gelin,A2,E-type (front),كنة/عروس,Gelinem çok güzel,كنتِ جميلة جداً
+kanepe,A2,E-type (front),كنبة,Uzun kanepe,كنبة طويلة
+böbrek,B1,E-type (front),كلية,İki böbrek,كليتان
+köpek,A1,E-type (front),كلب,Köpeğim çok sevimli.,كلبي لطيف جداً.
+köpek,A1,I-type (back),كلب,Köpeğim çok sevimli.,كلبي لطيف جداً
+köpek,A1,E-type,كلب,Küçük köpek,كلب صغير
+önce,A1,E-type (front),قبل,Önce yemek ye,كل أولاً
+lezzetli,A2,E-type (front),لذيذ,Lezzetli pasta,كعكة لذيذة
+tatlı,A1,I-type (back),حلو,Tatlı pasta,كعكة حلوة
+topuk,B1,I-type (back),كعب,Yüksek topuk,كعب عالي
+krem,A2,E-type (front),كريم,Cilt kremi,كريم البشرة
+rahat,A2,I-type (back),مريح,Rahat koltuk,كرسي مريح
+sandalye,A1,E-type (front),كرسي,Rahat sandalye,كرسي مريح
+küre,B2,E-type,كرة,Cam küre,كرة زجاجية
+basketbol,B1,I-type (back),كرة السلة,Basketbol çok eğlenceli.,كرة السلة ممتعة جداً
+garaj,A2,I-type (back),كراج,Arabalı garaj,كراج بالسيارة
+kum tepesi,B2,I-type (back),كثيب رملي,Büyük kum tepesi,كثيب رملي كبير
+yoğunluk,B2,I-type (back),yoğunluk,Su yoğunluğu,كثافة الماء
+omuz,A2,I-type (back),كتف,Omzum ağrıyor.,كتفي يؤلمني.
+omuz,B1,I-type (back),كتف,Omzum ağrıyor.,كتفي يؤلمني.
+omuz,A2,I-type (back),كتف,Omzum ağrıyor.,كتفي يؤلمني
+omuz,A2,I-type (back),كتف,Geniş omuz,كتف عريض
+defter,A1,E-type (front),دفتر,Defterime not aldım.,كتبت ملاحظة في دفتري.
+klavye,A2,I-type (back),لوحة مفاتيح,Klavye üzerinde yazdım.,كتبت على لوحة المفاتيح.
+çek,B1,E-type (front),شيك,Çek yazdım.,كتبت شيكاً
+mektup,A2,E-type (front),رسالة,Mektup yazdım,كتبت رسالة
+e-posta,B1,E-type (front),بريد إلكتروني,E-posta yazdım.,كتبت بريداً إلكترونياً
+tez,B2,E-type (front),أطروحة,Tezimi yazdım.,كتبت أطروحتي
+tahta,A1,I-type (back),لوح,Öğretmen tahtaya yazdı.,كتب المعلم على اللوح.
+kalın,A2,I-type (back),سميك,Kalın kitap,كتاب سميك
+yeni,A1,E-type (front),جديد,Yeni bir kitap.,كتاب جديد
+köy,A1,I-type (back),قرية,Köyde büyüdüm.,كبرت في القرية.
+karaciğer,B1,E-type (front),كبد,Sağlıklı karaciğer,كبد صحي
+nisan,A1,I-type (back),أبريل,Nisan yağmurlu geçti.,كان شهر أبريل ممطراً.
+sınav,A2,I-type (back),امتحان,Sınav çok zordu.,كان الامتحان صعباً جداً.
+motosiklet,B1,I-type (back),دراجة نارية,Motosiklet sürmek tehlikeli.,قيادة الدراجة النارية خطيرة
+gökkuşağı,B2,I-type (back),قوس قزح,Gökkuşağı çok güzel.,قوس قزح جميل جداً.
+güç,B1,E-type (front),قوة,Motor gücü,قوة المحرك
+kuvvet,B2,E-type (front),قوة,Çekim kuvveti,قوة الجذب
+acı,A2,I-type (back),مر/حار,Acı kahve,قهوة مرة
+denizanası,B2,I-type (back),قنديل البحر,Renkli denizanası,قنديل البحر الملون
+medüz,B2,E-type (front),قنديل البحر,Şeffaf medüz,قنديل البحر الشفاف
+oksijen,B2,E-type (front),أكسجين,Oksijen maskesi,قناع الأكسجين
+kirli,A2,E-type (front),قذر,Kirli bir gömlek.,قميص قذر
+gevşek,B1,E-type (front),فضفاض,Gevşek gömlek,قميص فضفاض
+açık,A2,I-type (back),فاتح,Açık mavi gömleği.,قميص أزرق فاتح
+beyaz,A1,I-type,أبيض,Beyaz gömlek,قميص أبيض
+tur,B1,I-type (back),جولة,Şehir turu yaptık.,قمنا بجولة في المدينة
+borsa,B2,I-type (back),بورصة,Borsada işlem yaptım.,قمت بصفقة في البورصة
+rezervasyon,B2,I-type (back),حجز,Rezervasyon yaptırdım.,قمت بحجز
+transfer,B2,E-type (front),تحويل,Para transferi yaptım.,قمت بتحويل مال
+ödeme,B1,I-type (back),دفع,Ödeme yaptım.,قمت بالدفع
+rezervasyon,A2,I-type (back),حجز,Rezervasyon yaptım,قمت بالحجز
+fotokopi,B1,I-type (back),تصوير,Fotokopi çektim.,قمت بالتصوير
+hafif,A2,E-type,خفيف,Hafif kumaş,قماش خفيف
+tava,A1,I-type (back),مقلاة,Tavada yumurta pişirdim.,قليت البيض في المقلاة.
+tırnak,A2,I-type (back),ظفر,Tırnaklarımı kestim.,قلمت أظافري.
+kurşun,B2,I-type (back),رصاص,Kurşun kalem,قلم رصاص
+kalp,A2,I-type (back),قلب,Sağlıklı kalp,قلب صحي
+durmak,A1,I-type (back),يقف,Burada dur.,قف هنا.
+üzüm,A1,E-type (front),عنب,Üzüm topladık.,قطفنا العنب.
+testere,B2,E-type (front),منشار,Testereyle tahta kestim.,قطعت الخشب بالمنشار
+maydanoz,A2,I-type (back),بقدونس,Maydanoz doğradım.,قطعت البقدونس.
+damla,A2,I-type (back),قطرة,Göz damlası,قطرة العين
+çap,C1,I-type (back),قطر,Dairenin çapı 10 cm.,قطر الدائرة 10 سم.
+kedi,A1,E-type (front),قطة,Kedim çok oyuncu.,قطتي مرحة جداً.
+kedi,A1,E-type,قطة,Sevimli kedi,قطة لطيفة
+tembel,A2,E-type (front),كسول,Tembel kedi,قطة كسولة
+kısa,A1,I-type (back),قصير,Kısa bir hikaye.,قصة قصيرة
+kabuk,B1,I-type (back),قشرة,Ağaç kabuğu sert,قشرة الشجرة صلبة
+yarıçap,C1,I-type (back),نصف القطر,Yarıçapı ölçtüm.,قست نصف القطر.
+köpekbalığı,B1,E-type,قرش,Tehlikeli köpekbalığı,قرش خطير
+maymun,A2,I-type,قرد,Sevimli maymun,قرد لطيف
+kütüphane,A2,Mixed,مكتبة,Kütüphanede kitap okudum.,قرأت كتاباً في المكتبة.
+kalın,A2,I-type (back),سميك,Kalın bir kitap okudum.,قرأت كتاباً سميكاً.
+kısa,A1,I-type (back),قصير,Kısa bir hikaye okudum.,قرأت قصة قصيرة.
+elli,A1,E-type (front),خمسون,Elli kitap okudum.,قرأت خمسين كتاباً.
+anlık,B2,I-type (back),لحظي,Anlık karar,قرار لحظي
+jet ski,B2,Mixed,دراجة مائية,Jet ski sürdük.,قدنا الدراجة المائية.
+ayak,A1,I-type (back),قدم,Büyük ayak,قدم كبيرة
+sahne,B1,E-type (front),مسرح,Sahnede performans sergiledi.,قدم عرضاً على المسرح
+bodrum,B1,I-type (back),قبو,Karanlık bodrum,قبو مظلم
+keşif,B2,E-type (front),اكتشاف,Büyük bir keşif yaptılar.,قاموا باكتشاف كبير
+fil,A1,E-type,فيل,Büyük fil,فيل كبير
+vitamin,B1,E-type (front),فيتامين,C vitamini,فيتامين ج
+sıvı,B1,I-type (back),سائل,Sıvı halde,في حالة سائلة
+bölüm,B1,E-type (front),قسم,Hangi bölümdesin?,في أي قسم أنت؟
+yetmiş,A1,E-type (front),سبعون,Yetmiş yaşında.,في السبعين من عمره.
+krom,C1,I-type (back),كروم,Krom çelik,فولاذ الكروم
+fincan,A2,I-type (back),فنجان,Çay fincanı güzel.,فنجان الشاي جميل.
+acı,A2,I-type (back),مر/حار,Acı biber,فلفل حار
+anahtar,A2,I-type (back),مفتاح,Anahtarımı kaybettim,فقدت مفتاحي
+anahtar,A2,I-type (back),مفتاح,Anahtarım kayboldu.,فقدت مفتاحي
+şapka,A2,I-type (back),قبعة,Şapkamı kaybettim.,فقدت قبعتي
+kart,A2,I-type (back),بطاقة,Kredi kartım kayboldu.,فقدت بطاقتي الائتمانية
+bagaj,B1,I-type (back),أمتعة,Bagajımı kaybettim.,فقدت أمتعتي
+mevsim,B1,E-type (front),فصل,En sevdiğim mevsim yaz.,فصلي المفضل هو الصيف.
+mevsim,B1,E-type (front),فصل,En sevdiğim mevsim,فصلي المفضل
+kirli,A1,E-type (front),متسخ,Kirli elbise,فستان متسخ
+mor,A1,I-type,بنفسجي,Mor elbise,فستان بنفسجي
+fırın,A2,I-type (back),فرن,Elektrikli fırın,فرن كهربائي
+sevinmek,B1,E-type (front),يفرح,Haberi duyunca sevindim.,فرحت عندما سمعت الخبر
+kelebekç,A2,E-type,فراشة,Renkli kelebek,فراشة ملونة
+ultrason,B2,I-type (back),الترا ساوند,Ultrason muayenesi,فحص الالترا ساوند
+coğrafya,B2,I-type (back),جغرافيا,Coğrafya haritası açtık.,فتحنا خريطة الجغرافيا
+müzik seti,B1,Mixed,جهاز موسيقى,Müzik seti açtım.,فتحت جهاز الموسيقى.
+pencere,A2,E-type (front),نافذة,Pencereyi açtım.,فتحت النافذة
+mikrofon,A2,E-type (front),ميكروفون,Mikrofonu açtım.,فتحت الميكروفون.
+web sitesi,B1,Mixed,موقع إلكتروني,Web sitesi açtım.,فتحت الموقع الإلكتروني.
+ocak,A1,I-type (back),موقد,Ocağı açtım.,فتحت الموقد.
+dosya,B1,I-type (back),ملف,Dosyayı açtım.,فتحت الملف
+tarayıcı,B1,I-type (back),متصفح,Tarayıcı açtım.,فتحت المتصفح.
+perde,B1,E-type (front),ستارة,Perdeyi açtım.,فتحت الستارة
+tornavida,B2,I-type (back),مفك براغي,Tornavidayla vida açtım.,فتحت البرغي بالمفك
+sekreter,A2,E-type (front),سكرتير,Sekreter telefon açtı,فتح السكرتير الهاتف
+genç,A2,E-type (front),شاب,Genç bir kız.,فتاة شابة
+mavi,A1,I-type (back),أزرق,Mavi gözlü bir kız.,فتاة زرقاء العينين
+güzel,A1,E-type (front),جميل,Çok güzel bir kız.,فتاة جميلة جداً.
+şubat,A1,I-type (back),فبراير,Şubat kısa bir ay.,فبراير شهر قصير.
+fare,A2,I-type,فأر,Küçük fare,فأر صغير
+tatlı,A1,I-type (back),حلو,Tatlı meyve,فاكهة حلوة
+turuncu,A1,I-type,برتقالي,Turuncu meyve,فاكهة برتقالية
+gri,A1,E-type,رمادي,Gri bulut,غيمة رمادية
+el,A1,E-type (front),يد,Ellerimi yıkadım.,غسلت يدي.
+sabun,A2,I-type (back),صابون,Sabunla ellerimi yıkadım.,غسلت يدي بالصابون
+el,A1,E-type (front),يد,Elimi yıkadım.,غسلت يدي
+yüz,A1,E-type (front),وجه,Yüzümü yıkadım.,غسلت وجهي.
+kirli,A1,E-type (front),متسخ,Kirli kıyafetlerimi yıkadım.,غسلت ملابسي المتسخة.
+şampuan,B1,I-type (back),شامبو,Şampuanla saçımı yıkadım.,غسلت شعري بالشامبو
+sabun,A1,I-type (back),صابون,Sabun ile yıkadım.,غسلت بالصابون.
+iç çamaşırı,B2,E-type (front),ملابس داخلية,İç çamaşırı yıkadım.,غسلت الملابس الداخلية
+tabak,A2,I-type (back),طبق,Tabağı yıkadım.,غسلت الطبق
+çamaşır makinesi,A2,I-type (back),غسالة ملابس,Otomatik çamaşır makinesi,غسالة ملابس أوتوماتيكية
+bulaşık makinesi,B1,I-type (back),غسالة صحون,Sessiz bulaşık makinesi,غسالة صحون هادئة
+bulaşık makinesi,B1,Mixed,غسالة أطباق,Bulaşık makinesi yararlı.,غسالة الأطباق مفيدة.
+oda,A1,I-type (back),غرفة,Odam çok güzel,غرفتي جميلة جداً
+sessiz,A2,E-type (front),هادئ,Sessiz oda,غرفة هادئة
+temiz,A1,E-type (front),نظيف,Temiz oda,غرفة نظيفة
+temiz,A2,E-type (front),نظيف,Temiz bir oda.,غرفة نظيفة
+oda,A1,I-type (back),غرفة,Büyük oda,غرفة كبيرة
+yatak odası,A1,I-type (back),غرفة النوم,Yatak odası temiz,غرفة النوم نظيفة
+öğretmenler odası,A2,Mixed,غرفة المعلمين,Öğretmenler odası sessiz.,غرفة المعلمين هادئة.
+kıskanmak,B2,I-type (back),يغار,Arkadaşımı kıskandım.,غرت من صديقي
+yarın,A1,I-type (back),غداً,Yarın tatil,غداً عطلة
+helyum,C1,E-type (front),هيليوم,Helyum gazı,غاز الهيليوم
+hidrojen,C1,E-type (front),هيدروجين,Hidrojen gazı,غاز الهيدروجين
+klor,C1,I-type (back),كلور,Klor gazı,غاز الكلور
+argon,C2,I-type (back),أرغون,Argon gazı,غاز الأرغون
+orman,A2,I-type (back),غابة,Yeşil orman,غابة خضراء
+göz,A1,I-type (back),عين,Gözlerim mavi.,عيناي زرقاوان
+doğum,B1,I-type (back),ولادة,Doğum günü bugün.,عيد الميلاد اليوم
+örümcek,B1,E-type,عنكبوت,Ağ ören örümcek,عنكبوت ينسج الشبكة
+boyun,A2,I-type (back),عنق,Boynum ağrıyor.,عنقي يؤلمني.
+kükürt,C1,E-type (front),كبريت,Kükürt elementi,عنصر الكبريت
+flor,C1,I-type (back),فلور,Flor elementi,عنصر الفلور
+brom,C2,I-type (back),بروم,Brom elementi,عنصر البروم
+amca,A1,I-type (back),عم,Amcam İzmir'de yaşıyor.,عمي يعيش في إزمير.
+amca,A1,I-type (back),عم,Amcam çok komik.,عمي مضحك جداً.
+amca,A2,I-type (back),عم,Amcam zengin,عمي غني
+endoskopi,C1,E-type (front),منظار,Endoskopi işlemi,عملية المنظار
+erişte,B1,E-type (front),شعيرية,Erişte çorbası yaptık.,عملنا شوربة الشعيرية.
+laboratuvar,B1,I-type (back),مختبر,Laboratuvarda deney yaptık.,عملنا تجربة في المختبر.
+sos,A1,I-type (back),صوص,Domates sosu yaptım.,عملت صوص الطماطم.
+sandviç,A2,E-type (front),سندويش,Sandviç yaptım.,عملت سندويش.
+altı,A1,I-type (back),ستة,Altı saat çalıştım.,عملت ست ساعات.
+saat,A1,I-type (back),ساعة,Üç saat çalıştım,عملت ثلاث ساعات
+tereyağı,A2,Mixed,زبدة,Tereyağı ile yaptim.,عملت بالزبدة.
+röntgen,B2,E-type (front),أشعة سينية,Röntgen çektirdim,عملت أشعة سينية
+spagetti,A2,E-type (front),سباغيتي,Spagetti yaptım.,عملت السباغيتي.
+cacık,A2,I-type (back),خيار بالزبادي,Cacık yaptım.,عملت الخيار بالزبادي.
+geçici,B2,E-type (front),مؤقت,Geçici iş,عمل مؤقت
+mantı,A2,I-type (back),مانتي,Mantı yapmak zor.,عمل المانتي صعب.
+derinlik,B1,E-type,عمق,On metre derinlik,عمق عشرة أمتار
+sekiz,A1,E-type (front),ثمانية,Sekiz yaşındayım.,عمري ثماني سنوات.
+yarılanma,C1,I-type (back),انتصاف,Yarılanma ömrü,عمر النصف
+hala,A2,I-type (back),عمة,Halam çok iyi,عمتي جيدة جداً
+hala,A1,I-type (back),عمة,Halam güzel şarkı söylüyor.,عمتي تغني بجمال.
+hala,A1,I-type (back),عمة,Halam yemek pişiriyor.,عمتي تطبخ الطعام.
+astronomi,C1,I-type (back),فلك,Astronomi çok ilginç.,علم الفلك مثير للاهتمام جداً
+kemik,A2,E-type (front),عظم,Güçlü kemik,عظم قوي
+kalça,B1,I-type (back),ورك,Kalça kemiği,عظم الورك
+yaz,A1,I-type (back),صيف,Yaz tatili,عطلة الصيف
+öğretim görevlisi,B2,Mixed,عضو هيئة تدريس,Öğretim görevlisi ders veriyor.,عضو هيئة التدريس يعطي درساً.
+kas,B1,I-type (back),عضلة,Güçlü kas,عضلة قوية
+dil,A1,E-type (front),لسان,Dilimi ısırdım.,عضضت لساني.
+dil,A1,E-type (front),لسان,Dilimi ısırdım.,عضضت لساني
+serçe,B1,E-type,عصفور,Küçük serçe,عصفور صغير
+limon suyu,A2,Mixed,عصير ليمون,Limon suyu sıktım.,عصرت عصير الليمون.
+on,A1,I-type (back),عشرة,On öğrenci sınıfta.,عشرة طلاب في الفصل.
+genişlik,A2,E-type,عرض,Bir metre genişlik,عرض متر واحد
+bale,B2,E-type (front),باليه,Bale gösterisi güzeldi.,عرض الباليه كان جميلاً
+at arabası,B1,Mixed,عربة حصان,At arabası eski.,عربة الحصان قديمة.
+nötron,C1,E-type (front),نيوترون,Nötron sayısı,عدد النيوترونات
+proton,C1,I-type (back),بروتون,Proton sayısı,عدد البروتونات
+hamur,B1,I-type (back),عجين,Hamuru yoğurdum.,عجنت العجين
+kaş,B2,I-type (back),حاجب,Kaşlarını çattı.,عبس حاجبيه
+feribot,B1,E-type (front),عبارة,Feribot ile geçtik.,عبرنا بالعبارة.
+köprü,A1,E-type (front),جسر,Köprüden geçtim.,عبرت من الجسر.
+aile,A1,I-type (back),عائلة,Ailem çok büyük,عائلتي كبيرة جداً
+aile,A2,E-type (front),عائلة,Ailem çok büyük.,عائلتي كبيرة جداً
+zengin,A2,E-type (front),غني,Zengin aile,عائلة غنية
+zengin,B1,E-type (front),غني,Zengin bir aile.,عائلة غنية
+temizlik görevlisi,A2,Mixed,عامل نظافة,Temizlik görevlisi ofisi temizledi.,عامل النظافة نظف المكتب.
+inşaat,B2,I-type (back),إنشاءات,İnşaat işçisi çalışıyor.,عامل البناء يعمل.
+sırt,A1,I-type (back),ظهر,Sırtım ağrıyor.,ظهري يؤلمني.
+gökkuşağı,B1,E-type,قوس قزح,Gökkuşağı çıktı,ظهر قوس قزح
+tırnak,A2,I-type (back),ظفر,Uzun tırnak,ظفر طويل
+uzunluk,A2,I-type,طول,İki metre uzunluk,طولان متران
+boşanmak,B2,I-type (back),يطلق,Geçen yıl boşandılar.,طلقوا العام الماضي
+pizza,A2,I-type (back),بيتزا,Pizza sipariş ettik.,طلبنا بيتزا.
+cappuccino,B1,I-type (back),كابتشينو,Cappuccino sipariş ettim.,طلبت كابتشينو.
+platin,C1,I-type (back),بلاتين,Platin kaplama,طلاء البلاتين
+değişken,B2,E-type (front),متغير,Değişken hava,طقس متغير
+hasta,A1,I-type (back),مريض,Hasta çocuk,طفل مريض
+mutlu,A1,I-type (back),سعيد,Mutlu çocuk,طفل سعيد
+donmuş,B1,I-type (back),مجمد,Donmuş gıda,طعام مجمد
+baharatlı,B1,I-type (back),متبل,Baharatlı yemek,طعام متبل
+sağlıklı,A2,I-type (back),صحي,Sağlıklı yemek,طعام صحي
+lezzetsiz,B1,E-type (front),بلا طعم,Lezzetsiz yemek,طعام بلا طعم
+tavuk,A1,I-type (back),دجاج,Tavuk yemeği çok lezzetli.,طعام الدجاج لذيذ جداً.
+düz,A2,E-type (front),مستقيم,Düz yol,طريق مستقيم
+çamur,A2,I-type (back),طين,Çamurlu yol,طريق طيني
+uzun,A1,I-type (back),طويل,Uzun bir yol.,طريق طويل
+tehlikeli,A2,E-type (front),خطير,Tehlikeli yol,طريق خطير
+sivri,B1,E-type (front),مدبب,Sivri uç,طرف مدبب
+diş hekimi,B1,Mixed,طبيب أسنان,Diş hekimi dişimi çekti.,طبيب الأسنان خلع سني.
+fırın,A1,I-type (back),فرن,Fırında pişirdim.,طبخت في الفرن.
+dolma,A2,I-type (back),محشي,Dolma pişirdim.,طبخت المحشي.
+kuş,A1,E-type,طائر,Renkli kuş,طائر ملون
+sağlam,A2,I-type (back),متين,Sağlam masa,طاولة متينة
+yuvarlak,A2,I-type (back),دائري,Yuvarlak masa,طاولة دائرية
+masa,A1,I-type (back),طاولة,Ahşap masa,طاولة خشبية
+kahverengi,A2,E-type,بني,Kahverengi masa,طاولة بنية
+çalışkan,A2,I-type (back),مجتهد,Çalışkan öğrenci,طالب مجتهد
+akıllı,A2,I-type (back),ذكي,Akıllı öğrenci,طالب ذكي
+parlak,A2,I-type,لامع,Parlak ışık,ضوء لامع
+neon,C1,E-type (front),نيون,Neon ışığı,ضوء النيون
+ışık,A2,I-type,ضوء,Güneş ışığı,ضوء الشمس
+kurbağa,A2,I-type,ضفدع,Yeşil kurbağa,ضفدع أخضر
+gaz,B1,I-type (back),وقود/غاز,Gaza bastım.,ضغطت على دواسة الوقود
+basınç,B2,I-type (back),basınç,Hava basıncı,ضغط الهواء
+tansiyon,B2,I-type (back),ضغط الدم,Tansiyon yüksek,ضغط الدم عالي
+gülmek,A2,E-type (front),يضحك,Şakayı duyunca güldüm.,ضحكت عندما سمعت النكتة
+barbekü sos,B1,Mixed,صوص باربكيو,Barbekü sosu lezzetli.,صوص الباربكيو لذيذ.
+kamera,A2,I-type (back),كاميرا,Kamera ile çektim.,صورت بالكاميرا.
+hareketli,B1,E-type (front),متحرك,Hareketli resim,صورة متحركة
+sürekli,B1,E-type (front),مستمر,Sürekli ses,صوت مستمر
+garip,A2,E-type (front),غريب,Garip ses,صوت غريب
+ses,A2,E-type,صوت,Yüksek ses,صوت عال
+zayıf,A2,I-type (back),ضعيف,Zayıf ses,صوت ضعيف
+zayıf,A2,I-type (back),ضعيف,Zayıf bir ses.,صوت ضعيف
+keman,B2,E-type (front),كمان,Keman sesi çok güzel.,صوت الكمان جميل جداً
+köşeli,B1,E-type (front),مربع,Köşeli kutu,صندوق مربع
+şahin,B1,E-type,صقر,Hızlı şahin,صقر سريع
+seyirci,B2,E-type (front),جمهور,Seyirciler alkışladı.,صفق الجمهور
+çatı,A2,I-type (back),سطح,Çatıya çıktık.,صعدنا إلى السطح.
+tepe,A2,E-type (front),تل,Tepeye çıktık.,صعدنا إلى التل.
+merdiven,A1,E-type (front),درج,Merdivenle çıktım.,صعدت بالدرج.
+döviz,B2,I-type (back),عملة أجنبية,Döviz bozdurdum.,صرفت عملة أجنبية
+arkadaş,A1,I-type (back),صديق,Arkadaşım çok iyi.,صديقي جيد جداً.
+göğüs,A2,E-type (front),صدر,Göğsüm ağrıyor.,صدري يؤلمني.
+kanun,B2,I-type (back),قانون,Yeni kanun çıktı.,صدر قانون جديد.
+göğüs,A2,E-type (front),صدر,Geniş göğüs,صدر عريض
+kaya,B1,I-type (back),صخرة,Sert kaya,صخرة صلبة
+çöl,B1,E-type,صحراء,Sıcak çöl,صحراء حارة
+sağlık,B1,I-type (back),صحة,Sağlığım iyi.,صحتي جيدة.
+salon,A1,I-type (back),صالة,Geniş salon,صالة واسعة
+ocak,A1,I-type (back),يناير,Ocak ayı çok soğuk.,شهر يناير بارد جداً.
+elips,B2,E-type,قطع ناقص,Elips şekli,شكل قطع ناقص
+dudak,A2,I-type (back),شفة,Dudaklarım kuru.,شفتاي جافتان.
+dudak,B1,I-type (back),شفة,Dudakları kuru.,شفتاه جافتان
+aspiratör,B1,I-type (back),شفاط,Mutfak aspiratörü,شفاط المطبخ
+saç,A2,I-type (back),شعر,Saçlarım uzun.,شعري طويل
+kahverengi,A2,I-type (back),بني,Kahverengi saçım var.,شعري بني
+sıkılmak,B1,I-type (back),يشعر بالملل,Derste sıkıldım.,شعرت بالملل في الدرس
+uzun,A1,I-type (back),طويل,Uzun saç,شعر طويل
+partner,B2,I-type (back),شريك,İş partnerim güvenilir.,شريكي في العمل موثوق
+balkon,A2,I-type (back),شرفة,Güneşli balkon,شرفة مشمسة
+cafe,A1,I-type (back),مقهى,Cafede kahve içtik.,شربنا القهوة في المقهى.
+litre,A2,E-type (front),لتر,Bir litre süt içtim,شربت لتراً من الحليب
+portakal,A1,I-type (back),برتقال,Portakal suyu içtim.,شربت عصير البرتقال.
+nane,A2,I-type (back),نعناع,Nane çayı içtim.,شربت شاي النعناع.
+zencefil,B1,E-type (front),زنجبيل,Zencefil çayı içtim.,شربت شاي الزنجبيل.
+şurup,A2,I-type (back),شراب,Öksürük şurubu,شراب برد السعال
+ağaç,A1,I-type (back),شجرة,Büyük bir ağaç,شجرة كبيرة
+yarımada,B2,I-type (back),شبه جزيرة,Anadolu yarımadası,شبه الجزيرة الأناضولية
+şeker,A1,E-type (front),سكر,Şekerli çay,شاي محلى
+sıcak,A1,I-type (back),حار,Sıcak çay,شاي حار
+tiyatro,A2,I-type (back),مسرح,Tiyatroda oyun izledik.,شاهدنا مسرحية في المسرح.
+tiyatro,B2,I-type (back),مسرح,Tiyatro oyunu seyrettik.,شاهدنا مسرحية
+tiyatro,B1,I-type (back),مسرح,Tiyatro oyunu izledik.,شاهدنا مسرحية
+stadyum,A2,I-type (back),ملعب,Stadyumda maç izledik.,شاهدنا مباراة في الملعب.
+video,A2,E-type (front),فيديو,Video izledim.,شاهدت فيديو.
+program,A2,I-type (back),برنامج,İyi bir program izledim,شاهدت برنامجاً جيداً
+sahil,B1,E-type,شاطئ,Kumlu sahil,شاطئ رملي
+plaj,A2,I-type (back),شاطئ,Güzel plaj,شاطئ جميل
+seminer,B2,E-type (front),ندوة,Seminere katıldım.,شاركت في الندوة
+geniş,A1,E-type (front),واسع,Geniş cadde,شارع واسع
+dar,A2,I-type (back),ضيق,Dar bir sokak.,شارع ضيق
+gürültülü,B1,E-type (front),صاخب,Gürültülü sokak,شارع صاخب
+hastalık,A2,I-type (back),مرض,Hastalığım geçti.,شُفيت من مرضي.
+başkan,B1,I-type (back),رئيس,Başkan konuşma yapacak.,سيلقي الرئيس خطاباً.
+aralık,A1,I-type (back),ديسمبر,Aralık kar yağacak.,سيتساقط الثلج في ديسمبر.
+araba,A1,I-type (back),سيارة,Arabam çok hızlı.,سيارتي سريعة جداً
+araba,A1,I-type (back),سيارة,Arabam yeni.,سيارتي جديدة
+pahalı,A2,I-type (back),غالي,Çok pahalı bir araba.,سيارة غالية جداً
+hızlı,A1,I-type (back),سريع,Hızlı araba,سيارة سريعة
+hızlı,A2,I-type (back),سريع,Hızlı bir araba.,سيارة سريعة
+yeni,A1,E-type (front),جديد,Yeni araba,سيارة جديدة
+itfaiye,A2,Mixed,إطفاء,İtfaiye arabası kırmızı.,سيارة الإطفاء حمراء.
+kolay,A1,I-type (back),سهل,Kolay soru,سؤال سهل
+kolay,A2,I-type (back),سهل,Kolay bir soru.,سؤال سهل
+altın,A1,I-type (back),ذهب,Altın bilezik,سوار ذهبي
+diş,A1,E-type (front),سن,Dişim ağrıyor.,سني يؤلمني.
+diş,A1,E-type (front),سن,Dişim ağrıyor.,سني يؤلمني.
+diş,A1,E-type (front),سن,Dişim ağrıyor.,سني تؤلمني
+nişan,B2,I-type (back),خطوبة,Nişan töreni yapacağız.,سنقيم حفل خطوبة
+taze,A2,I-type (back),طازج,Taze balık,سمك طازج
+balık,A1,I-type,سمك,Taze balık,سمك طازج
+gök gürültüsü,B1,E-type,رعد,Gök gürültüsü duydum,سمعت الرعد
+kalınlık,B1,I-type,سماكة,İnce kalınlık,سماكة رفيعة
+bakır,B1,I-type (back),نحاس,Bakır tel,سلك نحاسي
+kaplumbağa,B1,I-type,سلحفاة,Yavaş kaplumbağa,سلحفاة بطيئة
+künt,B2,E-type (front),كليل,Künt bıçak,سكين كليل
+keskin,A2,E-type (front),حاد,Keskin bıçak,سكين حاد
+alçak,A2,I-type (back),منخفض,Alçak tavan,سقف منخفض
+tavan,A2,I-type (back),سقف,Yüksek tavan,سقف عالي
+sabit,B2,E-type (front),ثابت,Sabit fiyat,سعر ثابت
+mat,B1,I-type,باهت,Mat yüzey,سطح باهت
+çatı,A2,I-type (back),سطح,Kırmızı çatı,سطح أحمر
+yatak,A1,I-type (back),سرير,Rahat yatak,سرير مريح
+sert,A2,E-type (front),صلب,Sert yatak,سرير صلب
+yengeç,B1,E-type,سرطان البحر,Kırmızı yengeç,سرطان البحر الأحمر
+borç,B2,I-type (back),دين,Borcumu ödedim.,سددت ديني.
+borç,B1,I-type (back),دين,Borcumu ödedim.,سددت ديني
+kertenkele,B1,E-type,سحلية,Yeşil kertenkele,سحلية خضراء
+ATM,A2,E-type (front),صراف آلي,ATM'den para çektim.,سحبت مالاً من الصراف الآلي
+halı,A2,I-type (back),سجادة,Renkli halı,سجادة ملونة
+perde,A2,E-type (front),ستارة,Mavi perde,ستارة زرقاء
+nikel,C1,E-type (front),نيكل,Nikel alaşım,سبيكة النيكل
+yedi,A1,E-type (front),سبعة,Yedi gün bir hafta.,سبعة أيام تساوي أسبوعاً.
+gelmek,A1,E-type (front),يأتي,Yarın eve geleceğim.,سآتي إلى البيت غداً.
+önce,A1,I-type (back),قبل,Önce ev işlerini bitireceğim.,سأنهي الأعمال المنزلية أولاً.
+akşam,A1,I-type (back),مساء,Akşam eve geleceğim.,سأعود إلى البيت مساءً.
+maden suyu,A2,Mixed,ماء معدني,Maden suyu alım.,سأشتري ماء معدني.
+gecelik,B2,E-type (front),قميص نوم,Geceliğimi giyeceğim.,سأرتدي قميص النوم
+eldiven,B1,E-type (front),قفازات,Eldivenlerimi giyeceğim.,سأرتدي قفازاتي
+yarın,A1,I-type (back),غداً,Yarın seni göreceğim.,سأراك غداً.
+çarşamba,A1,I-type (back),الأربعاء,Çarşamba doktora gideceğim.,سأذهب للطبيب يوم الأربعاء.
+metro,A2,E-type (front),مترو,Metro ile gideceğim.,سأذهب بالمترو.
+konferans,B2,I-type (back),مؤتمر,Konferansa gideceğim.,سأذهب إلى المؤتمر
+konser,B1,I-type (back),حفل موسيقي,Konsere gideceğim.,سأذهب إلى الحفل الموسيقي
+evlenmek,B1,E-type (front),يتزوج,Gelecek yıl evleneceğim.,سأتزوج العام القادم
+gelecek,A1,E-type (front),القادم,Gelecek ay evleneceğim.,سأتزوج الشهر القادم.
+yıl,A1,I-type (back),سنة,Bu yıl mezun olacağım.,سأتخرج هذه السنة.
+bacak,A1,I-type (back),ساق,Bacağım yorgun.,ساقي متعبة.
+bacak,A1,I-type (back),ساق,Bacağım ağrıyor.,ساقي تؤلمني
+bacak,A1,I-type (back),ساق,Uzun bacak,ساق طويلة
+otobüs,A2,E-type (front),حافلة,Otobüsle seyahat ettik.,سافرنا بالحافلة
+gemi,A1,E-type (front),سفينة,Gemiyle yolculuk yaptım.,سافرت بالسفينة.
+gemi,A1,E-type (front),سفينة,Gemiyle yolculuk yaptım.,سافرت بالسفينة.
+polis,A2,I-type (back),شرطة,Polis yardım etti.,ساعدت الشرطة.
+sekreter,B2,E-type (front),سكرتير,Sekreter yardım etti.,ساعد السكرتير
+saat,A2,I-type (back),ساعة,Saatim durdu.,ساعتي توقفت
+kıyı,B1,I-type (back),ساحل,Deniz kıyısı,ساحل البحر
+zeytinyağı,A2,Mixed,زيت الزيتون,Zeytinyağı sağlıklı.,زيت الزيتون صحي.
+yağ,A1,I-type (back),زيت,Zeytinyağı,زيت الزيتون
+eş,A2,E-type (front),زوج/زوجة,Eşim çok güzel,زوجي/زوجتي جميل/ة جداً
+koca,A2,I-type (back),زوج,Kocam işte çalışıyor,زوجي يعمل في العمل
+koca,B1,I-type (back),زوج,Kocam mühendis.,زوجي مهندس
+karı,A2,I-type (back),زوجة,Karım evde,زوجتي في البيت
+karı,B1,I-type (back),زوجة,Karım doktor.,زوجتي طبيبة
+sarı,A1,I-type,أصفر,Sarı çiçek,زهرة صفراء
+meslektaş,B2,E-type (front),زميل عمل,Meslektaşlarım çok yardımsever.,زملائي في العمل متعاونون جداً.
+müze,B1,E-type (front),متحف,Müzeyi ziyaret ettik.,زرنا المتحف
+tohum,B1,I-type (back),بذرة,Tohum ektik,زرعنا البذور
+müze,A1,E-type (front),متحف,Müzeyi ziyaret ettim.,زرت المتحف.
+kilise,A2,E-type (front),كنيسة,Kiliseyi ziyaret ettim.,زرت الكنيسة.
+zürafa,A2,I-type,زرافة,Uzun zürafa,زرافة طويلة
+kırık,A2,I-type (back),مكسور,Kırık cam,زجاج مكسور
+şeffaf,B1,I-type,شفاف,Şeffaf cam,زجاج شفاف
+cam,A1,I-type (back),زجاج,Şeffaf cam,زجاج شفاف
+şeffaf,B2,I-type (back),شفاف,Şeffaf cam.,زجاج شفاف
+eritilmiş,B2,E-type (front),مذاب,Eritilmiş tereyağı,زبدة مذابة
+dik,B2,E-type (front),عمودي,Dik açı.,زاوية عمودية
+açı,B2,I-type (back),زاوية,90 derece açı.,زاوية 90 درجة.
+patron,B1,I-type (back),رئيس,Patronum çok nazik.,رئيسي لطيف جداً
+patron,A2,I-type (back),رئيس,Patronum çok iyi,رئيسي جيد جداً
+akciğer,B1,E-type (front),رئة,Temiz akciğer,رئة نظيفة
+kum,A2,I-type (back),رمل,Altın kum,رمل ذهبي
+skateboard,B2,E-type (front),لوح تزلج,Skateboard sürmek zor.,ركوب لوح التزلج صعب.
+gemi,A2,E-type (front),سفينة,Gemiye bindik.,ركبنا السفينة
+otobüs,A1,E-type (front),حافلة,Otobüse bindim.,ركبت الحافلة.
+otobüs,A1,E-type (front),حافلة,Otobüse bindim.,ركبت الحافلة.
+otobüs,A1,I-type (back),حافلة,Otobüse bindim.,ركبت الحافلة.
+otobüs,A2,E-type (front),حافلة,Otobüse bindim.,ركبت الحافلة
+boyun,B1,I-type (back),رقبة,Boynum sert.,رقبتي متيبسة
+boyun,B1,I-type (back),رقبة,Boynum ağrıyor.,رقبتي تؤلمني.
+boyun,A2,I-type (back),رقبة,Uzun boyun,رقبة طويلة
+alüminyum,B2,E-type (front),ألمنيوم,Alüminyum folyo,رقائق الألمنيوم
+silisyum,C1,E-type (front),سيليكون,Silisyum çip,رقاقة السيليكون
+kol,A1,I-type (back),ذراع,Kolumu kaldırdım.,رفعت ذراعي
+yüklemek,B1,E-type (front),يرفع,Fotoğrafı yükledi.,رفع الصورة.
+zahter,B2,I-type (back),زعتر,Zahter serpti.,رشت الزعتر.
+renkli,B1,E-type (front),ملون,Renkli resim yaptım.,رسمت صورة ملونة
+daire,B1,E-type (front),دائرة,Daire çizdim.,رسمت دائرة
+çizgi,B1,E-type (front),خط,Düz bir çizgi çizdim.,رسمت خطاً مستقيماً
+cetvel,A2,E-type (front),مسطرة,Cetvel ile çizgi çektim.,رسمت خطاً بالمسطرة.
+üçgen,B2,E-type (front),مثلث,Üçgen çizmek kolay.,رسم المثلث سهل
+gemi,A2,E-type (front),سفينة,Gemi limana yanaştı.,رست السفينة في الميناء
+nazik,A2,E-type (front),مهذب,Nazik adam,رجل مهذب
+yaşlı,A2,I-type (back),مسن,Yaşlı bir adam.,رجل مسن
+güçlü,A2,E-type (front),قوي,Güçlü adam,رجل قوي
+güçlü,A2,E-type (front),قوي,Güçlü bir adam.,رجل قوي
+fakir,B1,I-type (back),فقير,Fakir bir adam.,رجل فقير
+genç,A1,E-type (front),شاب,Genç adam,رجل شاب
+itfaiyeci,A2,E-type (front),رجل إطفاء,İtfaiyeci yangını söndürdü.,رجل الإطفاء أطفأ الحريق.
+itfaiyeci,A2,Mixed,رجل إطفاء,İtfaiyeci yangını söndürdü.,رجل الإطفاء أطفأ الحريق.
+kemer,A2,E-type (front),حزام,Kemeri bağladım.,ربطت الحزام.
+sanat galerisi,A2,I-type (back),معرض فني,Sanat galerisinde resim gördük.,رأينا لوحات في المعرض الفني.
+çirkin,A1,E-type (front),قبيح,Çirkin bir bina gördüm.,رأيت مبنى قبيحاً.
+yüksek,A1,E-type (front),عالي,Yüksek bir bina gördüm.,رأيت مبنى عالياً.
+siyah,A1,I-type (back),أسود,Siyah bir kedi gördüm.,رأيت قطاً أسود.
+fare,A1,E-type (front),فأر,Küçük bir fare gördüm.,رأيت فأراً صغيراً.
+kırmızı,A1,E-type (front),أحمر,Kırmızı bir araba gördüm.,رأيت سيارة حمراء.
+teleskop,C1,E-type (front),تلسكوب,Teleskopla yıldızları gördüm.,رأيت النجوم بالتلسكوب
+baş,A1,I-type (back),رأس,Başım ağrıyor.,رأسي يؤلمني.
+baş,A1,I-type (back),رأس,Başım ağrıyor.,رأسي يؤلمني
+karanfil,B1,I-type (back),قرنفل,Karanfil kokusu güzel.,رائحة القرنفل جميلة.
+radyo,A2,I-type (back),راديو,Eski radyo,راديو قديم
+kurt,B1,I-type,ذئب,Vahşi kurt,ذئب بري
+göz,A1,I-type (back),عين,Mavi gözlü.,ذو عيون زرقاء
+perşembe,A1,E-type (front),الخميس,Perşembe akşamı sinemaya gittik.,ذهبنا للسينما مساء الخميس.
+balık,A2,I-type (back),سمك,Balık tutmaya gittik.,ذهبنا لصيد السمك
+alışveriş merkezi,A2,I-type (back),مركز تسوق,Alışveriş merkezine gittik.,ذهبنا إلى مركز التسوق.
+taksi,A2,I-type (back),سيارة أجرة,Taksiyle havaalanına gittik.,ذهبنا إلى المطار بالتاكسي
+konser,A2,E-type (front),حفل موسيقي,Konsere gittik.,ذهبنا إلى الحفل الموسيقي.
+ada,A2,I-type (back),جزيرة,Adaya gittik.,ذهبنا إلى الجزيرة.
+dün,A1,E-type (front),أمس,Dün sinemaya gittim.,ذهبت للسينما أمس.
+balık,A1,I-type (back),سمك,Balık tutmaya gittim.,ذهبت لصيد السمك.
+taksi,A1,I-type (back),تاكسي,Taksiyle gittim.,ذهبت بالتاكسي.
+taksi,A1,I-type (back),تاكسي,Taksiyle gittim.,ذهبت بالتاكسي.
+müdür odası,A2,Mixed,مكتب المدير,Müdür odasına gittim.,ذهبت إلى مكتب المدير.
+polis karakolu,A2,I-type (back),مركز شرطة,Polis karakoluna gittim.,ذهبت إلى مركز الشرطة.
+yıl,A1,I-type (back),سنة,Geçen yıl İstanbul'a gittim.,ذهبت إلى إسطنبول العام الماضي.
+havaalanı,A2,I-type (back),مطار,Havaalanına gittim.,ذهبت إلى المطار.
+hastane,A1,I-type (back),مستشفى,Hastaneye gittim.,ذهبت إلى المستشفى.
+hastane,A1,I-type (back),مستشفى,Hastaneye gittim.,ذهبت إلى المستشفى.
+hastane,A1,I-type (back),مستشفى,Hastaneye gittim,ذهبت إلى المستشفى
+tuvalet,A1,I-type (back),مرحاض,Tuvalete gittim.,ذهبت إلى المرحاض.
+dün,A1,E-type (front),أمس,Dün okula gittim,ذهبت إلى المدرسة أمس
+doktor,A1,I-type (back),طبيب,Doktora gittim.,ذهبت إلى الطبيب.
+sinema,A1,E-type (front),سينما,Sinemaya gittim.,ذهبت إلى السينما.
+berber,A1,E-type (front),حلاق,Berbere gittim.,ذهبت إلى الحلاق.
+camii,A1,E-type (front),جامع,Camiiye gittim.,ذهبت إلى الجامع.
+banka,A1,I-type (back),بنك,Bankaya gittim.,ذهبت إلى البنك.
+oğul,A1,I-type (back),ابن,Oğlum okula gitti.,ذهب ابني إلى المدرسة.
+çene,B2,E-type (front),ذقن,Çenesi sivri.,ذقنه مدبب
+kol,A1,I-type (back),ذراع,Kolum ağrıyor.,ذراعي يؤلمني.
+kol,A1,I-type (back),ذراع,Kolum kırıldı.,ذراعي مكسورة.
+sinek,A2,E-type,ذبابة,Rahatsız sinek,ذبابة مزعجة
+hindi,A2,E-type,ديك رومي,Büyük hindi,ديك رومي كبير
+horoz,A2,I-type,ديك,Kırmızı horoz,ديك أحمر
+azot,C1,I-type (back),نيتروجين,Azot döngüsü,دورة النيتروجين
+karbon,B2,I-type (back),كربون,Karbon döngüsü,دورة الكربون
+reçel,A2,E-type (front),مربى,Reçel sürdüm.,دهنت المربى.
+beyin,B1,E-type (front),دماغ,Akıllı beyin,دماغ ذكي
+kan,A2,I-type (back),دم,Kırmızı kan,دم أحمر
+yunus,B1,I-type,دلفين,Akıllı yunus,دلفين ذكي
+çekiç,B1,E-type (front),مطرقة,Çekiçle çivi çaktım.,دققت المسمار بالمطرقة
+lira,A2,I-type (back),ليرة,Beş lira verdim.,دفعت خمس ليرات
+kırk,A1,I-type (back),أربعون,Kırk lira verdim.,دفعت أربعين ليرة.
+fatura,B1,I-type (back),فاتورة,Faturayı ödedim.,دفعت الفاتورة
+piknik,B1,E-type (front),نزهة,Piknik yapalım.,دعونا نقوم بنزهة
+molekül,C1,E-type (front),جزيء,Molekül yapısını inceledik.,درسنا تركيب الجزيء
+zor,A1,I-type (back),صعب,Zor bir ders.,درس صعب
+ders,A1,E-type (front),درس,Matematik dersi zor.,درس الرياضيات صعب.
+sıcaklık,A2,I-type,درجة الحرارة,Oda sıcaklığı,درجة حرارة الغرفة
+sıcaklık,A2,I-type (back),درجة الحرارة,Sıcaklık yükseliyor,درجة الحرارة ترتفع
+sıcaklık,A2,I-type (back),درجة الحرارة,Sıcaklık yükseliyor,درجة الحرارة ترتفع
+tavuk,A1,I-type,دجاجة,Sarı tavuk,دجاجة صفراء
+ayı,A2,I-type,دب,Büyük ayı,دب كبير
+daire,A2,I-type,دائرة,Büyük daire,دائرة كبيرة
+domuz,A2,I-type,خنزير,Vahşi domuz,خنزير بري
+blender,B1,E-type (front),خلاط,Blender ile karıştırdım.,خلطت بالخلاط.
+mikser,B1,E-type (front),مضرب,Mikser ile çırptım.,خفقت بالمضرب.
+paralel,C1,I-type (back),متوازي,Paralel çizgiler.,خطوط متوازية.
+eğri,B1,E-type (front),معوج,Eğri çizgi,خط معوج
+çizgi,A2,E-type,خط,Düz çizgi,خط مستقيم
+yatay,B2,I-type (back),أفقي,Yatay çizgi,خط أفقي
+bel,A2,E-type (front),خصر,İnce bel,خصر نحيف
+dolap,A1,I-type (back),خزانة,Büyük dolap,خزانة كبيرة
+koyun,A1,I-type,خروف,Beyaz koyun,خروف أبيض
+kayık,A2,I-type (back),قارب,Kayıkla denize açıldık.,خرجنا للبحر بالقارب.
+utanmak,B2,I-type (back),يخجل,Hatamı fark edince utandım.,خجلت عندما أدركت خطئي
+pazarlama uzmanı,B2,Mixed,خبير تسويق,Pazarlama uzmanı kampanya hazırladı.,خبير التسويق حضر حملة.
+börek,A2,E-type (front),بوريك,Börek pişirdim.,خبزت البوريك.
+bayat,B1,I-type (back),قديم/بائت,Bayat ekmek,خبز بائت
+dayı,A1,I-type (back),خال,Dayım doktordur.,خالي طبيب.
+dayı,A2,I-type (back),خال,Dayım doktor,خالي طبيب
+dayı,A1,I-type (back),خال,Dayım beni ziyaret etti.,خالي زارني.
+teyze,A1,E-type (front),خالة,Teyzem pasta yaptı.,خالتي صنعت كعكة.
+teyze,A2,E-type (front),خالة,Teyzem İstanbul'da yaşıyor,خالتي تعيش في إسطنبول
+gümüş,A2,E-type (front),فضة,Gümüş yüzük,خاتم فضي
+hayvan,A1,I-type,حيوان,Sevimli hayvan,حيوان لطيف
+sağlıklı,A2,I-type (back),صحي,Sağlıklı yaşam,حياة صحية
+balina,B1,I-type,حوت,Büyük balina,حوت كبير
+uygulama,B1,I-type (back),تطبيق,Yeni uygulama indirdim.,حملت تطبيقاً جديداً.
+uygulama,B2,I-type (back),تطبيق,Yeni uygulama indirdim.,حملت تطبيقاً جديداً.
+program,A2,I-type (back),برنامج,Program yükledim.,حملت برنامجاً.
+indirmek,B1,E-type (front),بتحميل,Dosya indirdim.,حملت الملف.
+yüklemek,B1,E-type (front),بتحميل,Fotoğraf yükledim.,حملت الصورة.
+kayınbaba,A2,Mixed,حما,Kayınbabam emekli,حماي متقاعد
+güvercin,A2,E-type,حمامة,Beyaz güvercin,حمامة بيضاء
+banyo,A1,I-type (back),حمام,Temiz banyo,حمام نظيف
+kalıcı,B2,I-type (back),دائم,Kalıcı çözüm,حل دائم
+ağır,A1,I-type (back),ثقيل,Ağır bavul,حقيبة ثقيلة
+hak,B2,I-type (back),حق,İnsan hakları önemli.,حقوق الإنسان مهمة.
+tarla,A2,I-type (back),حقل,Buğday tarlası,حقل القمح
+torun,A2,I-type (back),حفيد/حفيدة,Torunum çok tatlı,حفيدي/حفيدتي لطيف/ة جداً
+cenaze,B2,E-type (front),جنازة,Cenaze töreni yarın.,حفل الجنازة غداً
+meze,B1,E-type (front),مقبلات,Meze hazırladık.,حضرنا المقبلات.
+salata,A1,I-type (back),سلطة,Salata hazırladım.,حضرت السلطة.
+dokuz,A1,I-type (back),تسعة,Dokuz öğrenci geldi.,حضر تسعة طلاب.
+not,A1,I-type (back),علامة,İyi not aldım.,حصلت على علامة جيدة.
+not,A2,I-type (back),درجة,İyi not aldım.,حصلت على درجة جيدة
+diploma,B1,I-type (back),دبلوم,Diplomamı aldım.,حصلت على دبلومي.
+diploma,B1,I-type (back),شهادة,Diplomı aldım.,حصلت على الشهادة
+at,A1,I-type,حصان,Hızlı at,حصان سريع
+böcek,A2,E-type,حشرة,Küçük böcek,حشرة صغيرة
+ivme,B2,E-type (front),ivme,İvme hesabı,حساب التسارع
+elektron,C1,E-type (front),إلكترون,Elektron hareketi,حركة الإلكترون
+ısı,B1,I-type,حرارة,Güneş ısısı,حرارة الشمس
+siyah,A1,I-type,أسود,Siyah ayakkabı,حذاء أسود
+bahçe,A1,I-type (back),حديقة,Güzel bir bahçe,حديقة جميلة
+bahçe,A1,I-type (back),حديقة,Çiçekli bahçe,حديقة بالزهور
+bahçe,A1,I-type (back),حديقة,Okul bahçesi geniş.,حديقة المدرسة واسعة.
+hacim,B2,E-type (front),hacim,Su hacmi,حجم الماء
+randevu,B1,I-type (back),موعد,Randevu aldım.,حجزت موعداً
+tenis,B1,E-type (front),تنس,Tenis kortu rezerve ettim.,حجزت ملعب التنس
+taş,A1,I-type (back),حجر,Büyük taş,حجر كبير
+sevgili,B1,E-type (front),حبيب/حبيبة,Sevgilim çok tatlı.,حبيبي/حبيبتي لطيف جداً
+dik,B1,E-type (front),عمودي,Dik duvar,حائط عمودي
+duvar,A1,I-type (back),حائط,Beyaz duvar,حائط أبيض
+plazma,C1,I-type (back),بلازما,Plazma hali,حالة البلازما
+kenar,B1,I-type,حافة,Keskin kenar,حافة حادة
+kenar,B2,E-type (front),حافة/جانب,Masanın kenarı keskin.,حافة الطاولة حادة.
+bilgisayar,A2,I-type (back),حاسوب,Bilgisayarım bozuldu.,حاسوبي معطل
+laptop,A2,I-type (back),حاسوب محمول,Yeni laptop,حاسوب محمول جديد
+bilgisayar,A2,I-type (back),حاسوب,Hızlı bilgisayar,حاسوب سريع
+güvenlik görevlisi,A2,Mixed,حارس أمن,Güvenlik görevlisi kapıda duruyor.,حارس الأمن يقف عند الباب.
+çorap,A1,I-type (back),جوارب,Çoraplarım temiz.,جواربي نظيفة.
+çorap,A1,I-type (back),جوارب,Çoraplarım kirli.,جواربي متسخة.
+çorap,A2,I-type (back),جوارب,Çoraplarım kirli.,جواربي متسخة
+judo,A1,E-type (back),مفردة تركية,judo çok güzel.,جميل جداً
+bir,A1,E-type (front),مفردة تركية,bir çok güzel.,جميل جداً
+aldi,A1,Mixed/Exception,مفردة تركية,aldi çok güzel.,جميل جداً
+alte,A1,Mixed/Exception,مفردة تركية,alte çok güzel.,جميل جداً
+karides,B1,E-type,جمبري,Taze karides,جمبري طازج
+koltuk,A2,I-type (back),مقعد,Ön koltuğa oturdum.,جلست في المقعد الأمامي
+havlu,A2,I-type (back),منشفة,Havluyla ellerimi kuruladım.,جففت يدي بالمنشفة
+havlu,A1,I-type (back),منشفة,Havlu ile kurulandım.,جففت نفسي بالمنشفة.
+vücut,B1,E-type (front),جسم,Vücudum hasta.,جسمي مريض
+ada,B1,I-type (back),جزيرة,Küçük ada,جزيرة صغيرة
+molekül,B2,E-type (front),جزيء,Su molekülü,جزيء الماء
+radyasyon,C1,I-type (back),إشعاع,Radyasyon dozu,جرعة الإشعاع
+sıçan,B1,I-type,جرذ,Gri sıçan,جرذ رمادي
+parmak,A1,I-type (back),إصبع,Parmağımı kestim.,جرحت إصبعي.
+kök,A2,I-type (back),جذر,Ağacın kökleri derindir.,جذور الشجرة عميقة.
+kök,A2,I-type (back),جذر,Ağacın kökleri derindir.,جذور الشجرة عميقة.
+kök,B1,E-type,جذر,Ağacın kökleri derin,جذور الشجرة عميقة
+gövde,B1,E-type,جذع,Ağaç gövdesi kalın,جذع الشجرة سميك
+dede,A1,E-type (front),جد,Dedem hikaye anlatıyor.,جدي يحكي القصص.
+dede,A1,E-type (front),جد,Dedem çok yaşlı.,جدي كبير في السن.
+büyükbaba,A2,Mixed,جد,Büyükbabam bahçede,جدي في البستان
+dede,A1,E-type (front),جد,Dedem yaşlı,جدي عجوز
+nine,A1,E-type (front),جدة,Ninem çok tatlı.,جدتي حلوة جداً.
+büyükanne,A2,Mixed,جدة,Büyükannem yemek pişiriyor,جدتي تطبخ الطعام
+nine,A1,E-type (front),جدة,Ninem pasta yapıyor.,جدتي تصنع الكيك.
+nine,A1,E-type (front),جدة,Ninem masallar anlatır,جدتي تحكي الحكايات
+mat,B2,I-type (back),مطفي,Mat boyalı duvar.,جدار مطلي بطلاء مطفي
+dağ,A1,I-type (back),جبل,Yüksek dağlar,جبال عالية
+komşu,B1,I-type (back),جار,Komşumuz çok nazik.,جارنا لطيف جداً
+geniş,A2,E-type (front),واسع,Geniş bir cadde.,جادة واسعة
+matematik,B1,E-type (front),رياضيات,Matematik öğretmeni geldi.,جاء مدرس الرياضيات
+ilkbahar,A2,I-type (back),ربيع,İlkbahar geldi,جاء الربيع
+ilkbahar,B1,I-type (back),ربيع,İlkbahar geldi.,جاء الربيع
+pense,B2,E-type (front),كماشة,Penseyle tel büktüm.,ثنيت السلك بالكماشة
+buzdolabı,A1,I-type (back),ثلاجة,Büyük buzdolabı,ثلاجة كبيرة
+derece,A2,E-type (front),درجة,Otuz derece sıcak,ثلاثون درجة حرارة
+boyut,B2,I-type,بُعد,Üç boyut,ثلاثة أبعاد
+tilki,B1,E-type,ثعلب,Kurnaz tilki,ثعلب ماكر
+yılan,A2,I-type,ثعبان,Uzun yılan,ثعبان طويل
+yıldız,A2,I-type (back),نجمة,Gökte yıldızlar var.,توجد نجوم في السماء
+raf,A2,I-type (back),رف,Rafta kitaplar var.,توجد كتب على الرف
+bulut,B1,I-type (back),غيمة,Gökyüzünde bulutlar var.,توجد غيوم في السماء
+gri,A2,E-type (front),رمادي,Gri bulutlar var.,توجد غيوم رمادية
+liman,A2,E-type (front),ميناء,Limanda gemiler var,توجد سفن في الميناء
+bulut,A1,I-type (back),سحابة,Gökyüzünde bulutlar var.,توجد سحب في السماء.
+bodrum,A2,I-type (back),قبو,Bodrumda eşyalar var.,توجد أشياء في القبو.
+haziran,A1,I-type (back),يونيو,Haziran sınavları var.,توجد امتحانات في يونيو.
+kısa,A1,I-type (back),قصير,Kısa etek,تنورة kısa
+öğle,A1,E-type (front),ظهر,Öğle yemeği yedik.,تناولنا غداء الظهر.
+hap,A2,I-type (back),حبة دواء,Hap içtim,تناولت الحبة
+öğle,A1,E-type (front),ظهيرة,Öğle yemeği ye,تناول طعام الظهيرة
+ilaç,A2,I-type (back),دواء,İlaç içmek gerekli,تناول الدواء ضروري
+protein,B2,E-type (front),بروتين,Protein almak önemli,تناول البروتين مهم
+orman,A1,I-type (back),غابة,Ormanda yürüyüş yaptık.,تمشينا في الغابة.
+orman,A1,I-type (back),غابة,Ormanda yürüyüş yaptık.,تمشينا في الغابة.
+park,A1,I-type (back),حديقة عامة,Parkta yürüyüş yaptık.,تمشينا في الحديقة العامة.
+serum,B2,E-type (front),مصل,Serum takıldı,تم تركيب المصل
+yazılım,B2,I-type (back),برمجيات,Yazılım güncellendi.,تم تحديث البرمجيات
+mesaj,A2,I-type (back),رسالة,Mesaj aldım.,تلقيت رسالة.
+mesaj,A2,E-type (front),رسالة,Mesaj aldım.,تلقيت رسالة
+üzgün,A2,E-type (front),حزين,Üzgün bir haber aldım.,تلقيت خبراً حزيناً
+maaş,B1,I-type (back),راتب,Maaş aldım.,تلقيت الراتب
+ceza,B2,E-type (front),عقوبة,Ceza aldı.,تلقى عقوبة.
+televizyon,A1,I-type (back),تلفزيون,Büyük televizyon,تلفزيون كبير
+tepe,A2,E-type,تل,Küçük bir tepe,تل صغير
+vize,B2,E-type (front),فيزا,Vize başvurusu yaptım.,تقدمت بطلب فيزا
+belediye,A2,E-type (front),بلدية,Belediyeye başvurdum.,تقدمت بطلب إلى البلدية.
+kredi,B2,E-type (front),ائتمان,Kredi başvurusu yaptım.,تقدمت بطلب ائتمان
+kredi,B1,E-type (front),ائتمان,Kredi başvurusu yaptım.,تقدمت بطلب ائتمان
+belediye,B2,E-type (front),بلدية,Belediye hizmet veriyor.,تقدم البلدية الخدمات.
+çiçek,A1,E-type,زهرة,Güzel çiçekler açtı,تفتحت زهور جميلة
+sarı,A1,I-type (back),أصفر,Sarı çiçekler açtı.,تفتحت الأزهار الصفراء.
+sarı,A1,I-type (back),أصفر,Sarı çiçekler açtı.,تفتحت الأزهار الصفراء
+kırmızı,A1,I-type,أحمر,Kırmızı elma,تفاحة حمراء
+ekşi,A2,E-type (front),حامض,Ekşi elma,تفاح حامض
+şaşırmak,B1,I-type (back),يتفاجأ,Hediyeyi görünce şaşırdım.,تفاجأت عندما رأيت الهدية
+pansuman,B2,I-type (back),ضمادة,Pansuman değişimi,تغيير الضمادة
+asır,A2,I-type (back),قرن,Geçen asırda çok şey değişti.,تغيرت أشياء كثيرة في القرن الماضي.
+at,A2,I-type (back),حصان,At binmeyi öğrendim.,تعلمت ركوب الخيل
+flüt,A2,E-type (front),ناي,Flüt çalmayı öğrendim.,تعلمت العزف على الناي.
+zor,A1,I-type (back),صعب,Türkçe öğrenmek zor.,تعلم التركية صعب.
+kahve makinesi,B1,Mixed,آلة قهوة,Kahve makinesi bozuldu.,تعطلت آلة القهوة.
+bilgisayar,A2,Mixed,حاسوب,Bilgisayarım bozuldu.,تعطل حاسوبي.
+motor,B1,I-type (back),محرك,Motor bozuldu.,تعطل المحرك
+hoparlör,A2,I-type (back),مكبر صوت,Hoparlörden müzik çalıyor.,تعزف الموسيقى من مكبر الصوت.
+tanışmak,B1,I-type (back),يتعرف,Dün yeni bir arkadaşla tanıştım.,تعرفت على صديق جديد أمس
+akşam,A1,I-type (back),مساء,Akşam eve gel,تعال إلى البيت في المساء
+kaba,A2,I-type (back),وقح,Kaba davranış,تصرف وقح
+aptal,B1,I-type (back),غبي,Aptal davranış,تصرف غبي
+plaj,A1,I-type (back),شاطئ,Plajda güneşlendik.,تشمسنا على الشاطئ.
+mağaza,A1,I-type (back),متجر,Mağazadan alışveriş yaptım.,تسوقت من المتجر.
+teyze,A1,E-type (front),خالة,Teyzemle alışveriş yaptım.,تسوقت مع خالتي.
+indirim,A2,E-type (front),تخفيض,İndirimde alışveriş yaptım.,تسوقت في التخفيضات.
+maaş,A2,I-type (back),راتب,Maaşımı aldım,تسلمت راتبي
+kristal,B2,I-type (back),بلورة,Kristal yapısı,تركيب بلوري
+elbise,A1,E-type (front),فستان,Güzel elbise giyiyor.,ترتدي فستاناً جميلاً.
+elbise,A1,E-type (front),فستان,Güzel elbise giyiyor.,ترتدي فستاناً جميلاً.
+elbise,A2,E-type (front),فستان,Güzel bir elbise giyiyor.,ترتدي فستاناً جميلاً
+etek,A1,E-type (front),تنورة,Kısa etek giyiyor.,ترتدي تنورة قصيرة.
+etek,A2,E-type (front),تنورة,Kısa etek giyiyor.,ترتدي تنورة قصيرة
+teras,B1,I-type (back),تراس,Büyük teras,تراس كبير
+kil,B2,E-type,طين,Kil toprak,تراب طيني
+toprak,A2,I-type (back),تراب,Verimli toprak,تراب خصب
+mezun,A2,I-type (back),خريج,Üniversiteden mezun oldum.,تخرجت من الجامعة.
+yıl,A1,I-type (back),سنة,Geçen yıl mezun oldum,تخرجت العام الماضي
+kan,A2,I-type (back),دم,Kan tahlili,تحليل الدم
+idrar,B2,I-type (back),بول,İdrar tahlili,تحليل البول
+seçim,B2,E-type (front),انتخابات,Seçim tarihi belli oldu.,تحدد موعد الانتخابات.
+müdür,B1,E-type (front),مدير,Banka müdürüyle konuştum.,تحدثت مع مدير البنك
+müdür,A2,E-type (front),مدير,Müdürle konuştum,تحدثت مع المدير
+müdür,B1,E-type (front),مدير,Müdürle konuştum.,تحدثت مع المدير
+telefon,A1,I-type (back),هاتف,Telefonla konuştum.,تحدثت بالهاتف
+rehber,B1,E-type (front),مرشد,Rehber eşliğinde gezdik.,تجولنا مع المرشد
+kayak,B1,I-type (back),قارب صغير,Kayak ile gezdik.,تجولنا بالقارب الصغير.
+mayıs,A1,I-type (back),مايو,Mayıs çiçekleri açıyor.,تتفتح الأزهار في مايو.
+ekim,A1,E-type (front),أكتوبر,Ekim yapraklar dökülüyor.,تتساقط الأوراق في أكتوبر.
+eylül,A1,E-type (front),سبتمبر,Eylül okul başlıyor.,تبدأ المدرسة في سبتمبر.
+mahkeme,B2,E-type (front),محكمة,Mahkeme saat dokuzda başlıyor.,تبدأ المحكمة في الساعة التاسعة.
+geç,A1,E-type (front),متأخر,Geç kaldım,تأخرت
+tren,A1,E-type (front),قطار,Tren geç kaldı.,تأخر القطار.
+tren,A2,E-type (front),قطار,Tren geç kaldı.,تأخر القطار
+anestezi,C1,E-type (front),تخدير,Anestezi etkisi,تأثير التخدير
+kaynatılmış,B1,I-type (back),مسلوق,Kaynatılmış yumurta,بيضة مسلوقة
+eski,A1,E-type (front),قديم,Eski ev,بيت قديم
+eski,A1,E-type (front),قديم,Eski bir ev.,بيت قديم
+ev,A1,E-type (front),بيت,Güzel ev,بيت جميل
+baykuş,B1,I-type,بومة,Gece baykuşu,بومة الليل
+dar,A1,I-type (back),ضيق,Dar pantolon,بنطلون ضيق
+sıkı,A2,I-type (back),ضيق,Sıkı pantolon,بنطلون ضيق
+döşeme,B2,E-type (front),بلاط,Fayans döşeme,بلاط الفايانس
+ağlamak,A2,I-type (back),يبكي,Filmi izlerken ağladım.,بكيت أثناء مشاهدة الفيلم
+üç,A1,E-type (front),ثلاثة,Üç gün kaldık.,بقينا ثلاثة أيام.
+inek,A1,E-type,بقرة,Büyük inek,بقرة كبيرة
+sivrisinek,B1,E-type,بعوضة,Isıran sivrisinek,بعوضة عاضة
+sonra,A1,I-type (back),بعد ذلك,Sonra eve gideceğim.,بعد ذلك سأذهب للبيت.
+karın,A2,I-type (back),بطن,Karnım ağrıyor.,بطني يؤلمني.
+battaniye,A2,E-type (front),بطانية,Yünlü battaniye,بطانية صوفية
+lityum,C1,E-type (front),ليثيوم,Lityum pili,بطارية الليثيوم
+ördek,A2,E-type,بطة,Su ördekleri,بط الماء
+tuzlu,A2,I-type (back),مالح,Tuzlu bisküvi,بسكويت مالح
+kalp,B1,I-type (back),قلب,Kalp şeklinde kurabiye.,بسكويت على شكل قلب
+soğukluk,B1,I-type,برودة,Kış soğukluğu,برودة الشتاء
+festival,B1,E-type (front),مهرجان,Müzik festivali başladı.,بدأ مهرجان الموسيقى
+proje,A2,E-type (front),مشروع,Yeni proje başladı,بدأ مشروع جديد
+çalışan,B1,I-type (back),موظف,Yeni çalışan işe başladı.,بدأ الموظف الجديد العمل
+toplantı,B1,I-type (back),اجتماع,Toplantı başladı.,بدأ الاجتماع
+buhar,B1,I-type (back),بخار,Su buharı,بخار الماء
+sprey,B1,E-type (front),بخاخ,Burun spreyi,بخاخ الأنف
+göl,A2,E-type,بحيرة,Büyük göl,بحيرة كبيرة
+açık,A1,I-type (back),مفتوح,Açık kapı,باب مفتوح
+kapı,A1,I-type (back),باب,Kahverengi kapı,باب بني
+umut etmek,B2,I-type (back),يأمل,İyileşmen için umut ediyorum.,آمل أن تتحسن
+restoran,A2,I-type (back),مطعم,Restoranda yemek yiyorum,آكل في المطعم
+çatal,B1,I-type (back),شوكة,Çatalla yemek yiyorum.,آكل بالشوكة
+yumurta,A1,I-type (back),بيض,Kahvaltıda yumurta yerim.,آكل البيض في الإفطار.
+duş almak,A1,I-type (back),يستحم,Her sabah duş alıyorum.,آخذ حماماً كل صباح.
+enstrüman,B2,I-type (back),آلة موسيقية,Hangi enstrüman çalıyorsun?,أي آلة موسيقية تعزف؟
+para,A1,I-type (back),مال,Para biriktiriyorum.,أوفر المال
+para,A1,I-type (back),مال,Para biriktiriyorum.,أوفر المال
+kaz,A2,I-type,أوزة,Beyaz kaz,أوزة بيضاء
+yaprak,A1,I-type (back),ورقة,Yeşil yapraklar,أوراق خضراء
+yeşil,A1,E-type (front),أخضر,Yeşil yapraklar.,أوراق خضراء
+sonbahar,A2,I-type (back),خريف,Sonbahar yaprakları,أوراق الخريف
+ödev,A2,E-type (front),واجب منزلي,Ödevimi bitirdim.,أنهيت واجبي المنزلي.
+ödev,A2,I-type (back),واجب منزلي,Ödevi bitirdim.,أنهيت الواجب المنزلي
+proje,B1,I-type (back),مشروع,Proje bitiriyorum.,أنهي المشروع
+helikopter,B2,E-type (front),مروحية,Helikopter hastayı kurtardı.,أنقذت المروحية المريض
+burun,A1,I-type (back),أنف,Burnum tıkalı.,أنفي مسدود.
+burun,A1,I-type (back),أنف,Burnum tıkalı.,أنفي مسدود.
+burun,A1,I-type (back),أنف,Burnum büyük.,أنفي كبير
+yüz,A1,E-type (front),مائة,Yüz lira harcadım.,أنفقت مائة ليرة.
+süpürge,B1,E-type (front),مكنسة,Süpürgeyle temizlik yapıyorum.,أنظف بالمكنسة
+diş fırçalamak,A1,E-type (front),ينظف الأسنان,Dişlerimi fırçalıyorum.,أنظف أسناني.
+diş fırçası,B1,E-type (front),فرشاة أسنان,Diş fırçasıyla dişlerimi fırçalıyorum.,أنظف أسناني بفرشاة الأسنان
+ayna,A2,I-type (back),مرآة,Aynaya bakıyorum.,أنظر في المرآة
+harita,A2,I-type (back),خريطة,Haritaya bakıyorum.,أنظر إلى الخريطة.
+klasör,B1,E-type (front),مجلد,Klasör oluşturdum.,أنشأت مجلداً.
+klasör,B1,I-type (back),مجلد,Klasör oluşturdum.,أنشأت مجلداً
+minibüs,B1,E-type (front),حافلة صغيرة,Minibüs durağında bekliyorum.,أنتظر في محطة الحافلة الصغيرة
+istasyon,A1,I-type (back),محطة,İstasyonda bekliyorum.,أنتظر في المحطة.
+istasyon,A2,I-type (back),محطة,İstasyonda bekliyorum,أنتظر في المحطة
+dolmuş,A2,I-type (back),دولموش,Dolmuş bekliyorum.,أنتظر الدولموش.
+yatak odası,A1,I-type (back),غرفة نوم,Yatak odasında uyuyorum.,أنام في غرفة النوم.
+gece,A1,E-type (front),ليل,Gece uyuyorum,أنام في الليل
+yatak,A1,I-type (back),سرير,Yatakta uyuyorum.,أنام في السرير.
+yatak,A1,I-type (back),سرير,Yatakta uyuyorum,أنام في السرير
+yatak,A1,I-type (back),سرير,Yatakta uyuyorum.,أنام في السرير
+ay,A1,I-type (back),شهر,Bu ay çok meşgulüm,أنا مشغول جداً هذا الشهر
+hafta,A1,I-type (back),أسبوع,Bu hafta çok meşgulüm.,أنا مشغول جداً هذا الأسبوع.
+hafta,A1,I-type (back),أسبوع,Bu hafta çok meşgulüm.,أنا مشغول جداً هذا الأسبوع.
+yapı,A1,E-type (back),مفردة تركية,Ben yapı istiyorum.,أنا محتوى الجملة بالعربية
+yorgun,A1,I-type (back),متعب,Çok yorgunum.,أنا متعب جداً.
+yorgun,A1,I-type (back),متعب,Çok yorgunum.,أنا متعب جداً.
+heyecanlı,A2,I-type (back),متحمس,Yarın için heyecanlıyım.,أنا متحمس لموضوع غد.
+yirmi,A1,E-type (front),عشرون,Yirmi yaşındayım.,أنا في العشرين من عمري.
+kızgın,A1,I-type (back),غاضب,Ona kızgınım.,أنا غاضب منه.
+kızgın,A1,I-type (back),غاضب,Ona kızgınım.,أنا غاضب منه.
+kızgın,A2,I-type (back),غاضب,Ona çok kızgınım.,أنا غاضب منه جداً
+susuz,A1,I-type (back),عطشان,Çok susuzum.,أنا عطشان جداً.
+ben,A1,E-type (front),أنا,Ben bir öğrenciyim.,أنا طالب.
+öğrenci,A1,E-type (front),طالب,İyi bir öğrenciyim.,أنا طالب جيد
+sakin,A2,I-type (back),هادئ,Çok sakin bir insanım.,أنا شخص هادئ جداً.
+tok,A1,I-type (back),شبعان,Artık tokum.,أنا شبعان الآن.
+mutlu,A1,I-type (back),سعيد,Çok mutluyum.,أنا سعيد جداً.
+mutlu,A1,I-type (back),سعيد,Çok mutluyum.,أنا سعيد جداً.
+üzgün,A1,E-type (front),حزين,Biraz üzgünüm.,أنا حزين قليلاً.
+üzgün,A1,E-type (front),حزين,Biraz üzgünüm.,أنا حزين قليلاً.
+aç,A1,I-type (back),جائع,Çok açım.,أنا جائع جداً.
+anne,A1,E-type (front),أم,Annem çok güzel.,أمي جميلة جداً.
+anne,A1,I-type (back),أم,Annem yemek pişiriyor.,أمي تطبخ الطعام.
+sigorta,B2,I-type (back),تأمين,Sigorta yaptırdım.,أمنت نفسي
+koridor,A2,I-type (back),ممر,Koridorda yürüyorum.,أمشي في الممر.
+cadde,A1,I-type (back),شارع,Caddede yürüyorum.,أمشي في الشارع.
+boş,A1,I-type (back),فارغ,Oda boş.,أمشي في الزقاق
+yürümek,A1,E-type (front),يمشي,Yavaş yürüyorum.,أمشي ببطء.
+saç taramak,A1,I-type (back),يمشط الشعر,Her sabah saçımı tarıyorum.,أمشط شعري كل صباح.
+yüzme,A1,E-type (front),سباحة,Yüzme sporu yapıyorum.,أمارس رياضة السباحة.
+spor,A1,I-type (back),رياضة,Spor yapıyorum.,أمارس الرياضة.
+salı,A1,I-type (back),الثلاثاء,Salı günü spor yapıyorum.,أمارس الرياضة يوم الثلاثاء.
+egzersiz,A2,E-type (front),تمرين,Egzersiz yapıyorum.,أمارس التمارين.
+ağrı,A2,I-type (back),ألم,Şiddetli ağrı,ألم شديد
+mide,A2,E-type (front),معدة,Mide ağrısı,ألم المعدة
+sırt,A2,I-type (back),ظهر,Sırt ağrısı,ألم الظهر
+diz,A2,E-type (front),ركبة,Diz ağrısı,ألم الركبة
+boğaz,A2,I-type (back),حلق,Boğaz ağrısı,ألم الحلق
+karın,A2,I-type (back),بطن,Karın ağrısı,ألم البطن
+dişağrısı,B1,E-type (front),ألم الأسنان,Diş ağrısı çok şiddetli,ألم الأسنان شديد جداً
+kulak,A1,I-type (back),أذن,Kulak ağrısı,ألم الأذن
+kardeş,A1,E-type (front),أخ/أخت,Kardeşimle oynuyorum.,ألعب مع أخي/أختي.
+bilgisayar oyunu,A2,Mixed,لعبة كمبيوتر,Bilgisayar oyunu oynuyorum,ألعب لعبة كمبيوتر
+video oyunu,A2,Mixed,لعبة فيديو,Video oyunu oynuyorum,ألعب لعبة فيديو
+oyun,A1,I-type (back),لعبة,Oyun oynuyorum,ألعب لعبة
+futbol,A1,I-type (back),كرة القدم,Futbol oynuyorum.,ألعب كرة القدم.
+fotoğraf,A1,I-type (back),صورة,Fotoğraf çekiyorum.,ألتقط صورة.
+restoran,A1,I-type (back),مطعم,Restoranda yemek yedik.,أكلنا في المطعم.
+lahmacun,B1,I-type (back),لحم بعجين,Lahmacun yedik.,أكلنا اللحم بعجين.
+restoran,A1,I-type (back),مطعم,Restoranda yemek yedim.,أكلت في المطعم.
+kantin,A2,I-type (back),كافيتيريا,Kantinde yemek yedim.,أكلت في الكافيتيريا.
+meyve,A1,E-type,فاكهة,Taze meyve yedim,أكلت فاكهة طازجة
+hafif,A1,I-type (back),خفيف,Hafif bir yemek yedim.,أكلت طعاماً خفيفاً.
+elma,A1,I-type (back),تفاح,Kırmızı elma yedim.,أكلت تفاحة حمراء.
+hamburger,A2,I-type (back),هامبرغر,Hamburger yedim.,أكلت الهامبرغر.
+sebze,A1,E-type (front),خضروات,Sebze yemek sağlıklı.,أكل الخضروات صحي.
+nefret etmek,B2,E-type (front),يكره,Yalan söylemekten nefret ederim.,أكره قول الكذب
+defter,A1,E-type (front),دفتر,Deftere yazıyorum.,أكتب في الدفتر.
+kağıt,A1,I-type (back),ورق,Kağıt üzerine yazıyorum,أكتب على الورق
+kağıt,A2,I-type (back),ورق,Kağıda yazıyorum.,أكتب على الورق
+rapor,A2,I-type (back),تقرير,Rapor yazıyorum,أكتب تقريراً
+rapor,B2,I-type (back),تقرير,Rapor yazıyorum.,أكتب تقريراً
+kalem,A1,E-type (front),قلم,Kalemle yazıyorum.,أكتب بالقلم.
+kalem,A1,E-type (front),قلم,Kalemle yazıyorum,أكتب بالقلم
+otel,A1,I-type (back),فندق,Otelde kalıyorum.,أقيم في الفندق.
+otel,A1,E-type (front),فندق,Otelde kalıyorum,أقيم في الفندق
+yurt,A2,I-type (back),سكن طلابي,Yurtta kalıyorum.,أقيم في السكن الطلابي.
+gezi,A2,E-type (front),رحلة,Şehir gezisi yapıyorum,أقوم برحلة في المدينة
+araştırma,B2,I-type (back),بحث,Araştırma yapıyorum.,أقوم ببحث
+araba,A1,I-type (back),سيارة,Araba kullanıyorum.,أقود السيارة.
+araba,A1,I-type (back),سيارة,Araba kullanıyorum.,أقود السيارة.
+motosiklet,A2,E-type (front),دراجة نارية,Motosiklet kullanıyorum.,أقود الدراجة النارية.
+motosiklet,B1,I-type (back),دراجة نارية,Motosiklet kullanıyorum.,أقود الدراجة النارية
+pansiyon,A2,I-type (back),بيت ضيافة,Pansiyonda konakladık.,أقمنا في بيت الضيافة.
+kamp,A2,I-type (back),مخيم,Kampta kaldık.,أقمنا في المخيم.
+otel,A1,I-type (back),فندق,Otelde kaldık.,أقمنا في الفندق.
+kızartmak,B2,I-type (back),يقلي,Patates kızartıyorum.,أقلي البطاطس
+endişelenmek,B2,E-type (front),يقلق,Sınav için endişeleniyorum.,أقلق بشأن الامتحان
+uçak,A2,I-type (back),طائرة,Uçak havalandı.,أقلعت الطائرة
+kapı,A1,I-type (back),باب,Kapıyı kitledim.,أقفلت الباب
+doğramak,B2,I-type (back),يقطع,Soğan doğruyorum.,أقطع البصل
+soyulmak,B2,I-type (back),يقشر,Patates soyuyorum.,أقشر البطاطس
+kitap,A1,I-type (back),كتاب,Kitap okuyorum.,أقرأ كتاباً.
+kütüphane,A2,E-type (front),مكتبة,Kütüphanede kitap okuyorum.,أقرأ كتاباً في المكتبة.
+dergi,A2,E-type (front),مجلة,Dergi okuyorum,أقرأ المجلة
+gazete,A2,I-type (back),جريدة,Gazete okuyorum,أقرأ الجريدة
+gazete,B1,E-type (front),جريدة,Gazete okuyorum.,أقرأ الجريدة
+sunum,A2,I-type (back),عرض تقديمي,Sunum yapıyorum,أقدم عرضاً
+latte,B1,I-type (back),لاتيه,Latte içmeyi tercih ederim.,أفضل شرب اللاتيه.
+gurur duymak,B2,I-type (back),يفتخر,Başarın için gurur duyuyorum.,أفتخر بنجاحك
+şarkı,A2,I-type (back),أغنية,Şarkı söylüyorum,أغني أغنية
+çaydanlık,A2,I-type (back),إبريق شاي,Çaydanlık kaynatıyorum.,أغلي إبريق الشاي.
+haşlamak,B2,I-type (back),يغلي,Yumurta haşlıyorum.,أغلي البيض
+ağız,A1,I-type (back),فم,Ağzını kapat.,أغلق فمك
+pencere,A1,E-type (front),نافذة,Pencereyi kapat.,أغلق النافذة.
+lavabo,B1,I-type (back),حوض,Lavaboda ellerimi yıkıyorum.,أغسل يدي في الحوض
+deterjan,B2,I-type (back),منظف,Deterjanla bulaşık yıkıyorum.,أغسل الصحون بالمنظف
+yıkamak,A2,I-type (back),يغسل,Sebzeleri yıkıyorum.,أغسل الخضار
+banyo,A1,I-type (back),حمام,Banyoda yıkanıyorum.,أغتسل في الحمام.
+banyo,A1,I-type (back),حمام,Banyoda yıkanıyorum,أغتسل في الحمام
+dar,A1,I-type (back),ضيق,Dar bir sokakta yaşıyorum.,أعيش في زقاق ضيق.
+yabancı,B1,I-type (back),غريب/أجنبي,Yabancı bir ülkede yaşıyorum.,أعيش في بلد أجنبي
+şehir,A1,E-type (front),مدينة,Şehirde yaşıyorum.,أعيش في المدينة.
+apartman,A1,I-type (back),شقة,Apartmanda yaşıyorum.,أعيش في الشقة.
+mahalle,A1,I-type (back),حي,Mahallede yaşıyorum.,أعيش في الحي.
+akşam,A1,I-type (back),مساء,Akşam eve dönüyorum.,أعود للبيت في المساء.
+ödev,A1,I-type (back),واجب منزلي,Ödevimi yapıyorum.,أعمل واجبي المنزلي.
+gündüz,A1,E-type (front),نهار,Gündüz çalışıyorum.,أعمل في النهار.
+gündüz,A2,E-type (front),نهار,Gündüz çalışıyorum,أعمل في النهار
+ofis,A2,E-type (front),مكتب,Ofiste çalışıyorum,أعمل في المكتب
+bilgisayar,A1,I-type (back),حاسوب,Bilgisayarda çalışıyorum.,أعمل على الحاسوب.
+parti,A2,I-type (back),حفلة,Doğum günü partisi yapıyorum,أعمل حفلة عيد ميلاد
+bilgisayar,A2,I-type (back),كمبيوتر,Bilgisayarla çalışıyorum,أعمل بالكمبيوتر
+bugün,A1,E-type (front),اليوم,Bugün çalışıyorum,أعمل اليوم
+tava,A2,I-type (back),مقلاة,Tavada omlet yapıyorum.,أعمل العجة في المقلاة
+şimdi,A1,E-type (front),الآن,Şimdi çalışıyorum.,أعمل الآن.
+proje,B1,I-type (back),مشروع,Proje hazırladım.,أعددت مشروعاً
+araştırma,B2,I-type (back),بحث,Araştırma projesi hazırladım.,أعددت مشروع بحث
+sunum,B2,I-type (back),عرض تقديمي,Sunum hazırladım.,أعددت عرضاً تقديمياً
+pasaport,A2,I-type (back),جواز سفر,Pasaportumu hazırladım,أعددت جواز سفري
+dosya,A2,I-type (back),ملف,Dosyayı hazırladım,أعددت الملف
+köprü,A2,E-type (front),جسر,Köprüden geçiyorum,أعبر من الجسر
+itfaiye,A2,E-type (front),إطفاء,İtfaiye yangını söndürdü.,أطفأت الإطفاء الحريق.
+et,A1,E-type (front),لحم,Et pişiriyorum.,أطبخ اللحم.
+mutfak,A1,I-type (back),مطبخ,Mutfakta yemek pişiriyorum.,أطبخ الطعام في المطبخ.
+tencere,B1,E-type (front),قدر,Tencerede yemek pişiriyor.,أطبخ الطعام في القدر
+ocak,B1,I-type (back),موقد,Ocakta yemek pişiriyorum.,أطبخ الطعام على الموقد
+pişirmek,B1,E-type (front),يطبخ,Yemek pişiriyorum.,أطبخ الطعام
+worcester sos,B2,Mixed,صوص ووستر,Worcester sos ekledim.,أضفت صوص ووستر.
+mayonez,A2,E-type (front),مايونيز,Mayonez ekledim.,أضفت المايونيز.
+karabiber,A2,Mixed,فلفل أسود,Karabiber ekledim.,أضفت الفلفل الأسود.
+dereotu,A2,I-type (back),شبت,Dereotu ekledim.,أضفت الشبت.
+maya,B2,I-type (back),خميرة,Maya ekledim.,أضفت الخميرة
+sirke,A2,E-type (front),خل,Salataya sirke ekledim.,أضفت الخل للسلطة.
+tuz,A1,I-type (back),ملح,Yemeğe tuz ekle.,أضف ملحاً للطعام
+şeker,A1,E-type (front),سكر,Şeker ekle.,أضف السكر.
+şeker,A1,E-type (front),سكر,Şeker ekle.,أضف السكر.
+kamera,A2,I-type (back),كاميرا,Kamerayla çekim yapıyorum.,أصور بالكاميرا.
+bisiklet,A2,E-type (front),دراجة هوائية,Bisikletimi tamirdeyim.,أصلح دراجتي الهوائية
+süzmek,B2,E-type (front),يصفي,Makarnayı süzüyorum.,أصفي المعكرونة
+asansör,A2,I-type (back),مصعد,Asansörle çıkıyorum.,أصعد بالمصعد.
+hakim,B2,I-type (back),قاضي,Hakim karar verdi.,أصدر القاضي القرار.
+yaprak,B1,I-type (back),ورقة,Yaprak sarı oldu.,أصبحت الورقة صفراء.
+yaprak,A1,I-type (back),ورقة,Yapraklar sarı oldu.,أصبحت الأوراق صفراء.
+yaprak,A1,I-type (back),ورقة,Yapraklar sarı oldu.,أصبحت الأوراق صفراء.
+nezle,A2,E-type (front),زكام,Nezle oldum.,أصبت بالزكام.
+grip,A2,E-type (front),إنفلونزا,Grip oldum.,أصبت بالإنفلونزا.
+grip,A2,E-type (front),إنفلونزا,Grip oldum,أصبت بالإنفلونزا
+lamba,A1,I-type (back),مصباح,Lambayı aç.,أشعل المصباح.
+mutlu,A2,I-type (back),سعيد,Çok mutlu hissediyorum.,أشعر بسعادة كبيرة
+hasta,A1,I-type (back),مريض,Hasta hissediyorum.,أشعر بالمرض.
+acı,A2,I-type (back),ألم,Acı hissediyorum,أشعر بالألم
+aromalı su,B1,Mixed,ماء منكه,Aromalı su içiyorum.,أشرب الماء المنكه.
+kahve,A1,E-type (front),قهوة,Sabah kahve içerim.,أشرب القهوة في الصباح.
+balkon,A1,I-type (back),شرفة,Balkonda kahve içiyorum.,أشرب القهوة في الشرفة.
+çorba,A1,I-type (back),شوربة,Çorba içiyorum.,أشرب الشوربة.
+çay,A1,I-type (back),شاي,Sıcak çay içiyorum.,أشرب الشاي الساخن.
+süt,A1,E-type (front),حليب,Süt içiyorum.,أشرب الحليب.
+süt,A1,E-type (front),حليب,Süt içiyorum.,أشرب الحليب.
+fakir,A2,E-type (front),فقير,Fakir insanlar,أشخاص فقراء
+şarj,A2,I-type (back),شحن,Telefonumu şarj ediyorum.,أشحن هاتفي.
+şarj,A2,I-type (back),شحن,Telefonu şarj ediyorum.,أشحن الهاتف.
+koyu,A2,I-type (back),غامق,Koyu yeşil ağaçlar.,أشجار خضراء غامقة
+laptop,B1,I-type (back),حاسوب محمول,Laptop alıyorum.,أشتري حاسوباً محمولاً.
+bar,A2,I-type (back),بار,Bardan içki alıyorum,أشتري المشروبات من البار
+benzin,A2,E-type (front),بنزين,Benzin alıyorum,أشتري البنزين
+özlemek,A2,I-type (back),يشتاق,Ailemi özlüyorum.,أشتاق لعائلتي.
+özlemek,B1,I-type (back),يشتاق,Ailemi özlüyorum.,أشتاق لعائلتي
+video,A2,E-type (front),فيديو,Video izliyorum.,أشاهد فيديو.
+video,A2,E-type (front),فيديو,Video izliyorum.,أشاهد فيديو.
+televizyon,A1,I-type (back),تلفزيون,Televizyon izliyorum.,أشاهد التلفزيون.
+televizyon,A2,E-type (front),تلفزيون,Televizyon izliyorum.,أشاهد التلفزيون.
+oturma odası,A1,I-type (back),غرفة جلوس,Oturma odasında televizyon izliyorum.,أشاهد التلفزيون في غرفة الجلوس.
+televizyon,A1,E-type (front),تلفزيون,Televizyon seyrediyorum,أشاهد التلفزيون
+televizyon,A2,I-type (back),تلفزيون,Televizyon seyrediyorum.,أشاهد التلفزيون
+toplantı,A2,I-type (back),اجتماع,Toplantıya katılıyorum,أشارك في الاجتماع
+davul,A2,I-type (back),طبل,Davul sesini duyuyorum.,أسمع صوت الطبل.
+kat,A1,I-type (back),طابق,Üçüncü katta oturuyorum.,أسكن في الطابق الثالث.
+silindir,B2,E-type,أسطوانة,Metal silindir,أسطوانة معدنية
+aslan,A1,I-type,أسد,Güçlü aslan,أسد قوي
+müzik,A2,E-type (front),موسيقى,Müzik dinliyorum.,أستمع إلى الموسيقى
+radyo,A2,I-type (back),راديو,Radyo dinliyorum.,أستمع إلى الراديو.
+piyano,A2,I-type (back),بيانو,Piyano çalabiliyorum.,أستطيع العزف على البيانو.
+pazar,A1,I-type (back),الأحد,Pazar günü dinleniyorum.,أستريح يوم الأحد.
+teras,A2,I-type (back),تراس,Terasta dinleniyorum.,أستريح في التراس.
+sosyal medya,A2,I-type (back),وسائل التواصل الاجتماعي,Sosyal medya kullanıyorum.,أستخدم وسائل التواصل الاجتماعي.
+ince,A2,E-type (front),رفيع,İnce bir kalem kullanıyorum.,أستخدم قلماً رفيعاً.
+şampuan,A2,I-type (back),شامبو,Şampuan kullanıyorum.,أستخدم شامبو.
+cetvel,A1,E-type (front),مسطرة,Cetvel kullanıyorum.,أستخدم المسطرة.
+cetvel,B1,E-type (front),مسطرة,Cetvel kullanyorum.,أستخدم المسطرة
+margarin,B1,I-type (back),مارغارين,Margarin kullanıyorum.,أستخدم المارغارين.
+yağ,A1,I-type (back),زيت,Yemek pişirmek için yağ kullanıyorum.,أستخدم الزيت لطبخ الطعام.
+tablet,B1,I-type (back),جهاز لوحي,Tablet kullanıyorum.,أستخدم الجهاز اللوحي.
+internet,A1,E-type (front),إنترنت,İnterneti kullanıyorum.,أستخدم الإنترنت.
+küvet,B2,E-type (front),حوض استحمام,Küvette yıkanıyorum.,أستحم في حوض الاستحمام
+duş,A2,E-type (front),دوش,Duş alıyorum,أستحم
+duş,A2,I-type (back),دش,Duş alıyorum.,أستحم
+havuz,A1,I-type (back),مسبح,Havuzda yüzüyorum.,أسبح في المسبح.
+tren,A1,E-type (front),قطار,Trenle seyahat ediyorum.,أسافر بالقطار.
+tren,A1,E-type (front),قطار,Trenle seyahat ediyorum.,أسافر بالقطار.
+websitesi,A2,E-type (front),موقع إلكتروني,Websitesini ziyaret ediyorum.,أزور موقعه الإلكتروني.
+açık,A1,I-type,فاتح,Açık mavi,أزرق فاتح
+koltuk,A1,I-type (back),أريكة,Deri koltuk,أريكة جلدية
+bardak,A1,I-type (back),كأس,Su bardağı istiyorum.,أريد كأس ماء.
+geniş,A1,E-type (front),واسع,Geniş bir oda istiyorum.,أريد غرفة واسعة.
+temiz,A1,E-type (front),نظيف,Temiz bir oda istiyorum.,أريد غرفة نظيفة.
+buzlu,A2,I-type (back),مثلج,Buzlu çay istiyorum,أريد شاياً مثلجاً
+büyük,A1,E-type (front),كبير,Büyük bir araba istiyorum.,أريد سيارة كبيرة.
+hızlı,A1,I-type (back),سريع,Hızlı bir araba istiyorum.,أريد سيارة سريعة.
+büyük,A1,E-type (front),كبير,Büyük bir ev istiyorum.,أريد بيتاً كبيراً.
+küçük,A1,E-type (front),صغير,Küçük bir ev istiyorum.,أريد بيتاً صغيراً.
+yemek,A1,E-type (front),يأكل,Ekmek yemek istiyorum.,أريد أن آكل الخبز.
+ekmek,A1,E-type (front),خبز,Ekmek yemek istiyorum.,أريد أن آكل الخبز.
+uyumak,A1,I-type (back),ينام,Erken uyumak istiyorum.,أريد أن أنام مبكراً.
+voleybol,B1,I-type (back),كرة الطائرة,Voleybol oynamak istiyorum.,أريد أن ألعب كرة الطائرة
+olmak,A1,I-type (back),يكون,Doktor olmak istiyorum.,أريد أن أكون طبيباً.
+araba,A1,I-type (back),سيارة,Araba sürmek istiyorum.,أريد أن أقود السيارة.
+su,A1,I-type (back),ماء,Su içmek istiyorum.,أريد أن أشرب الماء.
+su,A1,I-type (back),ماء,Su içmek istiyorum.,أريد أن أشرب الماء.
+su,A1,I-type (back),ماء,Su içmek istiyorum.,أريد أن أشرب الماء.
+çay,A1,I-type (back),شاي,Çay içmek istiyorum.,أريد أن أشرب الشاي.
+çay,A1,I-type (back),شاي,Çay içmek istiyorum.,أريد أن أشرب الشاي.
+almak,A1,I-type (back),يشتري,Ekmek almak istiyorum.,أريد أن أشتري الخبز
+yatırım,B2,I-type (back),استثمار,Yatırım yapmak istiyorum.,أريد أن أستثمر
+yüzmek,A2,E-type (front),يسبح,Denizde yüzmek istiyorum.,أريد أن أسبح في البحر
+görmek,A1,I-type (back),يرى,Seni görmek istiyorum.,أريد أن أراك.
+gitmek,A1,E-type (front),يذهب,Okula gitmek istiyorum.,أريد أن أذهب إلى المدرسة.
+nakit,B1,I-type (back),نقد,Nakit ödemek istiyorum.,أريد أن أدفع نقداً
+macchiato,B2,I-type (back),ماكياتو,Macchiato denemek istiyorum.,أريد أن أجرب الماكياتو.
+satmak,A2,I-type (back),يبيع,Araba satmak istiyorum.,أريد أن أبيع السيارة
+ketçap,A1,I-type (back),كاتشب,Ketçap istiyorum.,أريد الكاتشب.
+tavşan,A2,I-type,أرنب,Beyaz tavşan,أرنب أبيض
+bisiklet,A1,E-type (front),دراجة هوائية,Bisiklet sürüyorum.,أركب الدراجة الهوائية.
+bisiklet,A1,E-type (front),دراجة هوائية,Bisiklet sürüyorum.,أركب الدراجة الهوائية.
+zemin,B1,E-type (front),أرضية,Ahşap zemin,أرضية خشبية
+kurşun kalem,A2,I-type (back),قلم رصاص,Kurşun kalemle çiziyorum.,أرسم بالقلم الرصاص
+faks,B1,I-type (back),فاكس,Faks gönderdim.,أرسلت فاكساً
+postane,A2,I-type (back),مكتب بريد,Postaneden mektup gönderdim.,أرسلت رسالة من مكتب البريد.
+e-posta,B1,Mixed,بريد إلكتروني,E-posta gönderdim.,أرسلت بريداً إلكترونياً.
+e-posta,B1,E-type (front),بريد إلكتروني,E-posta gönderdim.,أرسلت بريداً إلكترونياً.
+e-posta,A2,I-type (back),بريد إلكتروني,E-posta gönderiyorum.,أرسل بريداً إلكترونياً.
+e-posta,A2,I-type (back),بريد إلكتروني,E-posta gönderiyorum,أرسل بريداً إلكترونياً
+gömlek,A1,I-type (back),قميص,Beyaz gömlek giyiyorum.,أرتدي قميصاً أبيض.
+gömlek,A2,I-type (back),قميص,Beyaz gömlek giyiyorum.,أرتدي قميصاً أبيض
+şapka,A1,I-type (back),قبعة,Başımda şapka var.,أرتدي قبعة على رأسي.
+şapka,A1,I-type (back),قبعة,Başımdaki şapka var.,أرتدي قبعة على رأسي.
+ayakkabı,A1,I-type (back),حذاء,Ayakkabılarımı giyiyorum.,أرتدي حذائي.
+ayakkabı,A1,I-type (back),حذاء,Ayakkabılarımı giyiyorum.,أرتدي حذائي.
+tişört,A2,E-type (front),تيشيرت,Rahat tişört giyiyorum.,أرتدي تيشيرت مريح
+pantolon,A1,I-type (back),بنطلون,Mavi pantolon giyiyorum.,أرتدي بنطلوناً أزرق.
+ceket,A1,E-type (front),سترة,Ceket giyiyorum.,أرتدي السترة.
+kanepe,B1,E-type (front),أريكة,Kanepede dinleniyorum.,أرتاح على الأريكة
+pazartesi,A1,I-type (back),الاثنين,Pazartesi işe gidiyorum.,أذهب للعمل يوم الاثنين.
+metro,A1,E-type (front),مترو,Metroyla işe gidiyorum.,أذهب للعمل بالمترو.
+metro,A1,E-type (front),مترو,Metroyla işe gidiyorum.,أذهب للعمل بالمترو.
+cuma,A1,I-type (back),الجمعة,Cuma namazına gidiyorum.,أذهب لصلاة الجمعة.
+tatil,A1,I-type (back),عطلة,Tatile gidiyorum,أذهب في عطلة
+tatil,A1,I-type (back),عطلة,Tatile çıkıyorum,أذهب في عطلة
+metro,A2,E-type (front),مترو,Metroyla gidiyorum.,أذهب بالمترو
+uçak,A1,I-type (back),طائرة,Uçakla gidiyorum.,أذهب بالطائرة.
+uçak,A1,I-type (back),طائرة,Uçakla gidiyorum.,أذهب بالطائرة.
+scooter,B1,E-type (front),سكوتر,Scooter ile gidiyorum.,أذهب بالسكوتر.
+kurs,B1,I-type (back),دورة,İngilizce kursuna gidiyorum.,أذهب إلى دورة الإنجليزية
+kulüp,A2,E-type (front),نادي,Gece kulübüne gidiyorum,أذهب إلى النادي الليلي
+ofis,A2,I-type (back),مكتب,Ofise gidiyorum.,أذهب إلى المكتب
+havaalanı,A2,I-type (back),مطار,Havaalanına gidiyorum,أذهب إلى المطار
+cami,B1,I-type (back),مسجد,Camiye gidiyorum.,أذهب إلى المسجد
+okul,A1,I-type (back),مدرسة,Okula gidiyorum.,أذهب إلى المدرسة.
+okul,A1,I-type (back),مدرسة,Okula gidiyorum.,أذهب إلى المدرسة.
+okul,A1,I-type (back),مدرسة,Okula gidiyorum.,أذهب إلى المدرسة.
+bisiklet,B1,E-type (front),دراجة هوائية,Bisikletle okula gidiyorum.,أذهب إلى المدرسة بالدراجة الهوائية
+iş,A1,E-type (front),عمل,İşe gidiyorum,أذهب إلى العمل
+banka,A2,I-type (back),بنك,Bankaya gidiyorum.,أذهب إلى البنك
+banka,A2,I-type (back),بنك,Bankaya gidiyorum.,أذهب إلى البنك
+şimdi,A1,E-type (front),الآن,Şimdi gidiyorum,أذهب الآن
+kulak,A1,I-type (back),أذن,Kulağım duymyor.,أذني لا تسمع
+kulak,A1,I-type (back),أذن,Kulağım ağrıyor.,أذني تؤلمني.
+çalışma odası,A2,I-type (back),مكتب,Çalışma odasında ders çalışıyorum.,أذاكر في المكتب.
+defter,A1,E-type (front),دفتر,Deftere not alıyorum,أدون ملاحظات في الدفتر
+oy,B1,I-type (back),صوت,Oyumu verdim.,أدليت بصوتي.
+sınav,A2,I-type (back),امتحان,Sınav için çalışıyorum.,أدرس للامتحان
+fakülte,B1,E-type (front),كلية,Tıp fakültesinde okuyorum.,أدرس في كلية الطب
+hukuk,C1,I-type (back),قانون,Hukuk fakültesinde okuyorum.,أدرس في كلية الحقوق.
+üniversite,A2,E-type (front),جامعة,Üniversitede okuyorum.,أدرس في الجامعة
+kullanıcı adı,B1,Mixed,اسم مستخدم,Kullanıcı adı girdim.,أدخلت اسم المستخدم.
+sınıf,A1,I-type (back),فصل,Sınıfa giriyorum.,أدخل إلى الفصل
+iş,A1,E-type (front),عمل,İş yapmak,أداء العمل
+kardeş,A1,E-type (front),أخ/أخت,Kardeşim benimle geliyor,أخي/أختي يأتي معي
+abi,A1,I-type (back),أخ كبير,Abim üniversitede.,أخي الكبير في الجامعة.
+ağabey,A2,I-type (back),أخ كبير,Ağabeyim üniversitede,أخي الكبير في الجامعة
+abi,A2,I-type (back),أخ أكبر,Abim üniversitede okuyor.,أخي الأكبر يدرس في الجامعة
+mayalamak,C1,I-type (back),يخمر,Hamuru mayalıyorum.,أخمر العجين
+ahtapot,B2,I-type,أخطبوط,Sekiz kollu ahtapot,أخطبوط ثماني الأذرع
+koyu,A1,I-type,غامق,Koyu yeşil,أخضر غامق
+kaşık,A2,I-type (back),ملعقة,Çorba kaşığı aldım.,أخذت ملعقة الشوربة
+çanta,A2,I-type (back),حقيبة,Çantamı aldım.,أخذت حقيبتي
+kepçe,A2,E-type (front),مغرفة,Kepçe ile aldım.,أخذت بالمغرفة.
+kaşık,A1,I-type (back),ملعقة,Kaşık aldım.,أخذت الملعقة.
+kız kardeş,A2,Mixed,أخت,Kız kardeşim küçük,أختي صغيرة
+abla,A2,I-type (back),أخت كبيرة,Ablam öğretmen,أختي الكبيرة معلمة
+abla,A1,I-type (back),أخت كبيرة,Ablam çok güzel.,أختي الكبيرة جميلة جداً.
+abla,A2,I-type (back),أخت كبرى,Ablam çok güzel.,أختي الكبرى جميلة جداً
+görümce,A2,E-type (front),أخت الزوج,Görümcem çok nazik,أخت زوجي لطيفة جداً
+baldız,A2,I-type (back),أخت الزوجة,Baldızım öğrenci,أخت زوجتي طالبة
+fırın,B1,I-type (back),فرن,Fırında kek pişiriyorum.,أخبز كعكة في الفرن
+fırınlamak,B2,I-type (back),يخبز في الفرن,Kek fırınlıyorum.,أخبز الكعك في الفرن
+korkmak,A2,I-type (back),يخاف,Karanlıktan korkuyorum.,أخاف من الظلام
+kazak,B1,I-type (back),كنزة,Yünlü kazak örüyorum.,أحيك كنزة صوفية
+ağır,A1,I-type (back),ثقيل,Ağır bir çanta taşıyorum.,أحمل حقيبة ثقيلة.
+indirmek,B1,E-type (front),يحمل,Dosyayı indiriyorum.,أحمل الملف.
+kavurmak,B2,I-type (back),يحمص/يقلي,Et kavuruyorum.,أحمص اللحم
+hayal kurmak,B2,I-type (back),يحلم,Gelecek için hayal kuruyorum.,أحلم بالمستقبل
+bavul,A2,I-type (back),حقيبة سفر,Bavulumu hazırlıyorum,أحضر حقيبة سفري
+karıştırmak,B1,I-type (back),يخلط/يحرك,Çorbayı karıştırıyorum.,أحرك الشوربة
+enişte,A2,E-type (front),زوج الأخت,Enişteme saygı duyuyorum,أحترم زوج أختي
+sevmek,A1,E-type (front),يحب,Seni seviyorum.,أحبك.
+sevmek,A1,E-type (front),يحب,Seni çok seviyorum.,أحبك كثيراً
+sevmek,A2,E-type (front),يحب,Seni seviyorum.,أحبك
+şarkı,A2,I-type (back),أغنية,Bu şarkıyı seviyorum.,أحب هذه الأغنية
+spor,A2,I-type (back),رياضة,Spor yapmayı seviyorum.,أحب ممارسة الرياضة
+basketbol,A1,I-type (back),كرة السلة,Basketbol seviyorum.,أحب كرة السلة.
+kitap,A1,I-type (back),كتاب,Kitap okumayı severim.,أحب قراءة الكتب.
+kitap,A1,I-type (back),كتاب,Kitap okumayı seviyorum,أحب قراءة الكتب
+kitap,A1,I-type (back),كتاب,Kitap okumayı seviyorum.,أحب قراءة الكتب
+balık,A1,I-type (back),سمك,Balık yemeği seviyorum.,أحب طعام السمك.
+bisiklet,A2,E-type (front),دراجة,Bisiklet sürmeyi severim.,أحب ركوب الدراجة.
+kimya,B2,E-type (front),كيمياء,Kimya dersini seviyorum.,أحب درس الكيمياء
+tarih,B1,I-type (back),تاريخ,Tarih dersini seviyorum.,أحب درس التاريخ
+kayınanne,A2,Mixed,حماة,Kayınannemi seviyorum,أحب حماتي
+jean,A2,E-type (front),جينز,Jean pantolon seviyorum.,أحب بنطلون الجينز
+tavuk,A1,I-type (back),دجاج,Tavuk yemeği seviyorum.,أحب أكل الدجاج.
+makarna,A2,I-type (back),معكرونة,Makarna seviyorum.,أحب المعكرونة.
+turşu,A2,I-type (back),مخلل,Turşu severim.,أحب المخلل.
+ızgara,B1,I-type (back),شواية,Izgara et seviyorum.,أحب اللحم المشوي
+kırmızı biber,A2,Mixed,فلفل أحمر,Kırmızı biber seviyorum.,أحب الفلفل الأحمر.
+biber,A2,E-type (front),فلفل,Biber seviyorum.,أحب الفلفل
+meyve,A1,E-type (front),فاكهة,Meyve seviyorum.,أحب الفاكهة.
+seyahat,A2,I-type (back),سفر,Seyahat etmeyi seviyorum,أحب السفر
+seyahat,B1,E-type (front),سفر,Seyahat etmeyi seviyorum.,أحب السفر
+dans,A1,I-type (back),رقص,Dans etmeyi seviyorum.,أحب الرقص.
+dans,A2,I-type (back),رقص,Dans etmeyi seviyorum,أحب الرقص
+hayvan,A2,I-type (back),حيوان,Hayvanları seviyorum.,أحب الحيوانات
+koşu,A1,I-type (back),جري,Koşu yapmayı seviyorum.,أحب الجري.
+peynir,A1,E-type (front),جبن,Peynir seviyorum.,أحب الجبن.
+peynir,A1,E-type (front),جبن,Peynir seviyorum.,أحب الجبن.
+alışveriş,A1,E-type (front),تسوق,Alışveriş yapmayı seviyorum.,أحب التسوق.
+oregano,B1,I-type (back),أوريجانو,Oregano severim.,أحب الأوريجانو.
+mor,A2,I-type (back),بنفسجي,Mor çiçekler seviyorum.,أحب الأزهار البنفسجية
+müzik,A1,E-type (front),موسيقى,Müzik dinlemeyi seviyorum.,أحب الاستماع للموسيقى.
+müzik,A2,E-type (front),موسيقى,Müzik dinlemeyi seviyorum.,أحب الاستماع إلى الموسيقى
+kafe,A2,I-type (back),مقهى,Kafede oturuyorum,أجلس في المقهى
+koltuk,B1,I-type (back),كرسي مريح,Koltukta oturuyorum.,أجلس في الكرسي المريح
+sınıf,A1,I-type (back),فصل دراسي,Sınıfta oturuyorum.,أجلس في الفصل.
+bahçe,A1,I-type (back),حديقة,Bahçede oturuyorum.,أجلس في الحديقة.
+ev,A1,E-type (front),بيت,Evde oturuyorum.,أجلس في البيت.
+oturmak,A1,I-type (back),يجلس,Sandalyede oturuyorum.,أجلس على الكرسي.
+sandalye,A1,I-type (back),كرسي,Sandalyede oturuyorum.,أجلس على الكرسي.
+sandalye,A2,E-type (front),كرسي,Sandalyede oturuyorum.,أجلس على الكرسي
+koşmak,A2,I-type (back),يجري,Her sabah koşuyorum.,أجري كل صباح
+koşmak,A1,I-type (back),يجري,Parkta koşuyorum.,أجري في الحديقة.
+vitamin,A2,E-type (front),فيتامين,Vitamin alıyorum.,أتناول الفيتامين.
+ilaç,A1,I-type (back),دواء,İlaç içiyorum.,أتناول الدواء.
+kahvaltı yapmak,A1,I-type (back),يتناول الإفطار,Her sabah kahvaltı yapıyorum.,أتناول الإفطار كل صباح.
+spor salonu,A2,I-type (back),صالة رياضية,Spor salonunda egzersiz yapıyorum.,أتمرن في الصالة الرياضية.
+sağlıklı,A2,I-type (back),صحي,Sağlıklı besleniyorum.,أتغذى بشكل صحي.
+yavaş,A1,I-type (back),بطيء,Yavaş yavaş öğreniyorum.,أتعلم ببطء.
+gitar,A2,I-type (back),غيتار,Gitar öğreniyorum.,أتعلم الغيتار.
+piyano,B1,I-type (back),بيانو,Piyano çalmayı öğreniyorum.,أتعلم العزف على البيانو
+dans,B1,I-type (back),رقص,Dans etmeyi öğreniyorum.,أتعلم الرقص
+internet,A1,E-type (front),إنترنت,İnternete bağlanıyorum.,أتصل بالإنترنت.
+cumartesi,A1,E-type (front),السبت,Cumartesi alışveriş yapıyorum.,أتسوق يوم السبت.
+merak etmek,B1,E-type (front),يتساءل/يفضل,Sonucu merak ediyorum.,أتساءل عن النتيجة
+heyecanlanmak,B2,I-type (back),يتحمس,Tatil için heyecanlanıyorum.,أتحمس للعطلة
+diyet,A2,E-type (front),حمية,Diyet yapıyorum.,أتبع حمية غذائية.
+haber,A2,I-type (back),أخبار,Haberleri takip ediyorum,أتابع الأخبار
+baba,A1,I-type (back),أب,Babam işte çalışıyor.,أبي يعمل في الوظيفة.
+baba,A1,I-type (back),أب,Babam işte çalışıyor.,أبي يعمل في العمل.
+etti,A1,E-type (front),مفردة تركية,Babam etti veriyor.,أبي محتوى الجملة بالعربية
+evüm,A1,E-type (front),مفردة تركية,Babam evüm veriyor.,أبي محتوى الجملة بالعربية
+il,A1,E-type (front),مفردة تركية,Babam il veriyor.,أبي محتوى الجملة بالعربية
+etır,A1,Mixed/Exception,مفردة تركية,Babam etır veriyor.,أبي محتوى الجملة بالعربية
+sulu,A1,E-type (back),مفردة تركية,Babam sulu veriyor.,أبي محتوى الجملة بالعربية
+beş,A1,E-type (front),مفردة تركية,Babam beş veriyor.,أبي محتوى الجملة بالعربية
+ders,A1,E-type (front),مفردة تركية,Babam ders veriyor.,أبي محتوى الجملة بالعربية
+saha,A1,E-type (back),مفردة تركية,Babam saha veriyor.,أبي محتوى الجملة بالعربية
+olüm,A1,Mixed/Exception,مفردة تركية,Babam olüm veriyor.,أبي محتوى الجملة بالعربية
+çıkı,A1,E-type (back),مفردة تركية,Babam çıkı veriyor.,أبي محتوى الجملة بالعربية
+doğu,A1,E-type (back),مفردة تركية,Babam doğu veriyor.,أبي محتوى الجملة بالعربية
+baharatlamak,B2,I-type (back),يبهر,Yemeği baharatlıyorum.,أبهر الطعام
+sözlük,A2,E-type (front),قاموس,Sözlükten bakıyorum.,أبحث في القاموس.
+iş,A1,E-type (front),عمل,İş arıyorum.,أبحث عن عمل
+eğlence,A2,E-type (front),تسلية,Eğlence arıyorum,أبحث عن التسلية
+yağmur,A2,I-type (back),مطر,Yağmur yağıyor.,إنها تمطر
+kar,A2,I-type (back),ثلج,Kar yağıyor.,إنها تثلج
+güzel,A1,E-type (front),جميل,Güzel bir gün.,إنه يوم جميل.
+yaşlı,A1,I-type (back),مسن,Yaşlı bir adamdır.,إنه رجل مسن.
+iyi,A1,E-type (front),جيد,İyi bir insan.,إنه إنسان جيد.
+parmak,A2,I-type (back),إصبع,Parmağım kesildi.,إصبعي مجروح
+parmak,A1,I-type (back),إصبع,Uzun parmak,إصبع طويل
+hafta,A1,I-type (back),أسبوع,Bir hafta tatil,إجازة لمدة أسبوع
+doğru,A1,I-type (back),صحيح,Doğru cevap,إجابة صحيحة
+fare,A2,I-type (back),فأرة حاسوب,Bilgisayar faresi kırıldı.,انكسرت فأرة الحاسوب.
+fincan,B1,I-type (back),فنجان,Çay fincanı kırıldı.,انكسر فنجان الشاي
+dal,A2,I-type (back),غصن,Ağacın dalı kırıldı,انكسر غصن الشجرة
+direksiyon,B2,E-type (front),مقود,Direksiyon kırıldı.,انكسر المقود
+dal,B1,I-type (back),غصن,Dal kırıldı.,انكسر الغصن.
+tabak,A1,I-type (back),طبق,Tabak kırıldı.,انكسر الطبق.
+elektrik,B1,E-type (front),كهرباء,Elektrik kesildi.,انقطعت الكهرباء
+kesmek,A2,E-type (front),بالقطع,Bağlantı kesildi.,انقطع الاتصال.
+ağ,B1,I-type (back),شبكة,Ağ bağlantısı kesildi.,انقطع الاتصال بالشبكة
+elektrik,B1,E-type,كهرباء,Elektrik kesintisi,انقطاع الكهرباء
+teker,B1,E-type (front),عجلة,Tekerlek patladı.,انفجر الإطار
+basınç,B2,I-type (back),ضغط,Hava basıncı düştü,انخفض ضغط الهواء
+euro,A2,E-type (front),يورو,Euro düştü.,انخفض اليورو
+diş macunu,A2,Mixed,معجون أسنان,Diş macunu bitti.,انتهى معجون الأسنان.
+kalem,A1,E-type (front),قلم,Kalemim bitti.,انتهى قلمي.
+kalem,A1,E-type (front),قلم,Kalemim bitti.,انتهى قلمي
+benzin,B1,E-type (front),بنزين,Benzin bitti.,انتهى البنزين
+görev,B1,I-type (back),واجب/مهمة,Görevim bitti.,انتهت مهمتي.
+yemekhane,A2,Mixed,قاعة الطعام,Yemekhanede sıra bekledik.,انتظرنا في الطابور في قاعة الطعام.
+otuz,A1,I-type (back),ثلاثون,Otuz dakika bekledim.,انتظرت ثلاثين دقيقة.
+beş,A1,E-type (front),خمسة,Beş dakika bekle.,انتظر خمس دقائق.
+dakika,A1,I-type (back),دقيقة,Beş dakika bekle,انتظر خمس دقائق
+saniye,A2,E-type (front),ثانية,Bir saniye bekle,انتظر ثانية واحدة
+milletvekili,C1,E-type (front),نائب,Milletvekili seçimi yakın.,انتخابات النواب قريبة.
+yavaş,A1,I-type (back),بطيء,Yavaş yürü,امش ببطء
+yaşlı,A1,I-type (back),كبير السن,Yaşlı kadın,امرأة كبيرة السن
+gün,A1,E-type (front),يوم,Bugün güzel bir gün.,اليوم يوم جميل.
+yat,B2,I-type (back),يخت,Yat çok pahalı.,اليخت غالي جداً.
+kase,A1,I-type (back),وعاء,Kase dolu.,الوعاء ممتلئ.
+kakule,B2,I-type (back),هيل,Kakule pahalı baharat.,الهيل توابل غالية.
+nem,B2,E-type,رطوبة,Hava çok nemli,الهواء رطب جداً
+mimari,C1,E-type (front),معمارية,Mimari çok güzel.,الهندسة المعمارية جميلة جداً.
+çalışır,A2,I-type (back),يعمل,Telefon çalışır,الهاتف يعمل
+telefon,A1,I-type (back),هاتف,Telefon çalıyor.,الهاتف يرن.
+telefon,A1,E-type (front),هاتف,Telefon çalıyor.,الهاتف يرن.
+telefon,A1,E-type (front),هاتف,Telefon çalıyor,الهاتف يرن
+telefon,A1,I-type (back),هاتف,Telefon çalıyor.,الهاتف يرن
+nehir,A1,E-type (front),نهر,Nehir çok temiz.,النهر نظيف جداً.
+nehir,A1,E-type (front),نهر,Nehir çok temiz.,النهر نظيف جداً.
+kaplan,A2,I-type (back),نمر,Kaplan avlanıyor.,النمر يصطاد.
+kaplan,B1,I-type (back),نمر,Kaplan çok hızlı koşar.,النمر يجري بسرعة كبيرة
+kaplan,A2,I-type (back),نمر,Kaplan çok güçlü bir hayvandır.,النمر حيوان قوي جداً.
+tünel,B2,E-type (front),نفق,Tünel karanlık.,النفق مظلم.
+arı,B1,I-type (back),نحلة,Arılar bal yapar.,النحل يصنع العسل
+yıldız,A1,I-type (back),نجمة,Yıldızlar parlıyor.,النجوم تلمع.
+yıldız,A2,I-type (back),نجمة,Yıldızlar parlıyor.,النجوم تلمع.
+yıldız,A1,I-type (back),نجمة,Yıldızlar parlıyor,النجوم تتلألأ
+nabız,B2,I-type (back),نبض,Nabız hızlı,النبض سريع
+garson,A2,I-type (back),نادل,Garson siparişi aldı.,النادل أخذ الطلب.
+minibüs,A2,Mixed,ميني باص,Minibüs dolu.,الميني باص ممتلئ.
+meydan,B1,I-type (back),ميدان,Meydan çok kalabalık.,الميدان مزدحم جداً.
+mojito,B2,I-type (back),موهيتو,Mojito yazlık içecek.,الموهيتو مشروب صيفي.
+virgin mojito,B2,Mixed,موهيتو بدون كحول,Virgin mojito alkol içermez.,الموهيتو بدون كحول لا يحتوي على الكحول.
+web sitesi,B1,E-type (front),موقع إلكتروني,Web sitesi çok güzel.,الموقع الإلكتروني جميل جداً.
+muz,A1,I-type (back),موز,Muz çok tatlı.,الموز حلو جداً.
+muz,A1,I-type (back),موز,Muz çok tatlı.,الموز حلو جداً.
+ölüm,B2,E-type (front),موت,Ölüm kaçınılmaz.,الموت لا مفر منه
+mühendis,A2,E-type (front),مهندس,Mühendis köprü tasarlıyor.,المهندس يصمم جسراً.
+mühendis,A2,E-type (front),مهندس,Mühendis proje çiziyor,المهندس يرسم المشروع
+mühendis,A2,Mixed,مهندس,Mühendis proje hazırlıyor.,المهندس يحضر مشروعاً.
+ders programı,B2,E-type (front),منهاج,Ders programı ağır.,المنهاج ثقيل
+balon,B2,I-type (back),منطاد,Balon havada uçuyor.,المنطاد يطير في الهواء.
+hemşire,A1,E-type (front),ممرضة,Hemşire çok nazik.,الممرضة لطيفة جداً.
+hemşire,A2,E-type (front),ممرضة,Hemşire çok nazik.,الممرضة لطيفة جداً.
+hemşire,B1,E-type (front),ممرضة,Hemşire çok nazik.,الممرضة لطيفة جداً
+hemşire,A2,E-type (front),ممرضة,Hemşire yardım ediyor,الممرضة تساعد
+boks,A2,I-type (back),ملاكمة,Boks tehlikeli spordur.,الملاكمة رياضة خطيرة.
+magnezyum,C1,E-type (front),مغنيسيوم,Magnezyum önemli,المغنيسيوم مهم
+şarkıcı,A1,I-type (back),مغني,Şarkıcı güzel söylüyor.,المغني يغني بجمال.
+tahta,A1,I-type (back),سبورة,Öğretmen tahtaya yazıyor.,المعلم يكتب على السبورة.
+öğretmen,A1,E-type (front),معلم,Öğretmen ders anlatıyor.,المعلم يشرح الدرس.
+öğretmen,A1,E-type (front),معلم,Öğretmen ders anlatıyor.,المعلم يشرح الدرس.
+yağmur,A1,I-type (back),مطر,Yağmur yağıyor,المطر ينزل
+yağmur,A1,I-type (back),مطر,Yağmur yağıyor.,المطر يتساقط.
+yağmur,A1,I-type (back),مطر,Yağmur yağıyor.,المطر يتساقط.
+fotoğrafçı,B1,I-type (back),مصور,Fotoğrafçı düğünü çekti.,المصور صور الزفاف.
+lamba,A2,I-type (back),مصباح,Lamba yanıyor.,المصباح مضاء
+güreş,A2,E-type (front),مصارعة,Güreş eski bir spordur.,المصارعة رياضة قديمة.
+çiftçi,A2,E-type (front),مزارع,Çiftçi tarla ekiyor.,المزارع يزرع الحقل.
+hasta,A1,I-type (back),مريض,Hasta çok yorgun.,المريض متعب جداً.
+hasta,A1,I-type (back),مريض,Hasta çok yorgun,المريض متعب جداً
+hasta,A2,I-type (back),مريض,Hasta çok yorgun.,المريض متعب جداً
+helikopter,B2,E-type (front),مروحية,Helikopter uçuyor.,المروحية تطير.
+hastalık,A2,I-type (back),مرض,Hastalık bulaşıcı,المرض معدي
+rehber,A2,E-type (front),مرشد,Rehber grubu yönlendirdi.,المرشد وجه المجموعة.
+oval,B2,I-type (back),بيضاوي,Oval ayna güzel.,المرآة البيضاوية جميلة
+müdür,A2,E-type (front),مدير,Müdür toplantıda.,المدير في الاجتماع.
+müdür,B1,E-type (front),مدير,Müdür toplantıda.,المدير في الاجتماع
+okyanus,B1,I-type (back),محيط,Büyük okyanus,المحيط الكبير
+kapalı,A2,I-type (back),مغلق,Dükkân kapalı.,المحل مغلق
+avukat,B2,I-type (back),محامي,Avukat müvekkilini savunuyor.,المحامي يدافع عن موكله.
+avukat,A2,I-type (back),محامي,Avukat mahkemede.,المحامي في المحكمة.
+avukat,A2,I-type (back),محامي,Avukat davayı kazandı.,المحامي ربح القضية.
+muhasebeci,A2,E-type (front),محاسب,Muhasebeci hesap yapıyor,المحاسب يحسب الحسابات
+muhasebeci,B1,Mixed,محاسب,Muhasebeci hesapları tutuyor.,المحاسب يحتفظ بالحسابات.
+manyetik,B2,E-type,مغناطيسي,Manyetik alan,المجال المغناطيسي
+çevirmen,B1,E-type (front),مترجم,Çevirmen metni çevirdi.,المترجم ترجم النص.
+müze,B1,E-type (front),متحف,Müze çok ilginç.,المتحف مثير للاهتمام جداً
+kapalı,A1,I-type (back),مغلق,Mağaza kapalı.,المتجر مغلق.
+bina,A1,I-type (back),مبنى,Bina çok yüksek.,المبنى عالي جداً.
+keçi,E-type (front),E-type (front),ماعز,Keçi zıplıyor.,الماعز يقفز.
+keçi,B1,E-type (front),ماعز,Keçi dağda yaşar.,الماعز يعيش في الجبل
+sıcak,A1,I-type (back),حار,Su çok sıcak,الماء حار جداً
+soğuk,A1,I-type (back),بارد,Su çok soğuk.,الماء بارد جداً.
+soğuk,A1,I-type (back),بارد,Su çok soğuk.,الماء بارد جداً.
+gece,A1,E-type (front),ليل,Gece çok sessiz.,الليل هادئ جداً.
+gece,A1,E-type (front),ليل,Gece çok karanlık.,الليل مظلم جداً.
+renk,A1,E-type,لون,Mavi renk,اللون الأزرق
+dolu,A1,I-type (back),مملوء,Bardak su dolu.,الكوب مملوء بالماء.
+kilise,B1,E-type (front),كنيسة,Kilise çok eski.,الكنيسة قديمة جداً
+havra,C1,I-type (back),كنيس,Havra tarihi bir yapı.,الكنيس مبنى تاريخي
+keman,A2,E-type (front),كمان,Keman çok güzel ses çıkarır.,الكمان يصدر صوتاً جميلاً.
+köpek,A1,I-type (back),كلب,Köpek havlıyor.,الكلب ينبح.
+kütle,B2,E-type (front),kütle,Atomik kütle,الكتلة الذرية
+çiğ köfte,B1,Mixed,كبة نيئة,Çiğ köfte acı.,الكبة النيئة حارة.
+kahve,A1,I-type (back),قهوة,Kahve çok sıcak.,القهوة ساخنة جداً.
+kahve,A1,I-type (back),قهوة,Kahve çok sıcak.,القهوة ساخنة جداً.
+ay,A1,I-type (back),قمر/شهر,Ay çok parlak.,القمر مشرق جداً.
+ay,A1,I-type (back),قمر,Ay çok güzel.,القمر جميل جداً.
+ay,A1,I-type (back),قمر,Ay çok güzel,القمر جميل جداً
+kedi,A1,E-type (front),قطة,Kedi çok sevimli.,القطة لطيفة جداً.
+kedi,A1,E-type (front),قطة,Kedi uyuyor.,القطة تنام
+asır,B2,I-type (back),قرن,Yirmi birinci asır,القرن الحادي والعشرون
+tarçın,A2,I-type (back),قرفة,Tarçın çok güzel.,القرفة جميلة جداً.
+maymun,B1,I-type (back),قرد,Maymun ağaçta oynuyor.,القرد يلعب على الشجرة
+yelkenli,B2,E-type (front),قارب شراعي,Yelkenli denizde.,القارب الشراعي في البحر.
+film,A2,E-type (front),فيلم,Film çok güzeldi.,الفيلم كان جميلاً جداً
+fil,A1,E-type (front),فيل,Fil çok büyük.,الفيل كبير جداً.
+fil,A2,E-type (front),فيل,Fil çok büyük.,الفيل كبير جداً.
+fil,A2,E-type (front),فيل,Fil çok büyük.,الفيل كبير جداً
+fizik,B2,E-type (front),فيزياء,Fizik çok zor.,الفيزياء صعبة جداً
+pembe,A2,E-type (front),وردي,Pembe elbise güzel.,الفستان الوردي جميل
+fren,B1,E-type (front),فرامل,Fren çalışmıyor.,الفرامل لا تعمل
+kelebek,B1,E-type (front),فراشة,Kelebek çiçekten çiçeğe uçuyor.,الفراشة تطير من زهرة إلى زهرة
+frappé,B2,I-type (back),فرابيه,Frappé çok serinletici.,الفرابيه منعش جداً.
+kız,A1,I-type (back),فتاة,Kız kitap okuyor.,الفتاة تقرأ كتاباً.
+fare,A2,I-type (back),فأر,Fare koşuyor.,الفأر يجري.
+meyve,A2,E-type (front),فاكهة,Meyve çok tatlı.,الفاكهة حلوة جداً.
+bulut,A1,I-type (back),غيمة,Bulutlar geliyor,الغيوم تأتي
+çamaşır makinesi,B1,Mixed,غسالة ملابس,Çamaşır makinesi çalışıyor.,الغسالة تعمل.
+gaz,A2,I-type (back),غاز,Doğalgaz,الغاز الطبيعي
+bayram,B1,I-type (back),عيد,Bayram geliyor.,العيد قادم
+komisyon,C1,I-type (back),عمولة,Komisyon çok yüksek.,العمولة مرتفعة جداً
+ameliyat,B1,I-type (back),عملية جراحية,Ameliyat başarılı geçti,العملية الجراحية نجحت
+bilim,B2,E-type (front),علم,Bilim çok önemli.,العلم مهم جداً.
+kemo,C1,E-type (front),كيماوي,Kemo tedavisi,العلاج الكيماوي
+radyo,C1,I-type (back),إشعاعي,Radyo terapi,العلاج الإشعاعي
+tedavi,B1,I-type (back),علاج,Tedavi uzun sürdü,العلاج استغرق وقتاً طويلاً
+bal,A1,I-type (back),عسل,Bal çok faydalı.,العسل مفيد جداً.
+bal,A1,I-type (back),عسل,Bal çok tatlı.,العسل حلو جداً.
+bal,A1,I-type (back),عسل,Bal çok tatlı.,العسل حلو جداً.
+adalet,C1,E-type (front),عدالة,Adalet çok önemli.,العدالة مهمة جداً.
+işçi,A1,E-type (front),عامل,İşçi çok çalışıyor,العامل يعمل كثيراً
+fırtına,B1,I-type (back),عاصفة,Fırtına geliyor,العاصفة تأتي
+kuş,A2,I-type (back),طائر,Kuşlar uçuyor.,الطيور تطير
+pilot,A2,I-type (back),طيار,Pilot uçağı uçuruyor.,الطيار يقود الطائرة.
+kötü,A1,E-type (front),سيء,Kötü hava var.,الطقس سيء.
+kötü,A1,I-type (back),سيء,Hava bugün kötü.,الطقس سيء اليوم.
+nemli,B2,E-type (front),رطب,Hava çok nemli.,الطقس رطب جداً.
+ılık,B1,I-type (back),دافئ,Hava ilık.,الطقس دافئ
+sıcak,A1,I-type (back),حار,Hava çok sıcak.,الطقس حار جداً.
+sıcak,A1,I-type (back),حار,Hava çok sıcak.,الطقس حار جداً.
+sıcak,A1,I-type (back),حار,Hava çok sıcak.,الطقس حار جداً.
+hava,A1,I-type (back),طقس,Hava çok güzel.,الطقس جميل جداً.
+hava,A2,I-type (back),طقس,Hava çok güzel.,الطقس جميل جداً.
+bugün,A1,E-type (front),اليوم,Bugün güzel hava.,الطقس جميل اليوم.
+kuru,A2,I-type (back),جاف,Hava çok kuru.,الطقس جاف جداً.
+soğuk,A1,I-type (back),بارد,Hava çok soğuk.,الطقس بارد جداً.
+soğuk,A1,I-type (back),بارد,Hava çok soğuk,الطقس بارد جداً
+çocuk,A1,I-type (back),طفل,Çocuk parkta oynuyor.,الطفل يلعب في الحديقة.
+yemek,A1,E-type (front),طعام,Yemek çok lezzetli.,الطعام لذيذ جداً.
+yol,A2,I-type (back),طريق,Yol çok dar.,الطريق ضيق جداً.
+eğri,B2,E-type (front),منحني,Eğri yol tehlikeli.,الطريق المنحني خطير.
+doktor,A1,I-type (back),طبيب,Doktor hastayı muayene ediyor.,الطبيب يفحص المريض.
+doktor,A1,I-type (back),طبيب,Doktor muayene ediyor,الطبيب يفحص
+doktor,A2,I-type (back),طبيب,Doktor muayene ediyor.,الطبيب يفحص
+veteriner,B1,E-type (front),طبيب بيطري,Veteriner hayvanı tedavi ediyor.,الطبيب البيطري يعالج الحيوان.
+aşçı,A1,I-type (back),طباخ,Aşçı lezzetli yemek yapıyor.,الطباخ يطبخ طعاماً لذيذاً.
+aşçı,A2,I-type (back),طباخ,Aşçı yemek pişiriyor.,الطباخ يطبخ الطعام.
+uçak,A1,I-type (back),طائرة,Uçak uçuyor.,الطائرة تطير.
+uçak,A2,I-type (back),طائرة,Uçak geç kaldı.,الطائرة تأخرت
+kuş,A1,I-type (back),طائر,Kuş uçuyor.,الطائر يطير.
+öğrenci,A1,E-type (front),طالب,Öğrenci kitap okuyor.,الطالب يقرأ كتاباً.
+öğrenci,A1,E-type (front),طالب,Öğrenci kitap okuyor.,الطالب يقرأ كتاباً.
+enerji,A2,E-type (front),طاقة,Güneş enerjisi,الطاقة الشمسية
+yazıcı,B1,I-type (back),طابعة,Yazıcı bozuldu.,الطابعة معطلة
+sis,B1,E-type,ضباب,Sis çok yoğun,الضباب كثيف جداً
+eczacı,B1,I-type (back),صيدلي,Eczacı ilaç verdi.,الصيدلي أعطى الدواء.
+avcılık,C1,I-type (back),صيد,Avcılık yasaktır.,الصيد محظور
+acı sos,A2,Mixed,صوص حار,Acı sos çok yakıyor.,الصوص الحار يحرق جداً.
+ses,A1,E-type (front),صوت,Ses çok yüksek.,الصوت عالي جداً.
+damat,A2,I-type (back),صهر/عريس,Damat iyi bir insan,الصهر إنسان جيد
+sağlık,A2,I-type (back),صحة,Sağlık çok önemli.,الصحة مهمة جداً.
+gazeteci,B1,E-type (front),صحافي,Gazeteci haber yazıyor.,الصحافي يكتب الخبر.
+güneş,A1,E-type (front),شمس,Güneş parlıyor.,الشمس تشرق.
+güneş,A1,E-type (front),شمس,Güneş parlıyor.,الشمس تشرق.
+güneş,A1,E-type (front),شمس,Güneş parlıyor,الشمس تشرق
+güneş,A2,E-type (front),شمس,Güneş parlıyor.,الشمس تشرق
+turuncu,B1,I-type (back),برتقالي,Turuncu güneş batıyor.,الشمس البرتقالية تغرب
+polis,A1,I-type (back),شرطي,Polis trafik kontrol ediyor.,الشرطي يراقب المرور.
+polis,A1,I-type (back),شرطي,Polis suçluyu yakaladı.,الشرطي أمسك بالمجرم.
+ağaç,A1,I-type (back),شجرة,Ağaç çok büyük.,الشجرة كبيرة جداً.
+ağaç,A1,I-type (back),شجرة,Ağaç çok büyük.,الشجرة كبيرة جداً.
+ağaç,A2,I-type (back),شجرة,Ağaç çok yüksek.,الشجرة عالية جداً.
+kış,A2,E-type (front),شتاء,Kış çok soğuk.,الشتاء بارد جداً.
+kış,A1,E-type (front),شتاء,Kış çok soğuk,الشتاء بارد جداً
+ekran,A2,I-type (back),شاشة,Ekran çok büyük.,الشاشة كبيرة جداً.
+sokak,A2,I-type (back),شارع,Sokak çok sessiz.,الشارع هادئ جداً.
+kamyon,A2,I-type (back),شاحنة,Kamyon yüklü.,الشاحنة محملة.
+kamyon,B1,I-type (back),شاحنة,Kamyon yüklendi.,الشاحنة محملة
+pahalı,A1,I-type (back),غالي,Araba çok pahalı.,السيارة غالية جداً.
+balık,A1,I-type (back),سمك,Balık yüzüyor.,السمك يسبح.
+sumak,B1,I-type (back),سماق,Sumak ekşi tatlı.,السماق حامض حلو.
+gök,A2,I-type (back),سماء,Gök çok mavi.,السماء زرقاء جداً.
+gök,B1,I-type (back),سماء,Gök çok mavi.,السماء زرقاء جداً.
+mavi,A1,I-type (back),أزرق,Mavi gökyüzü çok güzel.,السماء الزرقاء جميلة جداً.
+mavi,A1,I-type,أزرق,Mavi gökyüzü,السماء الزرقاء
+bıçak,A2,I-type (back),سكين,Bıçak çok keskin.,السكين حادة جداً
+bıçak,A1,I-type (back),سكين,Bıçak keskin.,السكين حاد.
+sekreter,A2,E-type (front),سكرتير,Sekreter telefonu cevapladı.,السكرتير أجاب على الهاتف.
+tavan,A1,I-type (back),سقف,Tavan yüksek.,السقف عالي.
+gemi,A2,E-type (front),سفينة,Gemi limanda.,السفينة في الميناء.
+büyükelçi,C1,E-type (front),سفير,Büyükelçi toplantıda.,السفير في الاجتماع.
+fiyat,A2,I-type (back),سعر,Fiyat çok yüksek.,السعر مرتفع جداً
+fiyat,A1,I-type (back),سعر,Fiyat çok pahalı.,السعر غالي جداً.
+öksürük,B1,E-type (front),سعال,Öksürük durmuyor,السعال لا يتوقف
+halı,A2,I-type (back),سجادة,Halı çok güzel.,السجادة جميلة جداً
+şoför,A2,E-type (front),سائق,Şoför dikkatli sürüyor.,السائق يقود بحذر.
+çiçek,A1,E-type (front),زهرة,Çiçek çok güzel.,الزهرة جميلة جداً.
+çiçek,A1,E-type (front),زهرة,Çiçek çok güzel.,الزهرة جميلة جداً.
+çiçek,A2,E-type (front),زهرة,Çiçek çok güzel.,الزهرة جميلة جداً.
+düğün,B1,E-type (front),زفاف,Düğün çok güzel.,الزفاف جميل جداً
+safran,B2,I-type (back),زعفران,Safran çok değerli.,الزعفران ثمين جداً.
+köşe,A2,E-type,زاوية,Sağ köşe,الزاوية اليمنى
+fesleğen,B1,E-type (front),ريحان,Fesleğen kokuyor.,الريحان له رائحة.
+rüzgar,A2,E-type,ريح,Rüzgar esiyor,الريح تهب
+sporcu,A2,I-type (back),رياضي,Sporcu antrenman yapıyor.,الرياضي يتدرب.
+rüzgar,B1,E-type (front),رياح,Rüzgar çok sert.,الرياح قوية جداً.
+rüzgar,A1,E-type (front),رياح,Rüzgar esiyor.,الرياح تهب.
+rüzgar,A1,E-type (front),رياح,Rüzgar esiyor.,الرياح تهب.
+manyetik,B2,E-type (front),مغناطيسي,Manyetik rezonans,الرنين المغناطيسي
+ressam,A2,I-type (back),رسام,Ressam resim yapıyor.,الرسام يرسم لوحة.
+kurt,B1,I-type (back),ذئب,Kurt çok vahşi.,الذئب متوحش جداً
+atom,B2,I-type (back),ذرة,Atom çok küçük.,الذرة صغيرة جداً
+kol,A1,I-type (back),ذراع,Sağ kol,الذراع الأيمن
+din,B2,E-type (front),دين,Din çok önemli.,الدين مهم جداً.
+horoz,B1,I-type (back),ديك,Horoz sabah öter.,الديك يصيح في الصباح
+horoz,A1,I-type (back),ديك,Horoz öttü.,الديك صاح.
+diskotik,A2,E-type (front),ديسكو,Diskotek eğlenceli,الديسكو ممتع
+doçent,B2,E-type (front),دوسنت,Doçent makale yazdı.,الدوسنت كتب مقالاً.
+motosiklet,B1,E-type (front),دراجة نارية,Motosiklet tehlikeli.,الدراجة النارية خطيرة.
+tavuk,A2,I-type (back),دجاجة,Tavuk yumurta verir.,الدجاجة تبيض
+tavuk,A1,I-type (back),دجاج,Tavuk yumurta veriyor.,الدجاج يبيض.
+pekmez,B1,E-type (front),دبس,Pekmez çok tatli.,الدبس حلو جداً.
+ayı,A1,I-type (back),دب,Ayı ormanda yaşar.,الدب يعيش في الغابة.
+ayı,B1,I-type (back),دب,Ayı ormanda yaşar.,الدب يعيش في الغابة
+sirke,A2,E-type (front),خل,Sirke salata için.,الخل للسلطة.
+çiğ,B1,E-type (front),نيء,Çiğ sebze sağlıklı,الخضروات النيئة صحية
+sebze,A2,E-type (front),خضار,Sebze çok faydalı.,الخضار مفيدة جداً.
+sonbahar,B1,I-type (back),خريف,Sonbahar güzel bir mevsim.,الخريف فصل جميل.
+koyun,A1,I-type (back),خروف,Koyun otluyor.,الخروف يأكل العشب.
+koyun,A1,I-type (back),خروف,Koyunlar otlakta.,الخراف في المرعى.
+koyun,B1,I-type (back),خروف,Koyunlar otlakta.,الخراف في المرعى
+berber,A2,E-type (front),حلاق,Berber saç kesti.,الحلاق قص الشعر.
+tarla,B1,I-type (back),حقل,Tarla çok geniş.,الحقل واسع جداً.
+at,A1,I-type (back),حصان,At koşuyor.,الحصان يجري.
+at,A2,I-type (back),حصان,At çok güzel bir hayvan.,الحصان حيوان جميل جداً
+at,A1,I-type (back),حصان,Beyaz at çok güzel.,الحصان الأبيض جميل جداً.
+özgürlük,C1,E-type (front),حرية,Özgürlük çok değerli.,الحرية ثمينة جداً.
+bahçe,A2,E-type (front),حديقة,Bahçe çok güzel.,الحديقة جميلة جداً.
+sinir,B1,E-type (front),عصب,Sinir sistemi,الجهاز العصبي
+buz,A1,I-type (back),جليد,Buz çok soğuk,الجليد بارد جداً
+köprü,B1,I-type (back),جسر,Köprü çok uzun.,الجسر طويل جداً.
+traktör,B1,E-type (front),جرار,Traktör tarlada.,الجرار في الحقل.
+gövde,B2,I-type (back),جذع,Gövde çok kalın.,الجذع سميك جداً.
+kök,B2,I-type (back),جذر,Kök çok derin.,الجذر عميق جداً.
+dere,B1,E-type,جدول,Küçük dere akıyor,الجدول الصغير يجري
+duvar,A1,I-type (back),جدار,Duvar beyaz.,الجدار أبيض.
+dağ,A1,I-type (back),جبل,Dağ çok yüksek.,الجبل عالي جداً.
+dağ,A1,I-type (back),جبل,Dağ çok yüksek.,الجبل عالي جداً.
+cadde,B1,E-type (front),جادة,Ana cadde çok geniş.,الجادة الرئيسية واسعة جداً.
+kar,A1,I-type (back),ثلج,Kar yağıyor,الثلج ينزل
+kar,A1,I-type (back),ثلج,Kar yağıyor.,الثلج يتساقط.
+kar,A1,I-type (back),ثلج,Kar yağıyor.,الثلج يتساقط.
+beyaz,A1,I-type (back),أبيض,Beyaz kar yağıyor.,الثلج الأبيض يتساقط.
+beyaz,A1,I-type (back),أبيض,Beyaz kar yağıyor.,الثلج الأبيض يتساقط
+buzdolabı,A1,Mixed,ثلاجة,Buzdolabı soğuk.,الثلاجة باردة.
+kültür,B2,E-type (front),ثقافة,Türk kültürü zengin.,الثقافة التركية غنية
+tilki,B2,E-type (front),ثعلب,Tilki çok kurnaz.,الثعلب ماكر جداً
+kulakanfeksiyonu,B2,I-type (back),التهاب الأذن,Kulak enfeksiyonu tehlikeli,التهاب الأذن خطير
+nefes,A2,E-type (front),نفس,Nefes almak,التنفس
+heykel,B2,E-type (front),تمثال,Heykel çok büyük.,التمثال كبير جداً
+teknoloji,B2,E-type (front),تكنولوجيا,Teknoloji hızla gelişiyor.,التكنولوجيا تتطور بسرعة
+kafeterya,A2,I-type (back),كافيتيريا,Kafeteryada arkadaşlarla buluştuk.,التقينا بالأصدقاء في الكافيتيريا.
+fotoğraf,A2,I-type (back),صورة,Fotoğraf çektim.,التقطت صورة.
+fotoğraf,A2,I-type (back),صورة,Fotoğraf çektim.,التقطت صورة.
+tomografi,C1,I-type (back),تصوير مقطعي,Tomografi çekimi,التصوير المقطعي
+paten,B1,I-type (back),حذاء تزلج,Paten kaymak eğlenceli.,التزلج بالحذاء ممتع.
+dil,A1,E-type (front),لسان/لغة,Türkçe güzel bir dil.,التركية لغة جميلة
+çürüme,B2,E-type (front),تحلل,Radyoaktif çürüme,التحلل الإشعاعي
+ticaret,B2,I-type (back),تجارة,Ticaret gelişiyor.,التجارة تتطور
+pide,A2,E-type (front),بيدة,Pide çok güzel.,البيدة جميلة جداً.
+yapı,C1,I-type (back),بناء,Yeni yapı çok modern.,البناء الجديد حديث جداً.
+inek,A1,E-type (front),بقرة,İnek süt verir.,البقرة تعطي الحليب.
+inek,A1,E-type (front),بقرة,İnek süt veriyor.,البقرة تعطي الحليب.
+inek,A2,E-type (front),بقرة,İnek süt verir.,البقرة تعطي الحليب
+profesör,B1,E-type (front),بروفيسور,Profesör konferans verdi.,البروفيسور ألقى محاضرة.
+şimşek,B1,E-type,برق,Şimşek çaktı,البرق لمع
+bulgur,A2,I-type (back),برغل,Bulgur pilav lezzetli.,البرغل بيلاف لذيذ.
+deniz,A1,E-type (front),بحر,Deniz çok mavi.,البحر أزرق جداً.
+deniz,A1,E-type (front),بحر,Deniz çok mavi.,البحر أزرق جداً.
+deniz,A1,E-type,بحر,Mavi deniz,البحر الأزرق
+açık,A1,I-type (back),مفتوح,Kapı açık.,الباب مفتوح.
+açık,A1,I-type (back),مفتوح/فاتح,Kapı açık.,الباب مفتوح
+opera,B2,I-type (back),أوبرا,Opera çok etkileyici.,الأوبرا مؤثرة جداً
+güvenlik,B2,E-type (front),أمان,Güvenlik çok önemli.,الأمان مهم جداً.
+oksijen,B2,E-type (front),أكسجين,Oksijen gerekli,الأكسجين ضروري
+çocuk,A1,I-type (back),طفل,Çocuklar oynuyor,الأطفال يلعبون
+oyun,A2,I-type (back),لعبة,Çocuklar oyun oynuyor.,الأطفال يلعبون
+süt,A1,E-type (front),حليب,Çocuklar süt sever.,الأطفال يحبون الحليب.
+aslan,A1,I-type (back),أسد,Aslan hayvanların kralıdır.,الأسد ملك الحيوانات.
+aslan,A2,I-type (back),أسد,Aslan kükredi.,الأسد زأر.
+aslan,A2,I-type (back),أسد,Aslan güçlü bir hayvan.,الأسد حيوان قوي
+tavşan,A2,I-type (back),أرنب,Tavşan zıplıyor.,الأرنب يقفز.
+zemin,A1,E-type (front),أرضية,Zemin temiz.,الأرضية نظيفة.
+internet,A2,E-type (front),إنترنت,İnternet çok yavaş.,الإنترنت بطيء جداً
+fisyon,C2,I-type (back),انشطار,Nükleer fisyon,الانشطار النووي
+füzyon,C2,E-type (front),اندماج,Nükleer füzyon,الاندماج النووي
+ekonomi,B2,E-type (front),اقتصاد,Ekonomi durağan.,الاقتصاد راكد.
+ağız,A1,I-type (back),فم,Ağzını aç.,افتح فمك
+kapı,A1,I-type (back),باب,Kapıyı aç.,افتح الباب.
+sanat,B2,I-type (back),فن,Sanat sergisi açıldı.,افتتح معرض الفن
+kilogram,A2,I-type (back),كيلوغرام,İki kilogram et aldık,اشترينا كيلوغرامين من اللحم
+kare,B1,E-type (front),مربع,Kare masa aldık.,اشترينا طاولة مربعة
+kırmızı,A1,I-type (back),أحمر,Kırmızı gül aldım.,اشتريت وردة حمراء
+mont,A2,I-type (back),معطف,Kış montu aldım.,اشتريت معطف شتاء
+dergi,B1,E-type (front),مجلة,Moda dergisi aldım.,اشتريت مجلة أزياء
+metre,A2,E-type (front),متر,Bir metre kumaş aldım.,اشتريت متراً من القماش
+bir,A1,E-type (front),واحد,Bir kitap aldım.,اشتريت كتاباً واحداً.
+yeni,A1,E-type (front),جديد,Yeni bir kitap aldım.,اشتريت كتاباً جديداً.
+mağaza,A1,I-type (back),متجر,Mağazadan elbise aldım.,اشتريت فستاناً من المتجر.
+diş fırçası,A2,Mixed,فرشاة أسنان,Diş fırçası aldım.,اشتريت فرشاة الأسنان.
+ayçiçek yağı,B1,Mixed,زيت عباد الشمس,Ayçiçek yağı aldım.,اشتريت زيت عباد الشمس.
+eczane,A1,I-type (back),صيدلية,Eczaneden ilaç aldım.,اشتريت دواء من الصيدلية.
+eczane,A1,I-type (back),صيدلية,Eczaneden ilaç aldım.,اشتريت دواء من الصيدلية.
+eczane,A1,I-type (back),صيدلية,Eczaneden ilaç aldım.,اشتريت دواء من الصيدلية.
+eczane,A2,E-type (front),صيدلية,Eczaneden ilaç aldım,اشتريت دواء من الصيدلية
+pazar,A1,I-type (back),سوق,Pazardan sebze aldım.,اشتريت خضروات من السوق.
+market,A1,I-type (back),السوبر ماركت,Marketten ekmek aldım.,اشتريت خبزاً من السوبر ماركت.
+ekmek,A1,E-type (front),خبز,Taze ekmek aldım.,اشتريت خبزاً طازجاً
+yüzük,B1,E-type (front),خاتم,Altın yüzük aldım.,اشتريت خاتماً ذهبياً
+bakkal,A1,I-type (back),بقال,Bakkaldan süt aldım.,اشتريت حليباً من البقال.
+ayakkabı,A2,I-type (back),حذاء,Yeni ayakkabı aldım.,اشتريت حذاءً جديداً
+bilet,A1,E-type (front),تذكرة,Bilet aldım,اشتريت تذكرة
+bilet,A2,E-type (front),تذكرة,Bilet aldım.,اشتريت تذكرة
+pantolon,A1,I-type (back),بنطلون,Mavi pantolon aldım.,اشتريت بنطلوناً أزرق.
+pantolon,A2,I-type (back),بنطلون,Mavi pantolon aldım.,اشتريت بنطلوناً أزرق
+hisse,B2,E-type (front),سهم,Hisse senedi aldım.,اشتريت أسهماً
+deterjan,A2,I-type (back),منظف,Deterjan aldım.,اشتريت المنظف.
+un,B1,I-type (back),دقيق,Un aldım.,اشتريت الدقيق
+ekmek,A1,E-type (front),خبز,Ekmek aldım.,اشتريت الخبز.
+kırmızı,A1,I-type (back),أحمر,Kırmızı bir araba aldı.,اشترى سيارة حمراء.
+kalkmak,A1,I-type (back),يستيقظ,Sabah erken kalktım.,استيقظت مبكراً في الصباح.
+sabah,A1,I-type (back),صباح,Sabah erkenden kalktım.,استيقظت باكراً في الصباح.
+kalkmak,A1,I-type (back),يستيقظ,Sabah erken kalktım.,استيقظت باكراً في الصباح.
+sabah,A1,I-type (back),صباح,Sabah erken kalk,استيقظ مبكراً في الصباح
+erken,A1,E-type (front),مبكر,Erken kalk,استيقظ مبكراً
+rahatlamak,B1,I-type (back),يسترخي,Müzik dinleyerek rahatladım.,استرخيت بالاستماع إلى الموسيقى
+taksi,A1,I-type (back),تاكسي,Taksi çağırdım.,استدعيت تاكسي.
+taksi,A2,I-type (back),سيارة أجرة,Taksi çağırdım.,استدعيت تاكسي
+soya sosu,B1,Mixed,صوص الصويا,Soya sosu kullandım.,استخدمت صوص الصويا.
+kişniş,B2,E-type (front),كزبرة,Kişniş tohumu kullandım.,استخدمت بذور الكزبرة.
+biberiye,B1,E-type (front),إكليل الجبل,Biberiye kullandım.,استخدمت إكليل الجبل.
+spatula,B1,I-type (back),ملعقة مسطحة,Spatula kullandım.,استخدمت الملعقة المسطحة.
+suç,B2,I-type (back),جريمة,Suç işledi.,ارتكب جريمة.
+ateş,A1,E-type (front),حمى,Ateşim yükseldi.,ارتفعت حرارتي.
+faiz,B2,I-type (back),فائدة,Faiz oranı yükseldi.,ارتفع معدل الفائدة
+alkış,B2,I-type (back),تصفيق,Alkış sesi yükseldi.,ارتفع صوت التصفيق
+dolar,A2,I-type (back),دولار,Dolar yükseldi.,ارتفع الدولار
+yükseklik,A2,E-type,ارتفاع,İki metre yükseklik,ارتفاع مترين
+giyinmek,A1,E-type (front),يرتدي الملابس,Hızlıca giyindim.,ارتديت ملابسي بسرعة.
+eldiven,A2,E-type (front),قفازات,Eldivenlerimi taktım.,ارتديت قفازاتي.
+gömlek,A1,I-type (back),قميص,Beyaz gömlek giydi.,ارتدى قميصاً أبيض.
+tentürdiyot,C1,E-type (front),صبغة يود,Tentürdiyot sür,ادهن صبغة اليود
+merhem,B1,E-type (front),مرهم,Merhem sür,ادهن المرهم
+buluş,B2,I-type (back),اختراع,Yeni bir buluş yaptı.,اخترع اختراعاً جديداً
+önemli,A2,E-type (front),مهم,Önemli toplantı,اجتماع مهم
+bağlanmak,B1,I-type (back),بالاتصال,İnternete bağlandım.,اتصلت بالإنترنت.
+hükümet,B2,E-type (front),حكومة,Hükümet yeni karar aldı.,اتخذت الحكومة قراراً جديداً.
+oğul,A1,I-type (back),ابن,Oğlum okula gidiyor.,ابني يذهب للمدرسة.
+oğul,A2,I-type (back),ابن,Oğlum okula gidiyor,ابني يذهب إلى المدرسة
+kız,A1,I-type (back),فتاة/ابنة,Kızım çok akıllı.,ابنتي ذكية جداً.
+kız,A1,E-type (front),بنت,Kızım çok akıllı,ابنتي ذكية جداً
+kızı,A1,I-type (back),ابنة,Kızım dans ediyor.,ابنتي ترقص.
+kuzen,A2,E-type (front),ابن/بنت عم أو خال,Kuzenim benimle aynı yaşta,ابن/بنت عمي في نفس عمري
+yeğen,A2,E-type (front),ابن/بنت أخ أو أخت,Yeğenim çok akıllı,ابن/بنت أخي ذكي/ة جداً

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test New Session Function</title>
+    <script>
+        // Add a function to run the test after the main app loads
+        function runNewSessionTest() {
+            console.log('🧪 Testing startNewFlashcardSession function...');
+            
+            // Wait for the main app to load
+            if (typeof window.startNewFlashcardSession !== 'function') {
+                console.log('❌ startNewFlashcardSession not available yet, retrying in 2 seconds...');
+                setTimeout(runNewSessionTest, 2000);
+                return;
+            }
+            
+            console.log('✅ startNewFlashcardSession function is available');
+            
+            // Test the function
+            try {
+                const result = window.startNewFlashcardSession({ categoryId: 'greetings' });
+                console.log('✅ Function call completed, result:', result);
+            } catch (error) {
+                console.log('❌ Function call failed:', error.message);
+                console.error('Full error:', error);
+            }
+        }
+        
+        // Auto-run test when page loads
+        window.addEventListener('load', function() {
+            setTimeout(runNewSessionTest, 3000);
+        });
+    </script>
+</head>
+<body>
+    <h1>New Session Test</h1>
+    <p>Check console for test results</p>
+    <button onclick="runNewSessionTest()">Run Test Again</button>
+    
+    <!-- Load the main application -->
+    <iframe src="/" style="width:100%; height:600px; border:1px solid #ccc;"></iframe>
+</body>
+</html>

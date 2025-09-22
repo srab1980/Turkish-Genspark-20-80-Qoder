@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Icons Test</title>
+    <link rel="stylesheet" href="/static/quiz-mode.css">
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Noto Sans Arabic', Arial, sans-serif;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .icon-test {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+        .quiz-word-icon {
+            width: 80px !important;
+            height: 80px !important;
+            min-width: 80px !important;
+            min-height: 80px !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Quiz Mode Icons Test</h1>
+    
+    <div class="test-section">
+        <h2>Icon System Status</h2>
+        <div id="icon-status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Word Icon Examples</h2>
+        <div id="word-icons"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Quiz Mode Format Test</h2>
+        <div class="quiz-main-layout">
+            <div class="quiz-word-card">
+                <div class="quiz-word-section">
+                    <div class="quiz-word-container">
+                        <div class="quiz-word-icon" id="test-icon">
+                            <!-- Icon will be loaded here -->
+                        </div>
+                        <div class="quiz-word-content">
+                            <div class="quiz-word">merhaba</div>
+                            <div class="quiz-pronunciation">[mer-ha-ba]</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/word-svg-icons.js"></script>
+    <script>
+        function log(message) {
+            console.log(message);
+            const statusDiv = document.getElementById('icon-status');
+            statusDiv.innerHTML += message + '<br>';
+        }
+        
+        function testIcons() {
+            log('🔍 Testing icon system...');
+            
+            // Check if WordSVGIcons is available
+            if (typeof WordSVGIcons !== 'undefined') {
+                log('✅ WordSVGIcons class available');
+                
+                if (window.wordSVGIcons) {
+                    log('✅ Global wordSVGIcons instance available');
+                } else {
+                    log('⚠️ Creating wordSVGIcons instance...');
+                    window.wordSVGIcons = new WordSVGIcons();
+                }
+                
+                // Test sample words
+                const testWords = [
+                    { id: 1, turkish: 'merhaba', arabic: 'مرحبا', english: 'hello' },
+                    { id: 2, turkish: 'su', arabic: 'ماء', english: 'water' },
+                    { id: 3, turkish: 'ekmek', arabic: 'خبز', english: 'bread' },
+                    { id: 4, turkish: 'araba', arabic: 'سيارة', english: 'car' },
+                    { id: 5, turkish: 'ev', arabic: 'منزل', english: 'house' }
+                ];
+                
+                const wordIconsDiv = document.getElementById('word-icons');
+                
+                testWords.forEach(word => {
+                    const icon = getWordIcon(word);
+                    const iconDiv = document.createElement('div');
+                    iconDiv.className = 'icon-test';
+                    iconDiv.innerHTML = `
+                        <div class="quiz-word-icon">${icon}</div>
+                        <div>
+                            <strong>${word.turkish}</strong> - ${word.arabic}<br>
+                            <small>ID: ${word.id}</small>
+                        </div>
+                    `;
+                    wordIconsDiv.appendChild(iconDiv);
+                });
+                
+                // Test the main quiz icon
+                const testIcon = getWordIcon(testWords[0]);
+                document.getElementById('test-icon').innerHTML = testIcon;
+                
+                log(`✅ Generated ${testWords.length} test icons`);
+                
+            } else {
+                log('❌ WordSVGIcons not available');
+            }
+        }
+        
+        // Enhanced getWordIcon function matching quiz mode - UPDATED VERSION
+        function getWordIcon(word) {
+            console.log('🎨 Getting icon for quiz word:', word.turkish, '- ID:', word.id);
+            
+            // Enhanced check for WordSVGIcons availability
+            const checkWordSVGIcons = () => {
+                return window.wordSVGIcons && 
+                       typeof window.wordSVGIcons.getIconForWord === 'function' &&
+                       window.WordSVGIcons;
+            };
+            
+            // If not available, try to initialize
+            if (!checkWordSVGIcons() && window.WordSVGIcons) {
+                console.log('🔧 Initializing wordSVGIcons for test...');
+                try {
+                    window.wordSVGIcons = new window.WordSVGIcons();
+                    console.log('✅ wordSVGIcons initialized successfully for test');
+                } catch (error) {
+                    console.warn('❌ Failed to initialize wordSVGIcons:', error);
+                }
+            }
+            
+            // PRIORITY 1: Use word-specific SVG icons
+            if (checkWordSVGIcons()) {
+                try {
+                    const svgIcon = window.wordSVGIcons.getIconForWord(word);
+                    if (svgIcon && svgIcon.trim()) {
+                        console.log('✅ Using word-specific SVG icon for test:', word.turkish);
+                        return `<div class="quiz-word-icon-svg" style="width: 64px; height: 64px; color: #4F46E5; display: flex; align-items: center; justify-content: center;">${svgIcon}</div>`;
+                    } else {
+                        console.log('⚠️ No word-specific SVG icon found for test:', word.turkish);
+                    }
+                } catch (error) {
+                    console.warn('❌ Error getting word-specific icon for test', word.turkish, ':', error);
+                }
+            } else {
+                console.log('❌ wordSVGIcons system not available for test mode');
+                console.log('Debug - window.wordSVGIcons:', !!window.wordSVGIcons);
+                console.log('Debug - window.WordSVGIcons:', !!window.WordSVGIcons);
+            }
+            
+            // Fallback to emoji if SVG icons are not available
+            if (word.emoji) {
+                return `<div class="quiz-word-emoji" style="font-size: 48px; width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;">${word.emoji}</div>`;
+            }
+            
+            // Default fallback icon
+            return `<div class="quiz-default-icon" style="width: 64px; height: 64px; display: flex; align-items: center; justify-content: center;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 48px; height: 48px; color: #6B7280;">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                </svg>
+            </div>`;
+        }
+        
+        // Run tests when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(testIcons, 500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Completion Screen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            direction: rtl;
+            text-align: right;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .test-section {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+    </style>
+    
+    <!-- Include all the necessary scripts for the app -->
+    <script src="/static/enhanced-vocab-data.js"></script>
+    <script src="/static/learning-mode-base.js"></script>
+    <script src="/static/modes/flashcard-mode.js"></script>
+    <script src="/static/learning-mode-manager.js"></script>
+</head>
+<body>
+    <div class="test-section">
+        <h1>اختبار شاشة إتمام الجلسة</h1>
+        <p>استخدم هذه الصفحة لاختبار وظائف شاشة إتمام الجلسة</p>
+        
+        <button onclick="testVocabData()">فحص بيانات المفردات</button>
+        <button onclick="testCompletionScreen()">عرض شاشة الإتمام التجريبية</button>
+        <button onclick="testNewSession()">اختبار الجلسة الجديدة</button>
+        <button onclick="runDiagnostics()">تشخيص شامل</button>
+        
+        <div id="results" style="margin-top: 20px; direction: ltr; text-align: left; font-family: monospace; background: white; padding: 15px; border-radius: 5px;"></div>
+    </div>
+
+    <script>
+        function log(message) {
+            console.log(message);
+            const results = document.getElementById('results');
+            results.innerHTML += message + '<br>';
+            results.scrollTop = results.scrollHeight;
+        }
+
+        function testVocabData() {
+            log('🔍 Testing vocabulary data...');
+            
+            if (typeof window.enhancedVocabularyData === 'undefined') {
+                log('❌ enhancedVocabularyData is not defined');
+                return;
+            }
+            
+            const categories = Object.keys(window.enhancedVocabularyData || {});
+            log('✅ Found ' + categories.length + ' categories: ' + categories.slice(0, 5).join(', '));
+            
+            // Test specific categories
+            const testCats = ['greetings', 'food', 'family'];
+            testCats.forEach(cat => {
+                const data = window.enhancedVocabularyData[cat];
+                if (data && data.words) {
+                    log('  ✅ ' + cat + ': ' + data.words.length + ' words');
+                } else {
+                    log('  ❌ ' + cat + ': no data');
+                }
+            });
+        }
+
+        function testCompletionScreen() {
+            log('🧪 Testing completion screen...');
+            
+            if (typeof window.testCompletionScreen === 'function') {
+                log('✅ testCompletionScreen function available');
+                try {
+                    window.testCompletionScreen();
+                    log('✅ Completion screen test triggered - check main area');
+                } catch (e) {
+                    log('❌ Error calling testCompletionScreen: ' + e.message);
+                }
+            } else {
+                log('❌ testCompletionScreen function not available');
+                // Try to create a completion screen manually
+                manualCompletionTest();
+            }
+        }
+
+        function manualCompletionTest() {
+            log('🛠️ Creating manual completion screen test...');
+            
+            // Create a simple completion screen HTML
+            const completionHTML = `
+                <div class="completion-screen-overlay-new" style="
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 1000;
+                    padding: 1rem;
+                    box-sizing: border-box;
+                    font-family: Arial, sans-serif;
+                ">
+                    <div class="completion-card-new" style="
+                        background: #ffffff;
+                        border-radius: 20px;
+                        padding: 2.5rem;
+                        text-align: center;
+                        max-width: 600px;
+                        width: 100%;
+                        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+                    ">
+                        <h2>تم إنهاء الجلسة!</h2>
+                        <p>تم تعلم 8 من أصل 10 كلمات بدقة 80%</p>
+                        
+                        <button onclick="testNewSessionFunction()" style="
+                            background: linear-gradient(135deg, #10b981, #059669);
+                            color: white;
+                            border: none;
+                            padding: 1rem 2rem;
+                            border-radius: 12px;
+                            font-size: 1rem;
+                            font-weight: 700;
+                            cursor: pointer;
+                            margin: 10px;
+                        ">
+                            جلسة جديدة
+                        </button>
+                        
+                        <button onclick="closeTestCompletion()" style="
+                            background: #f8fafc;
+                            color: #475569;
+                            border: 2px solid #e2e8f0;
+                            padding: 1rem 2rem;
+                            border-radius: 12px;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            margin: 10px;
+                        ">
+                            إغلاق
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', completionHTML);
+            log('✅ Manual completion screen created');
+        }
+
+        function testNewSessionFunction() {
+            log('🚀 Testing startNewFlashcardSession function...');
+            
+            if (typeof window.startNewFlashcardSession === 'function') {
+                log('✅ startNewFlashcardSession function available');
+                try {
+                    const result = window.startNewFlashcardSession({ categoryId: 'greetings' });
+                    log('✅ Function call completed, result: ' + result);
+                } catch (e) {
+                    log('❌ Error calling startNewFlashcardSession: ' + e.message);
+                }
+            } else {
+                log('❌ startNewFlashcardSession function not available');
+            }
+        }
+        
+        function testNewSession() {
+            testNewSessionFunction();
+        }
+
+        function closeTestCompletion() {
+            const overlay = document.querySelector('.completion-screen-overlay-new');
+            if (overlay) {
+                overlay.remove();
+                log('✅ Test completion screen closed');
+            }
+        }
+
+        function runDiagnostics() {
+            log('🔍 COMPREHENSIVE DIAGNOSTICS');
+            log('================================');
+            
+            const functions = [
+                'enhancedVocabularyData',
+                'startNewFlashcardSession',
+                'testCompletionScreen',
+                'learningModeManager',
+                'flashcardModeNew',
+                'showSection'
+            ];
+            
+            functions.forEach(func => {
+                const exists = typeof window[func] !== 'undefined';
+                const type = typeof window[func];
+                log((exists ? '✅' : '❌') + ' ' + func + ' (' + type + ')');
+            });
+            
+            log('================================');
+        }
+
+        // Auto-run diagnostics when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                log('🚀 Page loaded, running auto-diagnostics...');
+                runDiagnostics();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

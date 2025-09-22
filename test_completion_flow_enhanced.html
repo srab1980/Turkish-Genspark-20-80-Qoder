@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Completion Flow Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .test-section {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 16px;
+            margin: 1rem 0;
+        }
+        .test-button {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 700;
+            cursor: pointer;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .test-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+        }
+        .diagnostic-output {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85rem;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-4">
+    <div class="max-w-4xl mx-auto">
+        <div class="test-section">
+            <h1 class="text-2xl font-bold mb-4">🧪 Enhanced Completion Flow Test</h1>
+            <p>Test the enhanced completion screen button functionality with improved UI synchronization.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold mb-4">📱 Button Tests</h2>
+                
+                <button class="test-button w-full" onclick="testEnhancedNewSession()">
+                    <i class="fas fa-plus-circle ml-2"></i>
+                    Test Enhanced New Session
+                </button>
+                
+                <button class="test-button w-full" onclick="testEnhancedRestart()">
+                    <i class="fas fa-redo ml-2"></i>
+                    Test Enhanced Restart
+                </button>
+                
+                <button class="test-button w-full" onclick="testContainerVisibility()">
+                    <i class="fas fa-eye ml-2"></i>
+                    Test Container Visibility
+                </button>
+                
+                <button class="test-button w-full" onclick="simulateCompletionScreen()">
+                    <i class="fas fa-trophy ml-2"></i>
+                    Simulate Completion Screen
+                </button>
+                
+                <button class="test-button w-full" onclick="clearDiagnostics()">
+                    <i class="fas fa-trash ml-2"></i>
+                    Clear Diagnostics
+                </button>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-xl font-bold mb-4">📊 System Status</h2>
+                
+                <div class="mb-4">
+                    <h3 class="font-bold text-green-600">✅ Available Functions:</h3>
+                    <ul id="available-functions" class="text-sm mt-2"></ul>
+                </div>
+                
+                <div class="mb-4">
+                    <h3 class="font-bold text-blue-600">🔍 Container Status:</h3>
+                    <ul id="container-status" class="text-sm mt-2"></ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-purple-600">📈 Vocabulary Status:</h3>
+                    <ul id="vocabulary-status" class="text-sm mt-2"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-lg mt-4">
+            <h2 class="text-xl font-bold mb-4">📝 Diagnostic Output</h2>
+            <div id="diagnostics" class="diagnostic-output">
+                Diagnostic output will appear here...
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mock System Setup -->
+    <script>
+        // Mock essential functions for testing
+        window.showSection = function(section) {
+            log(`📍 showSection('${section}') called`);
+            return true;
+        };
+        
+        // Mock learning mode manager
+        window.learningModeManager = {
+            startMode: async function(mode, data) {
+                log(`🎯 learningModeManager.startMode('${mode}', data) called`);
+                log(`   Data contains: ${Object.keys(data).join(', ')}`);
+                
+                // Simulate container creation
+                setTimeout(() => {
+                    let container = document.getElementById('flashcard-mode-container');
+                    if (!container) {
+                        container = document.createElement('div');
+                        container.id = 'flashcard-mode-container';
+                        container.className = 'learning-mode-container';
+                        container.innerHTML = '<div class="flashcard">Mock Flashcard Content</div>';
+                        container.style.display = 'none'; // Initially hidden to test visibility logic
+                        document.body.appendChild(container);
+                    }
+                }, 200);
+                
+                return { 
+                    success: true, 
+                    render: function() { 
+                        log('🎨 Mode render() called'); 
+                    }
+                };
+            }
+        };
+        
+        // Mock vocabulary data
+        window.enhancedVocabularyData = {
+            greetings: {
+                name: 'Greetings',
+                words: [
+                    { id: 1, turkish: 'Merhaba', arabic: 'مرحبا', english: 'Hello' },
+                    { id: 2, turkish: 'Günaydın', arabic: 'صباح الخير', english: 'Good morning' },
+                    { id: 3, turkish: 'İyi akşamlar', arabic: 'مساء الخير', english: 'Good evening' }
+                ]
+            },
+            food: {
+                name: 'Food',
+                words: [
+                    { id: 4, turkish: 'Su', arabic: 'ماء', english: 'Water' },
+                    { id: 5, turkish: 'Ekmek', arabic: 'خبز', english: 'Bread' },
+                    { id: 6, turkish: 'Et', arabic: 'لحم', english: 'Meat' }
+                ]
+            },
+            random: {
+                name: 'Random',
+                words: [
+                    { id: 7, turkish: 'Test', arabic: 'اختبار', english: 'Test' }
+                ]
+            }
+        };
+        
+        let diagnosticsOutput = document.getElementById('diagnostics');
+        
+        function log(message) {
+            console.log(message);
+            const timestamp = new Date().toLocaleTimeString();
+            diagnosticsOutput.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            diagnosticsOutput.scrollTop = diagnosticsOutput.scrollHeight;
+        }
+        
+        function clearDiagnostics() {
+            diagnosticsOutput.innerHTML = 'Diagnostics cleared...<br>';
+        }
+        
+        // Include the enhanced startNewFlashcardSession function
+        window.startNewFlashcardSession = async function(options = {}) {
+            log('🚀 Enhanced startNewFlashcardSession called with: ' + JSON.stringify(options));
+            
+            // STEP 1: Navigate to learning section
+            log('📍 STEP 1: Navigating to learning section...');
+            if (window.showSection) {
+                window.showSection('learn');
+                await new Promise(resolve => setTimeout(resolve, 500));
+            }
+            
+            // STEP 2: Hide completion screens
+            log('📍 STEP 2: Clearing completion screens...');
+            const completionScreens = document.querySelectorAll('.completion-screen, [id*="completion"]');
+            log(`   Found ${completionScreens.length} completion screens to hide`);
+            
+            // STEP 3: Ensure learning content visibility
+            log('📍 STEP 3: Ensuring learning content visibility...');
+            let learningContent = document.getElementById('learning-content');
+            if (!learningContent) {
+                learningContent = document.createElement('div');
+                learningContent.id = 'learning-content';
+                document.body.appendChild(learningContent);
+            }
+            learningContent.style.display = 'block';
+            
+            // Check vocabulary data
+            if (!window.enhancedVocabularyData) {
+                log('❌ No vocabulary data available');
+                return false;
+            }
+            
+            // Get category and words
+            let categoryId = options.categoryId || 'greetings';
+            if (categoryId === 'random') {
+                const categories = Object.keys(window.enhancedVocabularyData);
+                categoryId = categories[Math.floor(Math.random() * categories.length)];
+            }
+            
+            const categoryData = window.enhancedVocabularyData[categoryId];
+            if (!categoryData || !categoryData.words) {
+                log(`❌ No data for category: ${categoryId}`);
+                return false;
+            }
+            
+            const sessionData = {
+                words: categoryData.words.slice(0, options.wordCount || 10),
+                category: { id: categoryId, ...categoryData },
+                categoryId: categoryId
+            };
+            
+            log(`📊 Session data prepared: ${sessionData.words.length} words from ${categoryId}`);
+            
+            // Start learning mode
+            try {
+                const modeResult = await window.learningModeManager.startMode('flashcard', sessionData);
+                log('✅ Learning Mode Manager returned success');
+                
+                // STEP 4: Enhanced container visibility
+                log('📍 STEP 4: Enhanced container visibility check...');
+                
+                const verifyContainerVisibility = (attempt = 1, maxAttempts = 3) => {
+                    const container = document.getElementById('flashcard-mode-container');
+                    
+                    if (container) {
+                        log(`🔍 Container check attempt ${attempt}: exists=${!!container}, display=${container.style.display}`);
+                        
+                        // Force visibility
+                        container.style.display = 'block';
+                        container.style.visibility = 'visible';
+                        container.style.opacity = '1';
+                        
+                        if (container.offsetParent) {
+                            log('✅ Container successfully visible and rendered');
+                            return true;
+                        }
+                    }
+                    
+                    if (attempt < maxAttempts) {
+                        setTimeout(() => verifyContainerVisibility(attempt + 1, maxAttempts), 300);
+                    } else {
+                        log('❌ Container visibility verification failed');
+                    }
+                    
+                    return false;
+                };
+                
+                setTimeout(() => verifyContainerVisibility(), 100);
+                return true;
+                
+            } catch (error) {
+                log(`❌ Error starting mode: ${error.message}`);
+                return false;
+            }
+        };
+        
+        // Test functions
+        async function testEnhancedNewSession() {
+            log('\n🧪 Testing Enhanced New Session...');
+            try {
+                const result = await window.startNewFlashcardSession({ categoryId: 'random' });
+                log(`Result: ${result ? 'SUCCESS' : 'FAILED'}`);
+            } catch (error) {
+                log(`ERROR: ${error.message}`);
+            }
+        }
+        
+        async function testEnhancedRestart() {
+            log('\n🧪 Testing Enhanced Restart...');
+            try {
+                const result = await window.startNewFlashcardSession({ categoryId: 'greetings' });
+                log(`Restart Result: ${result ? 'SUCCESS' : 'FAILED'}`);
+            } catch (error) {
+                log(`ERROR: ${error.message}`);
+            }
+        }
+        
+        function testContainerVisibility() {
+            log('\n🧪 Testing Container Visibility...');
+            
+            const container = document.getElementById('flashcard-mode-container');
+            log(`Container exists: ${!!container}`);
+            
+            if (container) {
+                log(`Display: ${container.style.display || 'default'}`);
+                log(`Visibility: ${container.style.visibility || 'default'}`);
+                log(`Opacity: ${container.style.opacity || 'default'}`);
+                log(`Offset parent exists: ${!!container.offsetParent}`);
+                log(`Content length: ${container.innerHTML.length}`);
+            }
+            
+            const learningContent = document.getElementById('learning-content');
+            log(`Learning content exists: ${!!learningContent}`);
+        }
+        
+        function simulateCompletionScreen() {
+            log('\n🧪 Simulating Completion Screen...');
+            
+            // Create mock completion screen
+            const completion = document.createElement('div');
+            completion.className = 'completion-screen';
+            completion.style.cssText = `
+                position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+                z-index: 1000; text-align: center; min-width: 300px;
+            `;
+            completion.innerHTML = `
+                <h3>🎉 Session Complete!</h3>
+                <p>Test completion screen with working buttons</p>
+                <button onclick="testEnhancedNewSession()" style="background: #10b981; color: white; border: none; padding: 1rem; margin: 0.5rem; border-radius: 8px; cursor: pointer;">
+                    Start New Session
+                </button>
+                <button onclick="testEnhancedRestart()" style="background: #4f46e5; color: white; border: none; padding: 1rem; margin: 0.5rem; border-radius: 8px; cursor: pointer;">
+                    Restart Session
+                </button>
+                <button onclick="this.parentElement.remove()" style="background: #6b7280; color: white; border: none; padding: 1rem; margin: 0.5rem; border-radius: 8px; cursor: pointer;">
+                    Close
+                </button>
+            `;
+            
+            document.body.appendChild(completion);
+            log('✅ Mock completion screen created');
+        }
+        
+        function updateSystemStatus() {
+            // Available functions
+            const functions = ['startNewFlashcardSession', 'showSection', 'learningModeManager'];
+            const functionsEl = document.getElementById('available-functions');
+            functionsEl.innerHTML = functions.map(fn => 
+                `<li>${fn}: ${window[fn] ? '✅' : '❌'}</li>`
+            ).join('');
+            
+            // Container status
+            const containers = ['learning-content', 'flashcard-mode-container'];
+            const containersEl = document.getElementById('container-status');
+            containersEl.innerHTML = containers.map(id => {
+                const el = document.getElementById(id);
+                return `<li>${id}: ${el ? '✅ exists' : '❌ missing'}</li>`;
+            }).join('');
+            
+            // Vocabulary status
+            const vocabEl = document.getElementById('vocabulary-status');
+            if (window.enhancedVocabularyData) {
+                const categories = Object.keys(window.enhancedVocabularyData);
+                vocabEl.innerHTML = `<li>✅ ${categories.length} categories: ${categories.join(', ')}</li>`;
+            } else {
+                vocabEl.innerHTML = '<li>❌ No vocabulary data</li>';
+            }
+        }
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            log('🚀 Enhanced Completion Flow Test initialized');
+            updateSystemStatus();
+            setInterval(updateSystemStatus, 2000);
+        });
+    </script>
+</body>
+</html>

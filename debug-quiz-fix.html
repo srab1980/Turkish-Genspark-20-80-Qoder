@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔧 Quiz Mode Debug & Fix</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+            background: #f5f5f5;
+            direction: rtl;
+        }
+        .debug-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin: 0.5rem;
+            font-size: 1rem;
+        }
+        .test-button:hover { background: #5a67d8; }
+        .test-button.success { background: #10b981; }
+        .test-button.error { background: #ef4444; }
+        .test-button.warning { background: #f59e0b; }
+        
+        .log {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+            height: 400px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 0.875rem;
+            white-space: pre-wrap;
+        }
+        .status { padding: 0.5rem 1rem; border-radius: 0.25rem; margin: 0.5rem 0; font-weight: bold; }
+        .status.success { background: #c6f6d5; color: #22543d; }
+        .status.error { background: #fed7d7; color: #822727; }
+        .status.warning { background: #feebc8; color: #7b341e; }
+        .status.info { background: #bee3f8; color: #2a4365; }
+        
+        .fix-action {
+            background: #f0f9ff;
+            border: 2px solid #0284c7;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        .fix-action h3 { color: #0369a1; margin: 0 0 0.5rem 0; }
+        .fix-action button {
+            background: #0284c7;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            margin: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-container">
+        <h1>🔧 Quiz Mode Debug & Automatic Fix</h1>
+        <p>This tool will diagnose and automatically fix the quiz mode issues.</p>
+        
+        <div class="status" id="status">🔍 Analyzing system...</div>
+        
+        <div>
+            <button class="test-button" onclick="runFullDiagnostic()">
+                🩺 Run Full Diagnostic
+            </button>
+            <button class="test-button" onclick="fixAllIssues()">
+                🔧 Auto-Fix All Issues
+            </button>
+            <button class="test-button" onclick="testQuizModeNow()">
+                🎯 Test Quiz Mode
+            </button>
+            <button class="test-button" onclick="clearLog()">
+                🧹 Clear Log
+            </button>
+        </div>
+        
+        <div id="fixes-container"></div>
+        
+        <div class="log" id="debugLog"></div>
+    </div>
+
+    <script>
+        let debugLog = document.getElementById('debugLog');
+        let status = document.getElementById('status');
+        let fixesContainer = document.getElementById('fixes-container');
+        let issues = [];
+        
+        function log(message, type = 'info') {
+            const timestamp = new Date().toLocaleTimeString();
+            const prefix = type === 'error' ? '❌' : type === 'warning' ? '⚠️' : type === 'success' ? '✅' : 'ℹ️';
+            debugLog.textContent += `[${timestamp}] ${prefix} ${message}\n`;
+            debugLog.scrollTop = debugLog.scrollHeight;
+            console.log(message);
+        }
+        
+        function setStatus(message, type = 'info') {
+            status.textContent = message;
+            status.className = `status ${type}`;
+        }
+        
+        function clearLog() {
+            debugLog.textContent = '';
+            setStatus('تم مسح السجل', 'success');
+        }
+        
+        function addFixAction(title, description, fixFunction) {
+            const fixDiv = document.createElement('div');
+            fixDiv.className = 'fix-action';
+            fixDiv.innerHTML = `
+                <h3>${title}</h3>
+                <p>${description}</p>
+                <button onclick="${fixFunction}()">🔧 تطبيق الإصلاح</button>
+            `;
+            fixesContainer.appendChild(fixDiv);
+        }
+        
+        function runFullDiagnostic() {
+            log('🩺 بدء التشخيص الشامل للنظام...', 'info');
+            issues = [];
+            fixesContainer.innerHTML = '';
+            
+            // Test 1: Check if we're in the main app context
+            if (window.location.pathname.includes('test-quiz-mode-fix.html')) {
+                log('⚠️ تشغيل في صفحة الاختبار - يحتاج اختبار في التطبيق الرئيسي', 'warning');
+                addFixAction(
+                    'الاختبار في السياق الخاطئ',
+                    'يجب اختبار الوضع في التطبيق الرئيسي وليس في صفحة منفصلة',
+                    'openMainApp'
+                );
+                issues.push('wrong_context');
+            }
+            
+            // Test 2: Check vocabulary data availability
+            let vocabDataOK = false;
+            if (!window.enhancedVocabularyData) {
+                log('❌ بيانات المفردات غير متوفرة (enhancedVocabularyData)', 'error');
+                issues.push('no_vocab_data');
+            } else {
+                const categories = Object.keys(window.enhancedVocabularyData);
+                log(`✅ بيانات المفردات متوفرة: ${categories.length} فئة`, 'success');
+                
+                // Check if categories have proper structure
+                let validCategories = 0;
+                categories.forEach(catId => {
+                    const catData = window.enhancedVocabularyData[catId];
+                    if (catData && catData.words && Array.isArray(catData.words) && catData.words.length > 0) {
+                        validCategories++;
+                    }
+                });
+                
+                if (validCategories > 0) {
+                    log(`✅ فئات صالحة: ${validCategories}/${categories.length}`, 'success');
+                    vocabDataOK = true;
+                } else {
+                    log('❌ لا توجد فئات صالحة بها كلمات', 'error');
+                    issues.push('invalid_categories');
+                }
+            }
+            
+            // Test 3: Check Learning Mode Manager
+            if (!window.learningModeManager) {
+                log('❌ مدير أنماط التعلم غير متوفر (learningModeManager)', 'error');
+                issues.push('no_mode_manager');
+            } else {
+                log('✅ مدير أنماط التعلم متوفر', 'success');
+                
+                // Check if quiz mode is registered
+                if (!window.learningModeManager.modes.has('quiz')) {
+                    log('❌ نمط الاختبار غير مسجل', 'error');
+                    issues.push('quiz_not_registered');
+                } else {
+                    log('✅ نمط الاختبار مسجل', 'success');
+                }
+            }
+            
+            // Test 4: Check Side Menu Filters
+            if (!window.sideMenuFilters) {
+                log('❌ نظام فلاتر القائمة الجانبية غير متوفر', 'error');
+                issues.push('no_side_menu');
+            } else {
+                log('✅ نظام فلاتر القائمة الجانبية متوفر', 'success');
+                
+                // Check if categories are loaded
+                if (!window.sideMenuFilters.categories || window.sideMenuFilters.categories.length === 0) {
+                    log('❌ لم يتم تحميل الفئات في القائمة الجانبية', 'error');
+                    issues.push('no_categories_loaded');
+                } else {
+                    log(`✅ تم تحميل ${window.sideMenuFilters.categories.length} فئة في القائمة الجانبية`, 'success');
+                }
+            }
+            
+            // Test 5: Check Quiz Mode class
+            if (typeof window.QuizMode === 'undefined') {
+                log('❌ فئة نمط الاختبار غير متوفرة (QuizMode)', 'error');
+                issues.push('no_quiz_class');
+            } else {
+                log('✅ فئة نمط الاختبار متوفرة', 'success');
+            }
+            
+            // Test 6: Check integration chain
+            if (vocabDataOK && window.learningModeManager && window.sideMenuFilters) {
+                log('🔗 اختبار سلسلة التكامل...', 'info');
+                try {
+                    // Test if we can get a category from side menu
+                    const firstCategory = window.sideMenuFilters.categories[0];
+                    if (firstCategory) {
+                        log(`✅ يمكن الحصول على الفئة الأولى: ${firstCategory.name}`, 'success');
+                        
+                        // Test if that category exists in vocab data
+                        const vocabCategory = window.enhancedVocabularyData[firstCategory.id];
+                        if (vocabCategory && vocabCategory.words) {
+                            log(`✅ الفئة موجودة في بيانات المفردات: ${vocabCategory.words.length} كلمة`, 'success');
+                        } else {
+                            log(`❌ الفئة غير موجودة في بيانات المفردات: ${firstCategory.id}`, 'error');
+                            issues.push('category_mismatch');
+                        }
+                    }
+                } catch (error) {
+                    log(`❌ خطأ في سلسلة التكامل: ${error.message}`, 'error');
+                    issues.push('integration_error');
+                }
+            }
+            
+            // Summary
+            if (issues.length === 0) {
+                setStatus('🎉 لا توجد مشاكل! النظام يعمل بشكل صحيح', 'success');
+                log('🎉 التشخيص اكتمل - لا توجد مشاكل!', 'success');
+            } else {
+                setStatus(`⚠️ تم العثور على ${issues.length} مشكلة`, 'warning');
+                log(`⚠️ التشخيص اكتمل - تم العثور على ${issues.length} مشكلة`, 'warning');
+                
+                // Add auto-fix options
+                if (issues.includes('no_vocab_data') || issues.includes('invalid_categories')) {
+                    addFixAction(
+                        'إصلاح بيانات المفردات',
+                        'إنشاء بيانات مفردات وهمية للاختبار',
+                        'fixVocabData'
+                    );
+                }
+                
+                if (issues.includes('category_mismatch')) {
+                    addFixAction(
+                        'إصلاح عدم تطابق الفئات',
+                        'مزامنة الفئات بين القائمة الجانبية وبيانات المفردات',
+                        'fixCategoryMismatch'
+                    );
+                }
+                
+                if (issues.includes('no_categories_loaded')) {
+                    addFixAction(
+                        'إعادة تحميل الفئات',
+                        'إجبار إعادة تحميل الفئات في القائمة الجانبية',
+                        'reloadCategories'
+                    );
+                }
+            }
+        }
+        
+        function fixVocabData() {
+            log('🔧 إنشاء بيانات مفردات للاختبار...', 'info');
+            
+            window.enhancedVocabularyData = {
+                greetings: {
+                    id: 'greetings',
+                    name: 'Greetings',
+                    nameArabic: 'التحيات',
+                    words: [
+                        { id: 1, turkish: 'Merhaba', arabic: 'مرحبا', english: 'Hello', category: 'greetings' },
+                        { id: 2, turkish: 'Günaydın', arabic: 'صباح الخير', english: 'Good morning', category: 'greetings' },
+                        { id: 3, turkish: 'İyi akşamlar', arabic: 'مساء الخير', english: 'Good evening', category: 'greetings' },
+                        { id: 4, turkish: 'Nasılsın', arabic: 'كيف حالك', english: 'How are you', category: 'greetings' },
+                        { id: 5, turkish: 'Teşekkürler', arabic: 'شكرا', english: 'Thank you', category: 'greetings' }
+                    ]
+                },
+                food: {
+                    id: 'food',
+                    name: 'Food',
+                    nameArabic: 'الطعام',
+                    words: [
+                        { id: 6, turkish: 'Ekmek', arabic: 'خبز', english: 'Bread', category: 'food' },
+                        { id: 7, turkish: 'Su', arabic: 'ماء', english: 'Water', category: 'food' },
+                        { id: 8, turkish: 'Çay', arabic: 'شاي', english: 'Tea', category: 'food' },
+                        { id: 9, turkish: 'Kahve', arabic: 'قهوة', english: 'Coffee', category: 'food' },
+                        { id: 10, turkish: 'Meyve', arabic: 'فاكهة', english: 'Fruit', category: 'food' }
+                    ]
+                },
+                family: {
+                    id: 'family',
+                    name: 'Family',
+                    nameArabic: 'العائلة',
+                    words: [
+                        { id: 11, turkish: 'Anne', arabic: 'أم', english: 'Mother', category: 'family' },
+                        { id: 12, turkish: 'Baba', arabic: 'أب', english: 'Father', category: 'family' },
+                        { id: 13, turkish: 'Kardeş', arabic: 'أخ/أخت', english: 'Sibling', category: 'family' },
+                        { id: 14, turkish: 'Çocuk', arabic: 'طفل', english: 'Child', category: 'family' },
+                        { id: 15, turkish: 'Aile', arabic: 'عائلة', english: 'Family', category: 'family' }
+                    ]
+                }
+            };
+            
+            log('✅ تم إنشاء بيانات المفردات بنجاح', 'success');
+        }
+        
+        function fixCategoryMismatch() {
+            log('🔧 إصلاح عدم تطابق الفئات...', 'info');
+            
+            if (window.sideMenuFilters && window.enhancedVocabularyData) {
+                // Update side menu categories to match vocab data
+                const vocabCategories = Object.keys(window.enhancedVocabularyData);
+                window.sideMenuFilters.categories = vocabCategories.map(catId => {
+                    const catData = window.enhancedVocabularyData[catId];
+                    return {
+                        id: catId,
+                        name: catData.nameArabic || catData.name || catId,
+                        wordCount: catData.words ? catData.words.length : 0,
+                        sessionCount: Math.ceil((catData.words ? catData.words.length : 0) / 10),
+                        icon: catId === 'greetings' ? '👋' : catId === 'food' ? '🍽️' : catId === 'family' ? '👨‍👩‍👧‍👦' : '📚'
+                    };
+                });
+                
+                log('✅ تم إصلاح عدم تطابق الفئات', 'success');
+            }
+        }
+        
+        function reloadCategories() {
+            log('🔧 إعادة تحميل الفئات...', 'info');
+            
+            if (window.sideMenuFilters) {
+                window.sideMenuFilters.loadCategories().then(() => {
+                    log('✅ تم إعادة تحميل الفئات', 'success');
+                }).catch(error => {
+                    log(`❌ فشل في إعادة تحميل الفئات: ${error.message}`, 'error');
+                });
+            }
+        }
+        
+        function fixAllIssues() {
+            log('🔧 بدء الإصلاح التلقائي لجميع المشاكل...', 'info');
+            
+            // Fix vocab data if missing
+            if (issues.includes('no_vocab_data') || issues.includes('invalid_categories')) {
+                fixVocabData();
+            }
+            
+            // Fix category mismatch
+            if (issues.includes('category_mismatch')) {
+                fixCategoryMismatch();
+            }
+            
+            // Reload categories
+            if (issues.includes('no_categories_loaded')) {
+                reloadCategories();
+            }
+            
+            // Create learning mode manager if missing
+            if (issues.includes('no_mode_manager')) {
+                createMockLearningModeManager();
+            }
+            
+            // Register quiz mode if missing
+            if (issues.includes('quiz_not_registered')) {
+                registerQuizMode();
+            }
+            
+            log('✅ تم تطبيق جميع الإصلاحات المتاحة', 'success');
+            setStatus('🔧 تم تطبيق الإصلاحات - جرب النمط الآن', 'success');
+        }
+        
+        function createMockLearningModeManager() {
+            log('🔧 إنشاء مدير أنماط التعلم...', 'info');
+            
+            window.learningModeManager = {
+                modes: new Map(),
+                currentMode: null,
+                activeContainer: null,
+                
+                registerMode: function(modeId, modeClass, config) {
+                    this.modes.set(modeId, { id: modeId, class: modeClass, ...config });
+                    log(`✅ تم تسجيل النمط: ${modeId}`, 'success');
+                },
+                
+                startMode: async function(modeId, data, options = {}) {
+                    log(`🚀 بدء النمط: ${modeId}`, 'info');
+                    log(`📊 البيانات: ${JSON.stringify(data, null, 2).substring(0, 200)}...`, 'info');
+                    
+                    // Create container if needed
+                    let container = document.getElementById(`${modeId}-mode-container`);
+                    if (!container) {
+                        container = document.createElement('div');
+                        container.id = `${modeId}-mode-container`;
+                        container.className = 'learning-mode-container';
+                        container.style.cssText = `
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0,0,0,0.9);
+                            color: white;
+                            padding: 2rem;
+                            z-index: 10000;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 1.5rem;
+                            text-align: center;
+                        `;
+                        
+                        container.innerHTML = `
+                            <h1>🎯 نمط الاختبار يعمل!</h1>
+                            <p>تم بدء نمط الاختبار بنجاح</p>
+                            <p>الفئة: ${data.category || 'غير محدد'}</p>
+                            <p>عدد الكلمات: ${data.words ? data.words.length : 0}</p>
+                            <button onclick="this.parentElement.remove()" style="
+                                background: #ef4444;
+                                color: white;
+                                border: none;
+                                padding: 1rem 2rem;
+                                border-radius: 0.5rem;
+                                font-size: 1rem;
+                                cursor: pointer;
+                                margin-top: 2rem;
+                            ">إغلاق</button>
+                        `;
+                        
+                        document.body.appendChild(container);
+                    }
+                    
+                    container.style.display = 'flex';
+                    
+                    return { success: true, mode: modeId, container };
+                }
+            };
+            
+            log('✅ تم إنشاء مدير أنماط التعلم', 'success');
+        }
+        
+        function registerQuizMode() {
+            log('🔧 تسجيل نمط الاختبار...', 'info');
+            
+            if (window.learningModeManager) {
+                // Create a simple quiz mode class
+                class MockQuizMode {
+                    constructor(config) {
+                        this.data = config.data;
+                        this.container = config.container;
+                    }
+                    
+                    async init() {
+                        log('🎯 تهيئة نمط الاختبار', 'info');
+                    }
+                    
+                    render() {
+                        log('🎨 عرض واجهة نمط الاختبار', 'info');
+                        if (this.container) {
+                            this.container.innerHTML = `
+                                <h1>🎯 نمط الاختبار</h1>
+                                <p>مرحباً بك في نمط الاختبار!</p>
+                                <p>الكلمات المتاحة: ${this.data.words ? this.data.words.length : 0}</p>
+                            `;
+                        }
+                    }
+                }
+                
+                window.QuizMode = MockQuizMode;
+                window.learningModeManager.registerMode('quiz', MockQuizMode, {
+                    name: 'الاختبارات التفاعلية',
+                    icon: '🎯',
+                    description: 'اختبر معرفتك بالكلمات التركية'
+                });
+                
+                log('✅ تم تسجيل نمط الاختبار', 'success');
+            }
+        }
+        
+        function testQuizModeNow() {
+            log('🎯 اختبار نمط الاختبار...', 'info');
+            
+            if (!window.sideMenuFilters) {
+                log('❌ القائمة الجانبية غير متوفرة', 'error');
+                return;
+            }
+            
+            try {
+                // Test mode selection
+                window.sideMenuFilters.handleModeSelection('quiz');
+                log('✅ تم اختيار نمط الاختبار', 'success');
+                
+                // Test quick start
+                setTimeout(() => {
+                    if (window.sideMenuFilters.quickStart) {
+                        window.sideMenuFilters.quickStart('quiz');
+                        log('✅ تم تشغيل البدء السريع', 'success');
+                    } else {
+                        log('⚠️ البدء السريع غير متوفر - جرب التطبيق اليدوي', 'warning');
+                        
+                        // Manual application
+                        if (window.sideMenuFilters.applyFilters) {
+                            window.sideMenuFilters.applyFilters();
+                            log('✅ تم تطبيق الفلاتر يدوياً', 'success');
+                        }
+                    }
+                }, 1000);
+                
+            } catch (error) {
+                log(`❌ خطأ في اختبار نمط الاختبار: ${error.message}`, 'error');
+            }
+        }
+        
+        function openMainApp() {
+            window.open('/', '_blank');
+        }
+        
+        // Auto-start diagnostic when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                setStatus('جاهز للتشخيص', 'info');
+                log('🔧 أداة التشخيص والإصلاح جاهزة', 'info');
+                log('💡 انقر على "Run Full Diagnostic" لبدء التشخيص', 'info');
+            }, 500);
+        });
+    </script>
+</body>
+</html>

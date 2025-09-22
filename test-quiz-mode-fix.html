@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Quiz Mode Fix</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 2rem;
+            background: #f5f5f5;
+            direction: rtl;
+        }
+        .test-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .test-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            margin: 0.5rem;
+            font-size: 1rem;
+        }
+        .test-button:hover {
+            background: #5a67d8;
+        }
+        .log {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
+            height: 300px;
+            overflow-y: auto;
+            font-family: monospace;
+            font-size: 0.875rem;
+            white-space: pre-wrap;
+        }
+        .status {
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        .status.success { background: #c6f6d5; color: #22543d; }
+        .status.error { background: #fed7d7; color: #822727; }
+        .status.warning { background: #feebc8; color: #7b341e; }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>🎯 اختبار إصلاح نمط الاختبار</h1>
+        <p>هذا الاختبار يتحقق من أن نمط الاختبار يعمل بشكل صحيح بعد الإصلاح.</p>
+        
+        <div class="status" id="status">جاري التحضير...</div>
+        
+        <div>
+            <button class="test-button" onclick="testQuizModeSelection()">
+                🎯 اختبار اختيار نمط الاختبار
+            </button>
+            <button class="test-button" onclick="testAutoStart()">
+                🚀 اختبار البدء التلقائي
+            </button>
+            <button class="test-button" onclick="testQuickStart()">
+                ⚡ اختبار البدء السريع
+            </button>
+            <button class="test-button" onclick="clearLog()">
+                🧹 مسح السجل
+            </button>
+        </div>
+        
+        <div class="log" id="testLog"></div>
+    </div>
+
+    <script>
+        let testLog = document.getElementById('testLog');
+        let status = document.getElementById('status');
+        
+        function log(message) {
+            const timestamp = new Date().toLocaleTimeString();
+            testLog.textContent += `[${timestamp}] ${message}\n`;
+            testLog.scrollTop = testLog.scrollHeight;
+            console.log(message);
+        }
+        
+        function setStatus(message, type = 'info') {
+            status.textContent = message;
+            status.className = `status ${type}`;
+        }
+        
+        function clearLog() {
+            testLog.textContent = '';
+            setStatus('تم مسح السجل', 'success');
+        }
+        
+        // Mock the necessary functions for testing
+        function setupMockEnvironment() {
+            // Mock learning mode manager
+            if (!window.learningModeManager) {
+                window.learningModeManager = {
+                    startMode: function(modeId, data) {
+                        log(`✅ Learning mode manager started: ${modeId}`);
+                        log(`📊 Data: ${JSON.stringify(data, null, 2)}`);
+                        return { success: true, mode: modeId };
+                    },
+                    modes: new Map([
+                        ['quiz', { id: 'quiz', name: 'Quiz Mode' }],
+                        ['flashcard', { id: 'flashcard', name: 'Flashcard Mode' }]
+                    ])
+                };
+            }
+            
+            // Mock enhanced vocabulary data
+            if (!window.enhancedVocabularyData) {
+                window.enhancedVocabularyData = {
+                    greetings: {
+                        name: 'Greetings',
+                        words: [
+                            { id: 1, turkish: 'Merhaba', arabic: 'مرحبا', english: 'Hello' },
+                            { id: 2, turkish: 'Günaydın', arabic: 'صباح الخير', english: 'Good morning' }
+                        ]
+                    },
+                    food: {
+                        name: 'Food',
+                        words: [
+                            { id: 3, turkish: 'Ekmek', arabic: 'خبز', english: 'Bread' },
+                            { id: 4, turkish: 'Su', arabic: 'ماء', english: 'Water' }
+                        ]
+                    }
+                };
+            }
+            
+            log('🔧 Mock environment setup complete');
+        }
+        
+        function testQuizModeSelection() {
+            log('🎯 Testing quiz mode selection...');
+            
+            try {
+                if (!window.sideMenuFilters) {
+                    throw new Error('sideMenuFilters not available');
+                }
+                
+                // Test mode selection
+                window.sideMenuFilters.handleModeSelection('quiz');
+                log('✅ Mode selection called successfully');
+                
+                // Check if mode was selected
+                const filters = window.sideMenuFilters.getFilters();
+                if (filters.mode === 'quiz') {
+                    log('✅ Quiz mode was selected correctly');
+                    setStatus('نمط الاختبار يعمل بشكل صحيح!', 'success');
+                } else {
+                    throw new Error(`Expected quiz mode, got: ${filters.mode}`);
+                }
+                
+            } catch (error) {
+                log(`❌ Error: ${error.message}`);
+                setStatus('خطأ في نمط الاختبار', 'error');
+            }
+        }
+        
+        function testAutoStart() {
+            log('🚀 Testing auto-start functionality...');
+            
+            try {
+                if (!window.sideMenuFilters) {
+                    throw new Error('sideMenuFilters not available');
+                }
+                
+                // First, select quiz mode (this should trigger auto-start)
+                log('📋 Selecting quiz mode...');
+                window.sideMenuFilters.handleModeSelection('quiz');
+                
+                // Give it a moment for auto-start logic
+                setTimeout(() => {
+                    const filters = window.sideMenuFilters.getFilters();
+                    log(`📊 Current filters: ${JSON.stringify(filters)}`);
+                    
+                    if (filters.categories && filters.categories.length > 0) {
+                        log('✅ Auto-category selection worked');
+                        setStatus('البدء التلقائي يعمل بشكل صحيح!', 'success');
+                    } else {
+                        log('⚠️ No categories auto-selected');
+                        setStatus('البدء التلقائي يحتاج إلى تحسين', 'warning');
+                    }
+                }, 100);
+                
+            } catch (error) {
+                log(`❌ Error: ${error.message}`);
+                setStatus('خطأ في البدء التلقائي', 'error');
+            }
+        }
+        
+        function testQuickStart() {
+            log('⚡ Testing quick start functionality...');
+            
+            try {
+                if (!window.sideMenuFilters) {
+                    throw new Error('sideMenuFilters not available');
+                }
+                
+                // Test quick start
+                window.sideMenuFilters.quickStart('quiz');
+                log('✅ Quick start called successfully');
+                
+                setStatus('البدء السريع يعمل بشكل صحيح!', 'success');
+                
+            } catch (error) {
+                log(`❌ Error: ${error.message}`);
+                setStatus('خطأ في البدء السريع', 'error');
+            }
+        }
+        
+        // Initialize when page loads
+        window.addEventListener('load', function() {
+            setupMockEnvironment();
+            
+            // Wait for potential side menu filters to load
+            setTimeout(() => {
+                if (window.sideMenuFilters) {
+                    log('✅ sideMenuFilters is available');
+                    setStatus('جاهز للاختبار', 'success');
+                } else {
+                    log('⚠️ sideMenuFilters not yet available, creating mock...');
+                    // Create a simple mock for testing
+                    window.sideMenuFilters = {
+                        selectedModes: new Set(),
+                        selectedCategories: new Set(),
+                        categories: [
+                            { id: 'greetings', name: 'التحيات' },
+                            { id: 'food', name: 'الطعام' }
+                        ],
+                        
+                        handleModeSelection: function(modeId) {
+                            this.selectedModes.clear();
+                            this.selectedModes.add(modeId);
+                            log(`🎯 Mode selected: ${modeId}`);
+                            
+                            // Trigger auto-start logic
+                            if (this.selectedCategories.size === 0) {
+                                this.autoSelectDefaultCategory();
+                            }
+                        },
+                        
+                        autoSelectDefaultCategory: function() {
+                            if (this.categories.length > 0) {
+                                this.selectedCategories.add(this.categories[0].id);
+                                log(`📂 Auto-selected category: ${this.categories[0].name}`);
+                            }
+                        },
+                        
+                        quickStart: function(modeId) {
+                            this.handleModeSelection(modeId);
+                            if (this.selectedCategories.size > 0) {
+                                log(`🚀 Quick starting ${modeId} mode`);
+                                return this.applyFilters();
+                            }
+                        },
+                        
+                        applyFilters: function() {
+                            const filters = this.getFilters();
+                            log(`✨ Applying filters: ${JSON.stringify(filters)}`);
+                            
+                            if (window.learningModeManager) {
+                                return window.learningModeManager.startMode(filters.mode, {
+                                    category: filters.categories[0]
+                                });
+                            }
+                        },
+                        
+                        getFilters: function() {
+                            return {
+                                categories: Array.from(this.selectedCategories),
+                                mode: Array.from(this.selectedModes)[0] || 'flashcard'
+                            };
+                        }
+                    };
+                    
+                    setStatus('جاهز للاختبار (وضع التجربة)', 'warning');
+                }
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Diagnostics</title>
+    <script>
+        // Redirect to main app with debug execution
+        window.location.href = '/?debug=true';
+    </script>
+</head>
+<body>
+    <p>Redirecting to main app with debug mode...</p>
+</body>
+</html>
+
+<script>
+// This script will run diagnostics on the main app
+setTimeout(() => {
+    // Test vocabulary data availability
+    console.log('🔍 DIAGNOSTIC TEST RESULTS');
+    console.log('============================');
+    
+    // Check if vocabulary data exists
+    if (typeof window.enhancedVocabularyData !== 'undefined' && window.enhancedVocabularyData) {
+        const categories = Object.keys(window.enhancedVocabularyData);
+        console.log('✅ enhancedVocabularyData available with', categories.length, 'categories');
+        console.log('   First 5 categories:', categories.slice(0, 5));
+        
+        // Test specific categories
+        const testCategories = ['greetings', 'food', 'family', 'numbers'];
+        testCategories.forEach(cat => {
+            const data = window.enhancedVocabularyData[cat];
+            if (data && data.words && Array.isArray(data.words) && data.words.length > 0) {
+                console.log('   ✅', cat + ':', data.words.length, 'words');
+            } else {
+                console.log('   ❌', cat + ': no valid data');
+            }
+        });
+    } else {
+        console.log('❌ enhancedVocabularyData not available');
+    }
+    
+    // Test startNewFlashcardSession function
+    if (typeof window.startNewFlashcardSession === 'function') {
+        console.log('✅ startNewFlashcardSession function available');
+        
+        try {
+            console.log('🚀 Testing startNewFlashcardSession with greetings...');
+            const result = window.startNewFlashcardSession({ categoryId: 'greetings' });
+            console.log('✅ Result:', result);
+        } catch (error) {
+            console.log('❌ Error:', error.message);
+            console.error('Full error:', error);
+        }
+    } else {
+        console.log('❌ startNewFlashcardSession function not available');
+    }
+    
+    // Test other functions
+    const functions = ['testCompletionScreen', 'checkLearningSystem', 'learningModeManager'];
+    functions.forEach(func => {
+        const available = typeof window[func] !== 'undefined';
+        console.log((available ? '✅' : '❌'), func, available ? 'available' : 'not available');
+    });
+    
+    console.log('============================');
+}, 2000);
+</script>

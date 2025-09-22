@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Complete Functionality</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            direction: rtl;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            direction: ltr;
+            text-align: left;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>اختبار وظائف شاشة الإتمام</h1>
+    
+    <button onclick="testIconSystem()">اختبار نظام الأيقونات</button>
+    <button onclick="testCompletionScreen()">اختبار شاشة الإتمام</button>
+    <button onclick="testButtonFunctionality()">اختبار أزرار الإتمام</button>
+    
+    <div id="results" class="result"></div>
+
+    <script>
+        function log(message) {
+            console.log(message);
+            const results = document.getElementById('results');
+            results.innerHTML += message + '<br>';
+        }
+
+        function testIconSystem() {
+            log('🎨 Testing word-specific icon system...');
+            
+            // Simulate loading the main app scripts
+            const script = document.createElement('script');
+            script.src = '/static/word-svg-icons.js?v=20250903-063800';
+            script.onload = () => {
+                setTimeout(() => {
+                    if (typeof WordSVGIcons !== 'undefined') {
+                        const iconSystem = new WordSVGIcons();
+                        log('✅ WordSVGIcons loaded successfully');
+                        
+                        // Test word-specific icon generation
+                        const testWords = [
+                            { id: 1, turkish: 'merhaba', english: 'hello' },
+                            { id: 2, turkish: 'su', english: 'water' },
+                            { id: 3, turkish: 'ekmek', english: 'bread' }
+                        ];
+                        
+                        testWords.forEach(word => {
+                            const icon = iconSystem.getIconForWord(word);
+                            if (icon) {
+                                log('✅ Icon generated for ' + word.turkish + ': ' + (icon.includes('svg') ? 'SVG icon' : 'emoji'));
+                            } else {
+                                log('❌ No icon for ' + word.turkish);
+                            }
+                        });
+                    } else {
+                        log('❌ WordSVGIcons not available');
+                    }
+                }, 500);
+            };
+            document.head.appendChild(script);
+        }
+
+        function testCompletionScreen() {
+            log('🎯 Testing completion screen generation...');
+            
+            // Create a mock completion screen HTML
+            const completionHTML = `
+                <div class="completion-screen-overlay-new" style="
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.8);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 1000;
+                    padding: 1rem;
+                    box-sizing: border-box;
+                    font-family: Arial, sans-serif;
+                ">
+                    <div class="completion-card-new" style="
+                        background: #ffffff;
+                        border-radius: 20px;
+                        padding: 2.5rem;
+                        text-align: center;
+                        max-width: 600px;
+                        width: 100%;
+                        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+                        direction: rtl;
+                    ">
+                        <h2 style="color: #10b981; margin-bottom: 1rem;">🎉 تم إنهاء الجلسة بنجاح!</h2>
+                        
+                        <div style="display: flex; justify-content: space-around; margin: 2rem 0; flex-wrap: wrap;">
+                            <div style="text-align: center; margin: 0.5rem;">
+                                <div style="font-size: 2rem; font-weight: 800; color: #10b981;">8/10</div>
+                                <div style="font-size: 0.9rem; color: #64748b;">إجابات صحيحة</div>
+                            </div>
+                            <div style="text-align: center; margin: 0.5rem;">
+                                <div style="font-size: 2rem; font-weight: 800; color: #f59e0b;">80%</div>
+                                <div style="font-size: 0.9rem; color: #64748b;">دقة</div>
+                            </div>
+                            <div style="text-align: center; margin: 0.5rem;">
+                                <div style="font-size: 2rem; font-weight: 800; color: #06b6d4;">3</div>
+                                <div style="font-size: 0.9rem; color: #64748b;">دقيقة</div>
+                            </div>
+                        </div>
+                        
+                        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                            <button onclick="testNewSession()" style="
+                                background: linear-gradient(135deg, #10b981, #059669);
+                                color: white;
+                                border: none;
+                                padding: 1rem 2rem;
+                                border-radius: 12px;
+                                font-size: 1rem;
+                                font-weight: 700;
+                                cursor: pointer;
+                                margin: 0.5rem;
+                            ">
+                                جلسة جديدة
+                            </button>
+                            
+                            <button onclick="testRestartSession()" style="
+                                background: linear-gradient(135deg, #4f46e5, #7c3aed);
+                                color: white;
+                                border: none;
+                                padding: 1rem 2rem;
+                                border-radius: 12px;
+                                font-size: 1rem;
+                                font-weight: 700;
+                                cursor: pointer;
+                                margin: 0.5rem;
+                            ">
+                                إعادة الجلسة
+                            </button>
+                            
+                            <button onclick="closeTestCompletion()" style="
+                                background: #f8fafc;
+                                color: #475569;
+                                border: 2px solid #e2e8f0;
+                                padding: 1rem 2rem;
+                                border-radius: 12px;
+                                font-size: 1rem;
+                                cursor: pointer;
+                                margin: 0.5rem;
+                            ">
+                                إغلاق
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            
+            document.body.insertAdjacentHTML('beforeend', completionHTML);
+            log('✅ Test completion screen created - check the screen!');
+        }
+
+        function testButtonFunctionality() {
+            log('🔘 Testing button functionality...');
+            
+            // Test if the functions exist
+            const functions = [
+                'startNewFlashcardSession',
+                'startNewSessionSimple',
+                'showSection'
+            ];
+            
+            functions.forEach(funcName => {
+                if (typeof window[funcName] === 'function') {
+                    log('✅ ' + funcName + ' function available');
+                } else {
+                    log('❌ ' + funcName + ' function not available');
+                }
+            });
+        }
+
+        function testNewSession() {
+            log('🚀 Testing New Session button...');
+            
+            if (typeof window.startNewFlashcardSession === 'function') {
+                try {
+                    const result = window.startNewFlashcardSession({ categoryId: 'greetings' });
+                    log('✅ New session function executed, result: ' + result);
+                } catch (e) {
+                    log('❌ New session function failed: ' + e.message);
+                }
+            } else {
+                log('❌ startNewFlashcardSession not available');
+            }
+        }
+
+        function testRestartSession() {
+            log('🔄 Testing Restart Session button...');
+            
+            if (typeof window.flashcardModeNew !== 'undefined' && window.flashcardModeNew.restart) {
+                try {
+                    window.flashcardModeNew.restart();
+                    log('✅ Restart function executed');
+                } catch (e) {
+                    log('❌ Restart function failed: ' + e.message);
+                }
+            } else {
+                log('❌ flashcardModeNew restart not available');
+            }
+        }
+
+        function closeTestCompletion() {
+            const overlay = document.querySelector('.completion-screen-overlay-new');
+            if (overlay) {
+                overlay.remove();
+                log('✅ Test completion screen closed');
+            }
+        }
+
+        // Auto-load main app functions
+        setTimeout(() => {
+            log('🔄 Auto-testing after 3 seconds...');
+            testIconSystem();
+            setTimeout(testButtonFunctionality, 1000);
+        }, 3000);
+    </script>
+</body>
+</html>

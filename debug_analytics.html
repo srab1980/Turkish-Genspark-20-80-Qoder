@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Debug</title>
+</head>
+<body>
+    <script>
+        // Open the main app in a popup and debug
+        const popup = window.open('https://8788-ivbmlm8vqak2xzzv33jm5-6532622b.e2b.dev', 'app');
+        
+        setTimeout(() => {
+            // Inspect the DOM elements
+            const doc = popup.document;
+            
+            console.log('=== DASHBOARD SECTION ANALYSIS ===');
+            const dashboard = doc.getElementById('dashboard-section');
+            if (dashboard) {
+                // Find all elements with numbers
+                const statElements = dashboard.querySelectorAll('.stat-value, .user-stat-value, #user-xp, #words-learned, #streak-days');
+                statElements.forEach(el => {
+                    console.log(`Dashboard: ${el.id || el.className} = "${el.textContent.trim()}"`);
+                });
+            }
+            
+            console.log('=== PROFILE SECTION ANALYSIS ===');
+            const profile = doc.getElementById('profile-section');
+            if (profile) {
+                // Find all elements with stats
+                const profileStats = profile.querySelectorAll('.stat-mini span, #profile-xp-display, #profile-words-display, #profile-streak-display, #overall-progress, #user-weekly-score');
+                profileStats.forEach(el => {
+                    console.log(`Profile: ${el.id || el.className} = "${el.textContent.trim()}"`);
+                });
+                
+                // Check if profile section is visible
+                console.log('Profile section visible:', profile.style.display !== 'none' && !profile.hidden);
+            }
+            
+            console.log('=== ALL ELEMENTS WITH IDS ===');
+            const allWithIds = doc.querySelectorAll('[id*="xp"], [id*="words"], [id*="streak"], [id*="progress"], [id*="score"]');
+            allWithIds.forEach(el => {
+                console.log(`Found: #${el.id} = "${el.textContent.trim()}"`);
+            });
+            
+        }, 5000);
+    </script>
+</body>
+</html>

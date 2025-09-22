@@ -1,0 +1,11 @@
+turkish_text,english_text,category_id,turkish_pronunciation,word_type,difficulty_level
+Merhaba,Hello,1,mer-ha-BA,expression,beginner
+Teşekkür ederim,Thank you,1,te-shek-KÜR e-de-RIM,expression,beginner
+Günaydın,Good morning,1,gün-ay-DIN,expression,beginner
+İyi akşamlar,Good evening,1,ee-YEE ak-SHAM-lar,expression,beginner
+Hoşça kal,Goodbye,1,ho-SHA kal,expression,beginner
+Anne,Mother,2,AN-ne,noun,beginner
+Baba,Father,2,BA-ba,noun,beginner
+Kardeş,Sibling,2,kar-DESH,noun,beginner
+Çocuk,Child,2,CHO-cuk,noun,beginner
+Aile,Family,2,eye-LE,noun,beginner

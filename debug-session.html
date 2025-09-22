@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Session Functionality</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { background: #f5f5f5; padding: 15px; margin: 10px 0; border-radius: 5px; }
+        .result { background: white; padding: 10px; margin: 5px 0; border-left: 4px solid #007cba; }
+        .error { border-left-color: #dc3545; background: #fff5f5; }
+        .success { border-left-color: #28a745; background: #f5fff5; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>🧪 Session Functionality Debug Tool</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Check Required Components</h2>
+        <button onclick="testComponents()">Run Component Test</button>
+        <div id="component-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Test Session Creation</h2>
+        <button onclick="testSessionCreation()">Test Session Creation</button>
+        <div id="session-results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Simulate Learning Flow</h2>
+        <button onclick="simulateLearningFlow()">Simulate Learning Session Start</button>
+        <div id="learning-results"></div>
+    </div>
+
+    <!-- Load required scripts -->
+    <script src="static/enhanced-vocabulary-with-sessions.js"></script>
+    <script src="static/difficulty-based-session-manager.js"></script>
+    <script>
+        function logResult(containerId, message, isError = false) {
+            const container = document.getElementById(containerId);
+            const div = document.createElement('div');
+            div.className = isError ? 'result error' : 'result success';
+            div.innerHTML = message;
+            container.appendChild(div);
+        }
+
+        function testComponents() {
+            const container = document.getElementById('component-results');
+            container.innerHTML = ''; // Clear previous results
+            
+            console.log('🧪 Testing Components...');
+            
+            // Test 1: Check if vocabulary data is loaded
+            if (window.enhancedVocabularyData) {
+                logResult('component-results', '✅ enhancedVocabularyData is loaded');
+                
+                // Check if school category exists
+                if (window.enhancedVocabularyData.school) {
+                    const schoolData = window.enhancedVocabularyData.school;
+                    logResult('component-results', `✅ School category found with ${schoolData.words.length} words`);
+                } else {
+                    logResult('component-results', '❌ School category not found', true);
+                }
+            } else {
+                logResult('component-results', '❌ enhancedVocabularyData not loaded', true);
+            }
+            
+            // Test 2: Check session manager
+            if (window.vocabularySessions) {
+                logResult('component-results', '✅ vocabularySessions is available');
+                
+                if (window.vocabularySessions.createSessionsFromWords) {
+                    logResult('component-results', '✅ createSessionsFromWords method exists');
+                } else {
+                    logResult('component-results', '❌ createSessionsFromWords method missing', true);
+                }
+            } else {
+                logResult('component-results', '❌ vocabularySessions not available', true);
+            }
+            
+            // Test 3: Check metadata
+            if (window.enhancedVocabularyMeta) {
+                logResult('component-results', `✅ Metadata loaded: ${window.enhancedVocabularyMeta.totalWords} words, ${window.enhancedVocabularyMeta.totalSessions} sessions`);
+            } else {
+                logResult('component-results', '❌ Metadata not loaded', true);
+            }
+        }
+
+        function testSessionCreation() {
+            const container = document.getElementById('session-results');
+            container.innerHTML = ''; // Clear previous results
+            
+            console.log('🧪 Testing Session Creation...');
+            
+            try {
+                if (!window.vocabularySessions || !window.enhancedVocabularyData) {
+                    logResult('session-results', '❌ Required components not available', true);
+                    return;
+                }
+                
+                const schoolData = window.enhancedVocabularyData.school;
+                if (!schoolData || !schoolData.words) {
+                    logResult('session-results', '❌ School category data not found', true);
+                    return;
+                }
+                
+                logResult('session-results', `📚 Attempting to create sessions from ${schoolData.words.length} school words`);
+                
+                const sessions = window.vocabularySessions.createSessionsFromWords(schoolData.words, 'school');
+                
+                logResult('session-results', `✅ Successfully created ${sessions.length} sessions`);
+                
+                sessions.forEach((session, index) => {
+                    const difficultyLevels = session.words.map(w => w.difficultyLevel || 'A1');
+                    const uniqueLevels = [...new Set(difficultyLevels)];
+                    logResult('session-results', `📖 Session ${index + 1}: ${session.words.length} words, levels: ${uniqueLevels.join(', ')}`);
+                });
+                
+                // Test first session structure
+                if (sessions.length > 0) {
+                    const firstSession = sessions[0];
+                    logResult('session-results', `🔍 First session structure: ID=${firstSession.id}, words=${firstSession.words.length}, difficulty=${firstSession.difficultyRange}`);
+                }
+                
+            } catch (error) {
+                logResult('session-results', `❌ Error creating sessions: ${error.message}`, true);
+                console.error('Session creation error:', error);
+            }
+        }
+
+        function simulateLearningFlow() {
+            const container = document.getElementById('learning-results');
+            container.innerHTML = ''; // Clear previous results
+            
+            console.log('🧪 Simulating Learning Flow...');
+            
+            try {
+                // Simulate what happens in startLearning()
+                const categoryId = 'school';
+                const categoryWords = window.enhancedVocabularyData.school.words;
+                
+                logResult('learning-results', `🎯 Starting simulation for ${categoryId} with ${categoryWords.length} words`);
+                
+                // Check session manager availability
+                if (window.vocabularySessions && window.vocabularySessions.createSessionsFromWords) {
+                    logResult('learning-results', '✅ Session manager available');
+                    
+                    // Create sessions
+                    const sessions = window.vocabularySessions.createSessionsFromWords(categoryWords, categoryId);
+                    logResult('learning-results', `📚 Created ${sessions.length} sessions for category ${categoryId}`);
+                    
+                    // Simulate user progress check
+                    const savedProgress = localStorage.getItem('turkishLearningProgress');
+                    let categoryProgress = {};
+                    if (savedProgress) {
+                        const progress = JSON.parse(savedProgress);
+                        categoryProgress = progress.categoryProgress || {};
+                    }
+                    
+                    // Find next session
+                    let currentSessionIndex = 0;
+                    const completedSessions = categoryProgress[categoryId]?.completedSessions || [];
+                    
+                    for (let i = 0; i < sessions.length; i++) {
+                        if (!completedSessions.includes(sessions[i].id)) {
+                            currentSessionIndex = i;
+                            break;
+                        }
+                    }
+                    
+                    const currentSession = sessions[currentSessionIndex];
+                    const sessionWords = currentSession.words;
+                    const sessionInfo = {
+                        sessionNumber: currentSessionIndex + 1,
+                        totalSessions: sessions.length,
+                        sessionId: currentSession.id,
+                        wordsInSession: currentSession.words.length
+                    };
+                    
+                    logResult('learning-results', `🎯 Current session: ${sessionInfo.sessionNumber}/${sessionInfo.totalSessions} with ${sessionInfo.wordsInSession} words`);
+                    logResult('learning-results', `📋 Session ID: ${sessionInfo.sessionId}`);
+                    
+                    // Show what would be passed to learning mode
+                    const learningData = {
+                        category: categoryId,
+                        words: sessionWords,
+                        sessionInfo: sessionInfo
+                    };
+                    
+                    logResult('learning-results', `✅ Learning data prepared successfully`);
+                    logResult('learning-results', `📊 Data contains: ${learningData.words.length} words, session info: ${!!learningData.sessionInfo}`);
+                    
+                    // Show first few words
+                    const firstWords = learningData.words.slice(0, 3);
+                    firstWords.forEach((word, index) => {
+                        logResult('learning-results', `📖 Word ${index + 1}: "${word.turkish}" (${word.difficultyLevel || 'A1'})`);
+                    });
+                    
+                } else {
+                    logResult('learning-results', '❌ Session manager not available', true);
+                }
+                
+            } catch (error) {
+                logResult('learning-results', `❌ Simulation error: ${error.message}`, true);
+                console.error('Learning flow simulation error:', error);
+            }
+        }
+
+        // Auto-run tests when page loads
+        window.addEventListener('load', () => {
+            console.log('🧪 Debug page loaded, running initial tests...');
+            setTimeout(() => {
+                testComponents();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-section { 
+            background: #f5f5f5; 
+            padding: 15px; 
+            margin: 10px 0; 
+            border-radius: 8px; 
+        }
+        .result { 
+            background: #e8f5e8; 
+            padding: 10px; 
+            margin: 5px 0; 
+            border-radius: 4px; 
+        }
+        button { 
+            background: #4CAF50; 
+            color: white; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            margin: 5px; 
+        }
+        button:hover { background: #45a049; }
+    </style>
+</head>
+<body>
+    <h1>🔍 Analytics Debug Test</h1>
+    
+    <div class="test-section">
+        <h3>1. Open Main App and Test</h3>
+        <button onclick="openAppAndTest()">Open App & Run Tests</button>
+        <div id="results"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>2. Instructions</h3>
+        <ol>
+            <li>Click "Open App & Run Tests" above</li>
+            <li>Wait for the app to load (about 10 seconds)</li>
+            <li>The test will automatically:</li>
+            <ul>
+                <li>Check dashboard numbers</li>
+                <li>Switch to profile section</li>
+                <li>Check profile numbers</li>
+                <li>Force update all analytics</li>
+                <li>Report results back here</li>
+            </ul>
+        </ol>
+    </div>
+
+    <script>
+        let appWindow = null;
+        
+        function openAppAndTest() {
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<div class="result">🚀 Opening app...</div>';
+            
+            // Open the app
+            appWindow = window.open('https://8788-ivbmlm8vqak2xzzv33jm5-6532622b.e2b.dev', 'turkishapp');
+            
+            // Wait for app to load, then run tests
+            setTimeout(() => {
+                runCompleteTest();
+            }, 8000);
+        }
+        
+        function runCompleteTest() {
+            if (!appWindow || appWindow.closed) {
+                document.getElementById('results').innerHTML = 
+                    '<div class="result">❌ App window closed or not available</div>';
+                return;
+            }
+            
+            try {
+                const doc = appWindow.document;
+                let results = [];
+                
+                // Test 1: Check dashboard elements
+                results.push('<h4>📊 Dashboard Test:</h4>');
+                ['user-xp', 'words-learned', 'streak-days'].forEach(id => {
+                    const el = doc.getElementById(id);
+                    if (el) {
+                        results.push(`✅ #${id}: "${el.textContent.trim()}"`);
+                    } else {
+                        results.push(`❌ #${id}: NOT FOUND`);
+                    }
+                });
+                
+                // Test 2: Switch to profile section
+                results.push('<h4>👤 Profile Section Test:</h4>');
+                
+                // Try to switch to profile
+                if (appWindow.showSection) {
+                    results.push('🔄 Switching to profile section...');
+                    appWindow.showSection('profile');
+                } else {
+                    // Try clicking profile button
+                    const profileBtn = doc.querySelector('[data-section="profile"]');
+                    if (profileBtn) {
+                        results.push('🔄 Clicking profile button...');
+                        profileBtn.click();
+                    } else {
+                        results.push('❌ Cannot find profile button');
+                    }
+                }
+                
+                // Wait a bit for section switch, then check profile elements
+                setTimeout(() => {
+                    ['profile-xp-display', 'profile-words-display', 'profile-streak-display', 'overall-progress'].forEach(id => {
+                        const el = doc.getElementById(id);
+                        if (el) {
+                            const isVisible = el.offsetParent !== null;
+                            results.push(`✅ #${id}: "${el.textContent.trim()}" (visible: ${isVisible})`);
+                        } else {
+                            results.push(`❌ #${id}: NOT FOUND`);
+                        }
+                    });
+                    
+                    // Test 3: Force update analytics
+                    results.push('<h4>💪 Force Update Test:</h4>');
+                    if (appWindow.forceAnalyticsUpdate) {
+                        results.push('🔄 Running forceAnalyticsUpdate()...');
+                        const forceResult = appWindow.forceAnalyticsUpdate();
+                        results.push(`📊 Force update data: ${JSON.stringify(forceResult)}`);
+                        
+                        // Check again after force update
+                        setTimeout(() => {
+                            results.push('<h4>📈 After Force Update:</h4>');
+                            ['user-xp', 'words-learned', 'streak-days', 'profile-xp-display', 'profile-words-display', 'profile-streak-display'].forEach(id => {
+                                const el = doc.getElementById(id);
+                                if (el) {
+                                    results.push(`📈 #${id}: "${el.textContent.trim()}"`);
+                                } else {
+                                    results.push(`❌ #${id}: STILL NOT FOUND`);
+                                }
+                            });
+                            
+                            // Display all results
+                            document.getElementById('results').innerHTML = 
+                                results.map(r => `<div class="result">${r}</div>`).join('');
+                                
+                        }, 2000);
+                    } else {
+                        results.push('❌ forceAnalyticsUpdate function not available');
+                        document.getElementById('results').innerHTML = 
+                            results.map(r => `<div class="result">${r}</div>`).join('');
+                    }
+                    
+                }, 2000);
+                
+            } catch (error) {
+                document.getElementById('results').innerHTML = 
+                    `<div class="result">❌ Error: ${error.message}</div>`;
+            }
+        }
+    </script>
+</body>
+</html>

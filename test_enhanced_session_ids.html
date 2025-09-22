@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Enhanced Session ID System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .test-section {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            background: #f8fafc;
+        }
+        
+        .test-button {
+            padding: 1rem 2rem;
+            margin: 0.5rem;
+            background: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        .test-button:hover {
+            background: #3730a3;
+            transform: translateY(-2px);
+        }
+        
+        .result {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        
+        .success { background: #d4edda; border: 1px solid #c3e6cb; color: #155724; }
+        .error { background: #f8d7da; border: 1px solid #f5c6cb; color: #721c24; }
+        .info { background: #d1ecf1; border: 1px solid #bee5eb; color: #0c5460; }
+        .warning { background: #fff3cd; border: 1px solid #ffeaa7; color: #856404; }
+        
+        .session-info {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎯 Enhanced Session ID System Test</h1>
+    
+    <div class="test-section">
+        <h3>1. Session ID Generation Test</h3>
+        <p>Test automatic session ID generation for different categories</p>
+        <button class="test-button" onclick="testSessionIdGeneration()">Test Session ID Generation</button>
+        <div id="session-id-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>2. Specific Session Launch Test</h3>
+        <p>Test launching specific sessions by session ID</p>
+        <button class="test-button" onclick="testSpecificSessionLaunch()">Launch Session 2 (greetings_session_2)</button>
+        <button class="test-button" onclick="testSpecificSessionLaunch('food_session_3')">Launch Session 3 (food_session_3)</button>
+        <div id="specific-session-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>3. Next Session Progression Test</h3>
+        <p>Test the "Start Next Session" button functionality</p>
+        <button class="test-button" onclick="testSessionProgression()">Test Session Progression</button>
+        <div id="progression-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>4. Session Progress Tracking</h3>
+        <p>Test session completion and progress tracking</p>
+        <button class="test-button" onclick="testProgressTracking()">Test Progress Tracking</button>
+        <button class="test-button" onclick="clearProgress()">Clear Progress</button>
+        <div id="progress-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>5. Session Information Display</h3>
+        <p>Display current session information and available sessions</p>
+        <button class="test-button" onclick="displaySessionInfo()">Display Session Info</button>
+        <div id="session-info-result"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>🚀 Quick Launch Tests</h3>
+        <button class="test-button" onclick="launchMainApp()">Launch Main App</button>
+        <button class="test-button" onclick="launchGreetingsSession1()">Greetings Session 1</button>
+        <button class="test-button" onclick="launchTravelSession2()">Travel Session 2</button>
+    </div>
+
+    <script>
+        function showResult(elementId, message, type = 'info') {
+            const element = document.getElementById(elementId);
+            element.innerHTML = '<div class="result ' + type + '">' + message + '</div>';
+        }
+        
+        function testSessionIdGeneration() {
+            showResult('session-id-result', 'Testing session ID generation...', 'info');
+            
+            // Test different categories and session numbers
+            const testCases = [
+                { category: 'greetings', sessionNumber: 1, expected: 'greetings_session_1' },
+                { category: 'food', sessionNumber: 3, expected: 'food_session_3' },
+                { category: 'travel', sessionNumber: 5, expected: 'travel_session_5' },
+                { category: 'shopping', sessionNumber: 2, expected: 'shopping_session_2' }
+            ];
+            
+            let results = '✅ Session ID Generation Test Results:\\n\\n';
+            
+            testCases.forEach(test => {
+                const generated = test.category + '_session_' + test.sessionNumber;
+                const match = generated === test.expected;
+                results += '• Category: ' + test.category + ', Session: ' + test.sessionNumber + '\\n';
+                results += '  Generated ID: ' + generated + '\\n';
+                results += '  Expected ID: ' + test.expected + '\\n';
+                results += '  Match: ' + (match ? '✅' : '❌') + '\\n\\n';
+            });
+            
+            showResult('session-id-result', results, 'success');
+        }
+        
+        function testSpecificSessionLaunch(sessionId = 'greetings_session_2') {
+            showResult('specific-session-result', 'Launching specific session: ' + sessionId + '...', 'info');
+            
+            // Open main app and test launching specific session
+            const testWindow = window.open('https://3000-ivbmlm8vqak2xzzv33jm5-6532622b.e2b.dev', '_blank');
+            
+            setTimeout(() => {
+                try {
+                    // Extract category and session number from session ID
+                    const parts = sessionId.split('_session_');
+                    const categoryId = parts[0];
+                    const sessionNumber = parseInt(parts[1]);
+                    
+                    if (testWindow.startNewFlashcardSession) {
+                        const result = testWindow.startNewFlashcardSession({
+                            categoryId: categoryId,
+                            sessionNumber: sessionNumber,
+                            sessionId: sessionId,
+                            wordCount: 10
+                        });
+                        
+                        showResult('specific-session-result', 
+                            '✅ Launched session: ' + sessionId + '\\n' +
+                            'Category: ' + categoryId + '\\n' +
+                            'Session Number: ' + sessionNumber + '\\n' +
+                            'Result: ' + (result ? 'Success' : 'Function called'), 'success');
+                    } else {
+                        showResult('specific-session-result', '⚠️ startNewFlashcardSession not available yet', 'warning');
+                    }
+                } catch (error) {
+                    showResult('specific-session-result', '❌ Error: ' + error.message, 'error');
+                }
+            }, 3000);
+        }
+        
+        function testSessionProgression() {
+            showResult('progression-result', 'Testing session progression logic...', 'info');
+            
+            // Simulate session progression
+            let results = '🔄 Session Progression Test:\\n\\n';
+            
+            const testSessions = [
+                { id: 'greetings_session_1', number: 1, total: 3 },
+                { id: 'greetings_session_2', number: 2, total: 3 },
+                { id: 'greetings_session_3', number: 3, total: 3 }
+            ];
+            
+            testSessions.forEach(session => {
+                const hasNext = session.number < session.total;
+                const nextId = hasNext ? 'greetings_session_' + (session.number + 1) : 'None';
+                
+                results += '• Current: ' + session.id + ' (' + session.number + '/' + session.total + ')\\n';
+                results += '  Has Next: ' + (hasNext ? '✅' : '❌') + '\\n';
+                results += '  Next ID: ' + nextId + '\\n\\n';
+            });
+            
+            showResult('progression-result', results, 'success');
+        }
+        
+        function testProgressTracking() {
+            showResult('progress-result', 'Testing progress tracking...', 'info');
+            
+            // Get current progress
+            const saved = localStorage.getItem('turkishLearningProgress');
+            let progress = saved ? JSON.parse(saved) : {};
+            
+            let results = '📊 Current Progress Tracking:\\n\\n';
+            results += 'Raw Data: ' + JSON.stringify(progress, null, 2) + '\\n\\n';
+            
+            if (progress.categoryProgress) {
+                Object.keys(progress.categoryProgress).forEach(category => {
+                    const categoryProgress = progress.categoryProgress[category];
+                    results += '• Category: ' + category + '\\n';
+                    results += '  Completed Sessions: ' + (categoryProgress.completedSessions || []).join(', ') + '\\n';
+                    results += '  Current Session: ' + (categoryProgress.currentSession || 'None') + '\\n\\n';
+                });
+            } else {
+                results += 'No category progress data found.\\n';
+            }
+            
+            showResult('progress-result', results, 'info');
+        }
+        
+        function clearProgress() {
+            localStorage.removeItem('turkishLearningProgress');
+            showResult('progress-result', '✅ Progress data cleared!', 'success');
+        }
+        
+        function displaySessionInfo() {
+            showResult('session-info-result', 'Loading session information...', 'info');
+            
+            const testWindow = window.open('https://3000-ivbmlm8vqak2xzzv33jm5-6532622b.e2b.dev', '_blank');
+            
+            setTimeout(() => {
+                try {
+                    let info = '📚 Available Sessions Information:\\n\\n';
+                    
+                    if (testWindow.enhancedVocabularyData) {
+                        const categories = Object.keys(testWindow.enhancedVocabularyData);
+                        
+                        categories.slice(0, 5).forEach(categoryId => {
+                            const categoryData = testWindow.enhancedVocabularyData[categoryId];
+                            const wordCount = categoryData.words ? categoryData.words.length : 0;
+                            const sessionCount = Math.ceil(wordCount / 10);
+                            
+                            info += '• Category: ' + categoryId + '\\n';
+                            info += '  Words: ' + wordCount + '\\n';
+                            info += '  Sessions: ' + sessionCount + '\\n';
+                            info += '  Session IDs: ';
+                            
+                            for (let i = 1; i <= sessionCount; i++) {
+                                info += categoryId + '_session_' + i;
+                                if (i < sessionCount) info += ', ';
+                            }
+                            info += '\\n\\n';
+                        });
+                        
+                        showResult('session-info-result', info, 'success');
+                    } else {
+                        showResult('session-info-result', '⚠️ Vocabulary data not loaded yet', 'warning');
+                    }
+                } catch (error) {
+                    showResult('session-info-result', '❌ Error: ' + error.message, 'error');
+                }
+            }, 3000);
+        }
+        
+        function launchMainApp() {
+            window.open('https://3000-ivbmlm8vqak2xzzv33jm5-6532622b.e2b.dev', '_blank');
+        }
+        
+        function launchGreetingsSession1() {
+            testSpecificSessionLaunch('greetings_session_1');
+        }
+        
+        function launchTravelSession2() {
+            testSpecificSessionLaunch('travel_session_2');
+        }
+        
+        // Auto-run basic test on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                testSessionIdGeneration();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

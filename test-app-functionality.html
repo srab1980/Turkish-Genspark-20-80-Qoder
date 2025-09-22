@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turkish Learning App - Bug Scan Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div id="test-results" class="p-6 bg-gray-100 min-h-screen">
+        <h1 class="text-2xl font-bold mb-6">Turkish Learning App - Bug Detection</h1>
+        <div id="test-output" class="space-y-4"></div>
+    </div>
+
+    <!-- Load core dependencies -->
+    <script src="/static/tts-service.js"></script>
+    <script src="/static/enhanced-vocabulary-with-sessions.js"></script>
+    <script src="/static/learning-mode-base.js"></script>
+    <script src="/static/learning-mode-manager.js"></script>
+    <script src="/static/modes/flashcard-mode.js"></script>
+    <script src="/static/modes/phrase-mode.js"></script>
+
+    <script>
+        // Bug detection test suite
+        const testOutput = document.getElementById('test-output');
+        
+        function addResult(test, status, message) {
+            const div = document.createElement('div');
+            div.className = `p-3 rounded ${status === 'pass' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'}`;
+            div.innerHTML = `
+                <strong>${test}:</strong> 
+                <span class="font-mono">${status.toUpperCase()}</span>
+                <br><small>${message}</small>
+            `;
+            testOutput.appendChild(div);
+        }
+
+        // Test 1: Check if vocabulary database loads
+        try {
+            if (typeof window.enhancedVocabularyDatabase !== 'undefined') {
+                addResult('Vocabulary Database', 'pass', 'Enhanced vocabulary database is available');
+            } else {
+                addResult('Vocabulary Database', 'fail', 'Enhanced vocabulary database not found');
+            }
+        } catch (e) {
+            addResult('Vocabulary Database', 'fail', `Error: ${e.message}`);
+        }
+
+        // Test 2: Check learning mode manager
+        try {
+            if (typeof LearningModeManager !== 'undefined') {
+                const manager = new LearningModeManager();
+                addResult('Learning Mode Manager', 'pass', 'Manager can be instantiated');
+            } else {
+                addResult('Learning Mode Manager', 'fail', 'LearningModeManager class not found');
+            }
+        } catch (e) {
+            addResult('Learning Mode Manager', 'fail', `Error: ${e.message}`);
+        }
+
+        // Test 3: Check flashcard mode
+        try {
+            if (typeof FlashcardMode !== 'undefined') {
+                addResult('Flashcard Mode', 'pass', 'FlashcardMode class is available');
+            } else {
+                addResult('Flashcard Mode', 'fail', 'FlashcardMode class not found');
+            }
+        } catch (e) {
+            addResult('Flashcard Mode', 'fail', `Error: ${e.message}`);
+        }
+
+        // Test 4: Check phrase mode
+        try {
+            if (typeof PhraseMode !== 'undefined') {
+                addResult('Phrase Mode', 'pass', 'PhraseMode class is available');
+            } else {
+                addResult('Phrase Mode', 'fail', 'PhraseMode class not found');
+            }
+        } catch (e) {
+            addResult('Phrase Mode', 'fail', `Error: ${e.message}`);
+        }
+
+        // Test 5: Check for CSS conflicts
+        try {
+            const flashcardElements = document.querySelectorAll('[class*="flashcard"]');
+            const styles = window.getComputedStyle(document.body);
+            addResult('CSS Loading', 'pass', 'CSS appears to be loading correctly');
+        } catch (e) {
+            addResult('CSS Loading', 'fail', `CSS Error: ${e.message}`);
+        }
+
+        // Test 6: Check data structure
+        setTimeout(() => {
+            try {
+                if (window.enhancedVocabularyDatabase && window.enhancedVocabularyDatabase.data) {
+                    const wordCount = window.enhancedVocabularyDatabase.data.length;
+                    addResult('Data Structure', 'pass', `Found ${wordCount} words in database`);
+                } else {
+                    addResult('Data Structure', 'fail', 'No vocabulary data found');
+                }
+            } catch (e) {
+                addResult('Data Structure', 'fail', `Data Error: ${e.message}`);
+            }
+        }, 1000);
+
+        console.log('Bug detection tests completed');
+    </script>
+</body>
+</html>

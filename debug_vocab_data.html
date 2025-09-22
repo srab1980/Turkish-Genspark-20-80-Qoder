@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Vocabulary Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            direction: rtl;
+            text-align: right;
+        }
+        .debug-section {
+            background: #f0f0f0;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            direction: ltr;
+            text-align: left;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>تشخيص بيانات المفردات</h1>
+    
+    <button onclick="checkVocabData()">فحص بيانات المفردات</button>
+    <button onclick="checkLearningSystem()">فحص نظام التعلم</button>
+    <button onclick="testNewSession()">اختبار الجلسة الجديدة</button>
+    
+    <div id="results" class="debug-section"></div>
+
+    <!-- Include required scripts -->
+    <script src="/static/enhanced-vocab-data.js"></script>
+    <script src="/static/learning-mode-base.js"></script>
+    <script src="/static/modes/flashcard-mode.js"></script>
+    <script src="/static/learning-mode-manager.js"></script>
+
+    <script>
+        function checkVocabData() {
+            const results = document.getElementById('results');
+            results.innerHTML = '<h3>Vocabulary Data Analysis</h3>';
+            
+            console.log('🔍 Checking vocabulary data availability...');
+            
+            if (typeof window.enhancedVocabularyData === 'undefined') {
+                results.innerHTML += '<p style="color: red;">❌ enhancedVocabularyData is not defined</p>';
+                console.log('❌ enhancedVocabularyData is not defined');
+                return;
+            }
+            
+            if (window.enhancedVocabularyData === null) {
+                results.innerHTML += '<p style="color: red;">❌ enhancedVocabularyData is null</p>';
+                console.log('❌ enhancedVocabularyData is null');
+                return;
+            }
+            
+            results.innerHTML += '<p style="color: green;">✅ enhancedVocabularyData exists</p>';
+            
+            const categories = Object.keys(window.enhancedVocabularyData);
+            results.innerHTML += '<p><strong>Available categories (' + categories.length + '):</strong><br>' + categories.join(', ') + '</p>';
+            
+            console.log('✅ Available categories:', categories);
+            
+            // Check each category
+            categories.forEach(catId => {
+                const cat = window.enhancedVocabularyData[catId];
+                const hasWords = cat && cat.words && Array.isArray(cat.words);
+                const wordCount = hasWords ? cat.words.length : 0;
+                
+                const status = hasWords ? 'green' : 'red';
+                const icon = hasWords ? '✅' : '❌';
+                
+                results.innerHTML += '<p style="color: ' + status + ';">' + icon + ' ' + catId + ': ' + wordCount + ' words</p>';
+                
+                if (hasWords && cat.words.length > 0) {
+                    const sampleWord = cat.words[0];
+                    results.innerHTML += '<p style="margin-left: 20px; font-size: 0.9em; color: #666;">Sample: ' + JSON.stringify(sampleWord).substring(0, 100) + '...</p>';
+                }
+            });
+        }
+
+        function checkLearningSystem() {
+            const results = document.getElementById('results');
+            results.innerHTML = '<h3>Learning System Analysis</h3>';
+            
+            const systems = {
+                'learningModeManager': window.learningModeManager,
+                'startLearningSession': window.startLearningSession,
+                'flashcardModeNew': window.flashcardModeNew,
+                'enhancedVocabularyData': window.enhancedVocabularyData,
+                'showSection': window.showSection
+            };
+            
+            Object.entries(systems).forEach(([name, system]) => {
+                const exists = !!system;
+                const color = exists ? 'green' : 'red';
+                const icon = exists ? '✅' : '❌';
+                const typeInfo = exists ? typeof system : 'undefined';
+                
+                results.innerHTML += '<p style="color: ' + color + ';">' + icon + ' ' + name + ' (' + typeInfo + ')</p>';
+                
+                if (name === 'learningModeManager' && system && system.getAvailableModes) {
+                    try {
+                        const modes = system.getAvailableModes().map(m => m.id);
+                        results.innerHTML += '<p style="margin-left: 20px; font-size: 0.9em;">Available modes: ' + modes.join(', ') + '</p>';
+                    } catch (e) {
+                        results.innerHTML += '<p style="margin-left: 20px; font-size: 0.9em; color: red;">Error getting modes: ' + e.message + '</p>';
+                    }
+                }
+            });
+        }
+
+        function testNewSession() {
+            const results = document.getElementById('results');
+            results.innerHTML = '<h3>Testing New Session Function</h3>';
+            
+            try {
+                // First check if the function exists
+                if (typeof window.startNewFlashcardSession !== 'function') {
+                    results.innerHTML += '<p style="color: red;">❌ startNewFlashcardSession function not available</p>';
+                    return;
+                }
+                
+                results.innerHTML += '<p style="color: green;">✅ startNewFlashcardSession function exists</p>';
+                
+                // Try to call it with greetings category
+                results.innerHTML += '<p>Testing with greetings category...</p>';
+                console.log('🧪 Testing startNewFlashcardSession with greetings...');
+                
+                const result = window.startNewFlashcardSession({ categoryId: 'greetings' });
+                results.innerHTML += '<p style="color: ' + (result ? 'green' : 'orange') + ';">Function returned: ' + result + '</p>';
+                
+            } catch (error) {
+                results.innerHTML += '<p style="color: red;">❌ Error: ' + error.message + '</p>';
+                console.error('❌ Test error:', error);
+            }
+        }
+
+        // Auto-run checks when page loads
+        window.addEventListener('load', function() {
+            setTimeout(() => {
+                checkVocabData();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

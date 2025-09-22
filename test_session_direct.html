@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Direct Session Test</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            direction: rtl; 
+        }
+        .log { 
+            background: #f5f5f5; 
+            padding: 10px; 
+            margin: 5px 0; 
+            border-radius: 4px; 
+            font-family: monospace; 
+            direction: ltr; 
+            text-align: left; 
+        }
+        button { 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            margin: 5px; 
+            border-radius: 4px; 
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <h1>اختبار مباشر للجلسة الجديدة</h1>
+    <button onclick="runTest()">تشغيل الاختبار</button>
+    <button onclick="testVocabAccess()">اختبار الوصول للمفردات</button>
+    <button onclick="clearLogs()">مسح السجل</button>
+    
+    <div id="logs"></div>
+
+    <script>
+        function addLog(message, type = 'info') {
+            const logs = document.getElementById('logs');
+            const logElement = document.createElement('div');
+            logElement.className = 'log';
+            logElement.style.backgroundColor = type === 'error' ? '#ffebee' : type === 'success' ? '#e8f5e9' : '#f5f5f5';
+            logElement.textContent = new Date().toLocaleTimeString() + ' - ' + message;
+            logs.appendChild(logElement);
+            logs.scrollTop = logs.scrollHeight;
+            console.log(message);
+        }
+
+        function clearLogs() {
+            document.getElementById('logs').innerHTML = '';
+        }
+
+        function testVocabAccess() {
+            addLog('🔍 Testing vocabulary data access...');
+            
+            // Test if we can access the parent window
+            if (window.parent && window.parent !== window) {
+                addLog('📱 Testing parent window access...');
+                
+                const parentData = window.parent.enhancedVocabularyData;
+                if (parentData) {
+                    const categories = Object.keys(parentData);
+                    addLog('✅ Parent vocabulary data found: ' + categories.length + ' categories', 'success');
+                    addLog('   Categories: ' + categories.slice(0, 5).join(', '));
+                    
+                    // Test specific categories
+                    ['greetings', 'food', 'family'].forEach(cat => {
+                        const data = parentData[cat];
+                        if (data && data.words) {
+                            addLog('   ✅ ' + cat + ': ' + data.words.length + ' words', 'success');
+                        } else {
+                            addLog('   ❌ ' + cat + ': no data', 'error');
+                        }
+                    });
+                } else {
+                    addLog('❌ No parent vocabulary data', 'error');
+                }
+            }
+
+            // Test direct access (if loaded in same context)
+            if (typeof window.enhancedVocabularyData !== 'undefined') {
+                addLog('✅ Direct vocabulary data access available', 'success');
+                const categories = Object.keys(window.enhancedVocabularyData);
+                addLog('   Found ' + categories.length + ' categories');
+            } else {
+                addLog('❌ No direct vocabulary data access', 'error');
+            }
+        }
+
+        function runTest() {
+            addLog('🚀 Starting session test...');
+            
+            // Try different approaches to access the function
+            let testFunction = null;
+            
+            if (typeof window.startNewFlashcardSession === 'function') {
+                testFunction = window.startNewFlashcardSession;
+                addLog('✅ Found startNewFlashcardSession in current window', 'success');
+            } else if (window.parent && typeof window.parent.startNewFlashcardSession === 'function') {
+                testFunction = window.parent.startNewFlashcardSession;
+                addLog('✅ Found startNewFlashcardSession in parent window', 'success');
+            } else {
+                addLog('❌ startNewFlashcardSession not found', 'error');
+                return;
+            }
+
+            // Test the function
+            try {
+                addLog('🎯 Calling startNewFlashcardSession with greetings...');
+                const result = testFunction({ categoryId: 'greetings' });
+                addLog('✅ Function completed, result: ' + result, 'success');
+            } catch (error) {
+                addLog('❌ Function failed: ' + error.message, 'error');
+                console.error('Full error:', error);
+            }
+        }
+
+        // Auto-run tests after delay
+        setTimeout(() => {
+            addLog('🔄 Auto-running tests...');
+            testVocabAccess();
+            setTimeout(runTest, 2000);
+        }, 3000);
+
+        // Load main app in iframe to test integration
+        window.addEventListener('load', () => {
+            const iframe = document.createElement('iframe');
+            iframe.src = '/';
+            iframe.style.width = '0';
+            iframe.style.height = '0';
+            iframe.style.border = 'none';
+            iframe.onload = () => {
+                addLog('📱 Main app loaded in background');
+                setTimeout(() => {
+                    testVocabAccess();
+                }, 5000);
+            };
+            document.body.appendChild(iframe);
+        });
+    </script>
+</body>
+</html>

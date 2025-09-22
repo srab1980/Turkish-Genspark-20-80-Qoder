@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Flashcard Mode</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            margin: 20px;
+            background: #f0f2f5;
+        }
+        .status {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        .success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+        .test-button {
+            padding: 10px 20px;
+            margin: 5px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .test-button:hover {
+            background: #0056b3;
+        }
+        .console-output {
+            background: #1e1e1e;
+            color: #0f0;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Flashcard Mode Test Page</h1>
+    
+    <h2>1. Check Flashcard Module Status</h2>
+    <div id="module-status"></div>
+    
+    <h2>2. Test Flashcard Functions</h2>
+    <button class="test-button" onclick="testFlashcardInit()">Test Initialize Flashcard</button>
+    <button class="test-button" onclick="testFlashcardFlip()">Test Card Flip</button>
+    <button class="test-button" onclick="testDifficultyButtons()">Test Difficulty Buttons</button>
+    
+    <h2>3. Console Output</h2>
+    <div id="console-output" class="console-output"></div>
+
+    <script>
+        const output = document.getElementById('console-output');
+        const moduleStatus = document.getElementById('module-status');
+        
+        // Override console.log to capture output
+        const originalLog = console.log;
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            const message = args.map(arg => 
+                typeof arg === 'object' ? JSON.stringify(arg, null, 2) : arg
+            ).join(' ');
+            output.innerHTML += `<div>[${new Date().toLocaleTimeString()}] ${message}</div>`;
+            output.scrollTop = output.scrollHeight;
+        };
+        
+        // Check if running in iframe
+        function checkEnvironment() {
+            if (window.parent !== window) {
+                console.log('⚠️ Running in iframe - loading parent resources...');
+                
+                // Try to access parent's flashcard module
+                if (window.parent.FlashcardMode) {
+                    window.FlashcardMode = window.parent.FlashcardMode;
+                    console.log('✅ Loaded FlashcardMode from parent');
+                }
+                
+                if (window.parent.learningModeManager) {
+                    window.learningModeManager = window.parent.learningModeManager;
+                    console.log('✅ Loaded learningModeManager from parent');
+                }
+            }
+        }
+        
+        // Check module status
+        function checkModuleStatus() {
+            console.log('🔍 Checking Flashcard Module Status...');
+            
+            const statuses = [];
+            
+            // Check FlashcardMode class
+            if (typeof FlashcardMode !== 'undefined') {
+                statuses.push('<div class="status success">✅ FlashcardMode class is loaded</div>');
+                console.log('✅ FlashcardMode class found');
+            } else {
+                statuses.push('<div class="status error">❌ FlashcardMode class not found</div>');
+                console.log('❌ FlashcardMode class not found');
+            }
+            
+            // Check flashcardMode instance
+            if (typeof flashcardMode !== 'undefined') {
+                statuses.push('<div class="status success">✅ flashcardMode instance exists</div>');
+                console.log('✅ flashcardMode instance found');
+            } else {
+                statuses.push('<div class="status info">ℹ️ flashcardMode instance not initialized</div>');
+                console.log('ℹ️ flashcardMode instance not found');
+            }
+            
+            // Check learningModeManager
+            if (typeof learningModeManager !== 'undefined') {
+                statuses.push('<div class="status success">✅ learningModeManager is available</div>');
+                console.log('✅ learningModeManager found');
+                
+                // Check registered modes
+                if (learningModeManager.modes) {
+                    const modes = Object.keys(learningModeManager.modes);
+                    statuses.push(`<div class="status info">📋 Registered modes: ${modes.join(', ')}</div>`);
+                    console.log('📋 Registered modes:', modes);
+                }
+            } else {
+                statuses.push('<div class="status error">❌ learningModeManager not found</div>');
+                console.log('❌ learningModeManager not found');
+            }
+            
+            moduleStatus.innerHTML = statuses.join('');
+        }
+        
+        // Test flashcard initialization
+        function testFlashcardInit() {
+            console.log('🚀 Testing Flashcard Initialization...');
+            
+            try {
+                // Check if we need to load the module first
+                if (typeof FlashcardMode === 'undefined') {
+                    console.log('📦 Loading flashcard-mode.js...');
+                    const script = document.createElement('script');
+                    script.src = '/static/modes/flashcard-mode.js';
+                    script.onload = () => {
+                        console.log('✅ Script loaded, initializing...');
+                        initializeFlashcard();
+                    };
+                    document.head.appendChild(script);
+                } else {
+                    initializeFlashcard();
+                }
+            } catch (error) {
+                console.log('❌ Error:', error.message);
+            }
+        }
+        
+        function initializeFlashcard() {
+            try {
+                // Create a test container
+                if (!document.getElementById('learning-area')) {
+                    const container = document.createElement('div');
+                    container.id = 'learning-area';
+                    document.body.appendChild(container);
+                    console.log('✅ Created learning-area container');
+                }
+                
+                // Initialize with test data
+                const testData = {
+                    words: [
+                        {
+                            turkish: 'genç',
+                            arabic: 'شاب',
+                            english: 'young',
+                            pronunciation: 'genj',
+                            category: 'adjective'
+                        }
+                    ],
+                    mode: 'flashcard'
+                };
+                
+                if (typeof FlashcardMode !== 'undefined') {
+                    window.flashcardMode = new FlashcardMode(testData);
+                    console.log('✅ Flashcard mode initialized successfully');
+                    console.log('📊 Instance:', flashcardMode);
+                } else {
+                    console.log('❌ FlashcardMode class not available');
+                }
+            } catch (error) {
+                console.log('❌ Initialization error:', error.message);
+            }
+        }
+        
+        // Test card flip
+        function testFlashcardFlip() {
+            console.log('🔄 Testing Card Flip...');
+            
+            try {
+                const flashcard = document.querySelector('.flashcard');
+                if (flashcard) {
+                    flashcard.classList.toggle('flipped');
+                    const isFlipped = flashcard.classList.contains('flipped');
+                    console.log(isFlipped ? '✅ Card flipped to back' : '✅ Card flipped to front');
+                } else {
+                    console.log('❌ No flashcard element found');
+                }
+            } catch (error) {
+                console.log('❌ Flip error:', error.message);
+            }
+        }
+        
+        // Test difficulty buttons
+        function testDifficultyButtons() {
+            console.log('🎯 Testing Difficulty Buttons...');
+            
+            try {
+                const buttons = document.querySelectorAll('.btn-difficulty');
+                if (buttons.length > 0) {
+                    console.log(`✅ Found ${buttons.length} difficulty buttons`);
+                    buttons.forEach(btn => {
+                        const difficulty = btn.dataset.difficulty;
+                        const text = btn.querySelector('span').textContent;
+                        console.log(`  - ${text} (${difficulty})`);
+                    });
+                } else {
+                    console.log('❌ No difficulty buttons found');
+                }
+            } catch (error) {
+                console.log('❌ Button test error:', error.message);
+            }
+        }
+        
+        // Run initial checks
+        checkEnvironment();
+        setTimeout(checkModuleStatus, 500);
+    </script>
+</body>
+</html>

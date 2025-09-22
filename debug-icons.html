@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Icons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .debug-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+        .icon-test {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+        }
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            border-radius: 10px;
+        }
+        .word-info {
+            font-weight: bold;
+        }
+        #console-output {
+            background: #000;
+            color: #0f0;
+            padding: 10px;
+            font-family: monospace;
+            height: 200px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐛 Debug Icons System</h1>
+    
+    <div class="debug-section">
+        <h2>Console Output</h2>
+        <div id="console-output"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h2>System Status</h2>
+        <div id="system-status"></div>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Icon Tests</h2>
+        <div id="icon-tests"></div>
+    </div>
+    
+    <button onclick="runTests()">🧪 Run Tests</button>
+    <button onclick="clearConsole()">🧹 Clear Console</button>
+    
+    <script src="/static/word-svg-icons.js"></script>
+    <script>
+        // Override console.log to capture output
+        const originalConsoleLog = console.log;
+        const originalConsoleWarn = console.warn;
+        const originalConsoleError = console.error;
+        
+        const consoleOutput = document.getElementById('console-output');
+        
+        function logToConsole(message, type = 'log') {
+            const timestamp = new Date().toLocaleTimeString();
+            const prefix = type === 'warn' ? '⚠️' : type === 'error' ? '❌' : '📝';
+            consoleOutput.textContent += `[${timestamp}] ${prefix} ${message}\n`;
+            consoleOutput.scrollTop = consoleOutput.scrollHeight;
+        }
+        
+        console.log = function(...args) {
+            originalConsoleLog.apply(console, args);
+            logToConsole(args.join(' '), 'log');
+        };
+        
+        console.warn = function(...args) {
+            originalConsoleWarn.apply(console, args);
+            logToConsole(args.join(' '), 'warn');
+        };
+        
+        console.error = function(...args) {
+            originalConsoleError.apply(console, args);
+            logToConsole(args.join(' '), 'error');
+        };
+        
+        function clearConsole() {
+            consoleOutput.textContent = '';
+        }
+        
+        function updateSystemStatus() {
+            const statusDiv = document.getElementById('system-status');
+            statusDiv.innerHTML = `
+                <p><strong>WordSVGIcons Class:</strong> ${typeof WordSVGIcons !== 'undefined' ? '✅ Available' : '❌ Not Found'}</p>
+                <p><strong>window.wordSVGIcons:</strong> ${window.wordSVGIcons ? '✅ Available' : '❌ Not Found'}</p>
+                <p><strong>getIconForWord method:</strong> ${window.wordSVGIcons && typeof window.wordSVGIcons.getIconForWord === 'function' ? '✅ Available' : '❌ Not Found'}</p>
+                <p><strong>User Agent:</strong> ${navigator.userAgent}</p>
+                <p><strong>Timestamp:</strong> ${new Date().toLocaleString()}</p>
+            `;
+        }
+        
+        function runTests() {
+            console.log('🧪 Starting icon system tests...');
+            
+            // Test 1: Check if WordSVGIcons class exists
+            console.log('Test 1: WordSVGIcons class check');
+            if (typeof WordSVGIcons !== 'undefined') {
+                console.log('✅ WordSVGIcons class is available');
+            } else {
+                console.error('❌ WordSVGIcons class is not available');
+                return;
+            }
+            
+            // Test 2: Check if global instance exists
+            console.log('Test 2: Global instance check');
+            if (!window.wordSVGIcons) {
+                console.log('🔧 Creating wordSVGIcons instance...');
+                try {
+                    window.wordSVGIcons = new WordSVGIcons();
+                    console.log('✅ wordSVGIcons instance created successfully');
+                } catch (error) {
+                    console.error('❌ Failed to create wordSVGIcons instance:', error);
+                    return;
+                }
+            } else {
+                console.log('✅ Global wordSVGIcons instance already exists');
+            }
+            
+            // Test 3: Test method availability
+            console.log('Test 3: Method availability check');
+            if (typeof window.wordSVGIcons.getIconForWord === 'function') {
+                console.log('✅ getIconForWord method is available');
+            } else {
+                console.error('❌ getIconForWord method is not available');
+                return;
+            }
+            
+            // Test 4: Test icon generation
+            console.log('Test 4: Icon generation test');
+            const testWords = [
+                { id: 1, turkish: 'merhaba', arabic: 'مرحبا', english: 'hello' },
+                { id: 2, turkish: 'su', arabic: 'ماء', english: 'water' },
+                { id: 3, turkish: 'ekmek', arabic: 'خبز', english: 'bread' },
+                { id: 7, turkish: 'havaalanı', arabic: 'مطار', english: 'airport' },
+                { id: 13, turkish: 'su', arabic: 'ماء', english: 'water' }
+            ];
+            
+            const testsDiv = document.getElementById('icon-tests');
+            testsDiv.innerHTML = '';
+            
+            testWords.forEach(word => {
+                console.log(`Testing icon for: ${word.turkish} (ID: ${word.id})`);
+                
+                try {
+                    const icon = window.wordSVGIcons.getIconForWord(word);
+                    if (icon) {
+                        console.log(`✅ Generated icon for ${word.turkish}`);
+                        
+                        // Create visual test
+                        const testDiv = document.createElement('div');
+                        testDiv.className = 'icon-test';
+                        testDiv.innerHTML = `
+                            <div class="icon-container">${icon}</div>
+                            <div class="word-info">
+                                <div>${word.turkish}</div>
+                                <div>${word.arabic}</div>
+                                <small>ID: ${word.id}</small>
+                            </div>
+                        `;
+                        testsDiv.appendChild(testDiv);
+                    } else {
+                        console.warn(`⚠️ No icon generated for ${word.turkish}`);
+                    }
+                } catch (error) {
+                    console.error(`❌ Error generating icon for ${word.turkish}:`, error);
+                }
+            });
+            
+            console.log('🏁 Tests completed!');
+            updateSystemStatus();
+        }
+        
+        // Run initial status update
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                updateSystemStatus();
+                console.log('🚀 Debug page loaded');
+            }, 100);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fixes Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-result {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .pass { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .fail { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        button { 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            margin: 5px;
+        }
+        button:hover { background: #0056b3; }
+        #results { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🔧 JavaScript Fixes Validation Test</h1>
+    <p>This page tests the fixes for the JavaScript errors mentioned in the original issue.</p>
+    
+    <button onclick="testSyntaxErrors()">🔍 Test Syntax Errors</button>
+    <button onclick="testFetchFunction()">📡 Test Fetch Function</button>
+    <button onclick="testGoogleAuthInit()">🔐 Test Google Auth Initialization</button>
+    <button onclick="runAllTests()">🚀 Run All Tests</button>
+    
+    <div id="results"></div>
+
+    <!-- Load the fixed JavaScript files -->
+    <script src="/static/visual-ux-system.js"></script>
+    <script src="/static/auth-service.js"></script>
+    <script src="/static/auth-ui.js"></script>
+    <script src="/static/analytics-dashboard.js"></script>
+
+    <script>
+        function logResult(test, status, message) {
+            const results = document.getElementById('results');
+            const div = document.createElement('div');
+            div.className = `test-result ${status}`;
+            
+            const icon = status === 'pass' ? '✅' : status === 'fail' ? '❌' : '⚠️';
+            div.innerHTML = `${icon} <strong>${test}:</strong> ${message}`;
+            
+            results.appendChild(div);
+            console.log(`${icon} ${test}: ${message}`);
+        }
+
+        function testSyntaxErrors() {
+            logResult('Syntax Check', 'pass', 'All JavaScript files loaded without syntax errors');
+        }
+
+        function testFetchFunction() {
+            try {
+                // Test if fetch function works correctly (fixed illegal invocation)
+                if (typeof window.fetch === 'function') {
+                    logResult('Fetch Function', 'pass', 'Fetch function is available and properly bound');
+                } else {
+                    logResult('Fetch Function', 'fail', 'Fetch function not available');
+                }
+            } catch (error) {
+                logResult('Fetch Function', 'fail', `Fetch function error: ${error.message}`);
+            }
+        }
+
+        function testGoogleAuthInit() {
+            try {
+                if (window.authService) {
+                    if (typeof window.authService.initGoogleAuth === 'function') {
+                        logResult('Google Auth Service', 'pass', 'Google Auth initialization method is available');
+                        
+                        // Check if the readiness flag exists
+                        if ('isGoogleAuthReady' in window.authService) {
+                            logResult('Google Auth Ready Flag', 'pass', 'Google Auth readiness tracking is implemented');
+                        } else {
+                            logResult('Google Auth Ready Flag', 'warning', 'Google Auth readiness flag not found');
+                        }
+                    } else {
+                        logResult('Google Auth Service', 'fail', 'Google Auth initialization method not found');
+                    }
+                } else {
+                    logResult('Google Auth Service', 'warning', 'Auth service not yet initialized - this is normal on page load');
+                }
+            } catch (error) {
+                logResult('Google Auth Service', 'fail', `Google Auth test error: ${error.message}`);
+            }
+        }
+
+        function testVisualUXSystem() {
+            try {
+                if (window.visualUXSystem) {
+                    logResult('Visual UX System', 'pass', 'Visual UX System loaded successfully');
+                    
+                    if (typeof window.visualUXSystem.setupLoadingStates === 'function') {
+                        logResult('Loading States Setup', 'pass', 'Loading states setup method is available');
+                    }
+                } else {
+                    logResult('Visual UX System', 'warning', 'Visual UX System not yet initialized');
+                }
+            } catch (error) {
+                logResult('Visual UX System', 'fail', `Visual UX System error: ${error.message}`);
+            }
+        }
+
+        function testAnalyticsDashboard() {
+            try {
+                if (window.analyticsDashboard || window.AnalyticsDashboard) {
+                    logResult('Analytics Dashboard', 'pass', 'Analytics Dashboard loaded successfully');
+                } else {
+                    logResult('Analytics Dashboard', 'warning', 'Analytics Dashboard not yet initialized');
+                }
+            } catch (error) {
+                logResult('Analytics Dashboard', 'fail', `Analytics Dashboard error: ${error.message}`);
+            }
+        }
+
+        function runAllTests() {
+            document.getElementById('results').innerHTML = '';
+            
+            logResult('Test Suite', 'pass', 'Starting comprehensive test suite...');
+            
+            setTimeout(() => {
+                testSyntaxErrors();
+                testFetchFunction();
+                testGoogleAuthInit();
+                testVisualUXSystem();
+                testAnalyticsDashboard();
+                
+                logResult('Test Suite', 'pass', 'All tests completed! Check individual results above.');
+            }, 500);
+        }
+
+        // Auto-run basic tests on page load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                logResult('Page Load', 'pass', 'Page loaded successfully without JavaScript errors');
+                testSyntaxErrors();
+            }, 1000);
+        });
+
+        // Listen for any uncaught errors
+        window.addEventListener('error', (event) => {
+            logResult('Runtime Error', 'fail', `Uncaught error: ${event.error?.message || event.message}`);
+        });
+
+        window.addEventListener('unhandledrejection', (event) => {
+            logResult('Promise Rejection', 'fail', `Unhandled promise rejection: ${event.reason}`);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+{
+  "Sheet1": {
+    "headers": [
+      "Word",
+      "Difficulty Level",
+      "Vowel Harmony Rule",
+      "Arabic Translation",
+      "Usage Sentence (Turkish)",
+      "Usage Sentence (Arabic)",
+      "Category"
+    ],
+    "totalRows": 1126,
+    "sampleData": [
+      [
+        "alçak",
+        "A2",
+        "I-type (back)",
+        "منخفض",
+        "Alçak bir duvar var.",
+        "يوجد جدار منخفض.",
+        "adjective"
+      ],
+      [
+        "yavaş",
+        "A2",
+        "I-type (back)",
+        "بطيء",
+        "Yavaş yürüyor.",
+        "يمشي ببطء",
+        "adjective"
+      ],
+      [
+        "boş",
+        "A2",
+        "I-type (back)",
+        "فارغ",
+        "Boş zaman",
+        "وقت فارغ",
+        "adjective"
+      ],
+      [
+        "normal",
+        "A2",
+        "I-type (back)",
+        "طبيعي",
+        "Normal durum",
+        "وضع طبيعي",
+        "adjective"
+      ],
+      [
+        "ince",
+        "A2",
+        "E-type (front)",
+        "رفيع",
+        "İnce kağıt",
+        "ورق رفيع",
+        "adjective"
+      ],
+      [
+        "ucuz",
+        "A1",
+        "I-type (back)",
+        "رخيص",
+        "Bu çok ucuz.",
+        "هذا رخيص جداً.",
+        "adjective"
+      ],
+      [
+        "kolay",
+        "A1",
+        "I-type (back)",
+        "سهل",
+        "Bu soru çok kolay.",
+        "هذا السؤال سهل جداً.",
+        "adjective"
+      ],
+      [
+        "bozuk",
+        "A2",
+        "I-type (back)",
+        "معطل",
+        "Bozuk telefon",
+        "هاتف معطل",
+        "adjective"
+      ],
+      [
+        "düz",
+        "A2",
+        "E-type (front)",
+        "مستقيم",
+        "Düz yol gidiyoruz.",
+        "نسير في طريق مستقيم",
+        "adjective"
+      ],
+      [
+        "dolu",
+        "B1",
+        "I-type (back)",
+        "برد",
+        "Dolu yağdı",
+        "نزل البرد",
+        "adjective"
+      ]
+    ],
+    "columnStats": {
+      "Word": {
+        "filledCells": 1126,
+        "uniqueValues": 1126,
+        "sampleValues": [
+          "alçak",
+          "yavaş",
+          "boş",
+          "normal",
+          "ince",
+          "ucuz",
+          "kolay",
+          "bozuk",
+          "düz",
+          "dolu"
+        ]
+      },
+      "Difficulty Level": {
+        "filledCells": 1126,
+        "uniqueValues": 6,
+        "sampleValues": [
+          "A2",
+          "A1",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ]
+      },
+      "Vowel Harmony Rule": {
+        "filledCells": 1126,
+        "uniqueValues": 7,
+        "sampleValues": [
+          "I-type (back)",
+          "E-type (front)",
+          "E-type",
+          "I-type",
+          "Mixed",
+          "E-type (back)",
+          "Mixed/Exception"
+        ]
+      },
+      "Arabic Translation": {
+        "filledCells": 1126,
+        "uniqueValues": 1077,
+        "sampleValues": [
+          "منخفض",
+          "بطيء",
+          "فارغ",
+          "طبيعي",
+          "رفيع",
+          "رخيص",
+          "سهل",
+          "معطل",
+          "مستقيم",
+          "برد"
+        ]
+      },
+      "Usage Sentence (Turkish)": {
+        "filledCells": 1126,
+        "uniqueValues": 1123,
+        "sampleValues": [
+          "Alçak bir duvar var.",
+          "Yavaş yürüyor.",
+          "Boş zaman",
+          "Normal durum",
+          "İnce kağıt",
+          "Bu çok ucuz.",
+          "Bu soru çok kolay.",
+          "Bozuk telefon",
+          "Düz yol gidiyoruz.",
+          "Dolu yağdı"
+        ]
+      },
+      "Usage Sentence (Arabic)": {
+        "filledCells": 1126,
+        "uniqueValues": 1110,
+        "sampleValues": [
+          "يوجد جدار منخفض.",
+          "يمشي ببطء",
+          "وقت فارغ",
+          "وضع طبيعي",
+          "ورق رفيع",
+          "هذا رخيص جداً.",
+          "هذا السؤال سهل جداً.",
+          "هاتف معطل",
+          "نسير في طريق مستقيم",
+          "نزل البرد"
+        ]
+      },
+      "Category": {
+        "filledCells": 1126,
+        "uniqueValues": 31,
+        "sampleValues": [
+          "adjective",
+          "animal",
+          "body",
+          "clothes",
+          "color",
+          "direction",
+          "emotion",
+          "family",
+          "finance",
+          "food"
+        ]
+      }
+    }
+  }
+}

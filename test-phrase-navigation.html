@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Phrase Navigation</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .test-result { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .pass { background: #d4edda; border: 1px solid #c3e6cb; }
+        .fail { background: #f8d7da; border: 1px solid #f5c6cb; }
+    </style>
+</head>
+<body>
+    <h1>Phrase Mode Navigation Test</h1>
+    <div id="test-results"></div>
+    
+    <script>
+        async function testPhraseNavigation() {
+            const results = [];
+            
+            try {
+                // Test 1: Check if phrase button exists in HTML
+                const response = await fetch('https://8787-ivbmlm8vqak2xzzv33jm5-6532622b.e2b.dev/');
+                const html = await response.text();
+                
+                const hasPhraseButton = html.includes('data-section="phrase"');
+                const hasArabicText = html.includes('العبارات');
+                const hasIcon = html.includes('fa-quote-left');
+                
+                results.push({
+                    test: 'Phrase button in HTML',
+                    pass: hasPhraseButton,
+                    details: hasPhraseButton ? '✅ Found data-section="phrase"' : '❌ Missing data-section="phrase"'
+                });
+                
+                results.push({
+                    test: 'Arabic text present',
+                    pass: hasArabicText,
+                    details: hasArabicText ? '✅ Found "العبارات" text' : '❌ Missing "العبارات" text'
+                });
+                
+                results.push({
+                    test: 'Phrase icon present', 
+                    pass: hasIcon,
+                    details: hasIcon ? '✅ Found fa-quote-left icon' : '❌ Missing fa-quote-left icon'
+                });
+                
+                // Test 2: Check JavaScript handler exists
+                const hasNavigationHandler = html.includes('navigationHandler');
+                const hasSetupPhraseMode = html.includes('setupPhraseMode');
+                
+                results.push({
+                    test: 'Navigation handler exists',
+                    pass: hasNavigationHandler,
+                    details: hasNavigationHandler ? '✅ Found navigationHandler method' : '❌ Missing navigationHandler method'
+                });
+                
+                results.push({
+                    test: 'Phrase setup method exists',
+                    pass: hasSetupPhraseMode,
+                    details: hasSetupPhraseMode ? '✅ Found setupPhraseMode method' : '❌ Missing setupPhraseMode method'
+                });
+                
+            } catch (error) {
+                results.push({
+                    test: 'Connection test',
+                    pass: false,
+                    details: `❌ Error: ${error.message}`
+                });
+            }
+            
+            // Display results
+            const container = document.getElementById('test-results');
+            container.innerHTML = results.map(result => 
+                `<div class="test-result ${result.pass ? 'pass' : 'fail'}">
+                    <strong>${result.test}:</strong> ${result.details}
+                </div>`
+            ).join('');
+            
+            // Summary
+            const passed = results.filter(r => r.pass).length;
+            const total = results.length;
+            container.innerHTML += `
+                <div class="test-result ${passed === total ? 'pass' : 'fail'}">
+                    <strong>Summary:</strong> ${passed}/${total} tests passed
+                    ${passed === total ? '🎉 All tests passed! Phrase navigation is working.' : '⚠️ Some tests failed.'}
+                </div>`;
+        }
+        
+        testPhraseNavigation();
+    </script>
+</body>
+</html>
