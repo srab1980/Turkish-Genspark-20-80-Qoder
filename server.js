@@ -61,7 +61,10 @@ app.get('/api/db/categories', async (c) => {
 app.get('/api/db/vocabulary/:categoryId', async (c) => {
   const db = await dbPromise;
   const { categoryId } = c.req.param();
-  const limit = c.req.query('limit') || 20;
+  let limit = parseInt(c.req.query('limit'), 10);
+  if (isNaN(limit) || limit <= 0) {
+    limit = 20;
+  }
   const vocabulary = await db.all('SELECT * FROM vocabulary WHERE category_id = ? LIMIT ?', categoryId, limit);
   return c.json({ vocabulary });
 });
