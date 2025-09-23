@@ -12,6 +12,7 @@ const dbPromise = open({
 // Helper to initialize DB
 const initDb = async () => {
   const db = await dbPromise;
+  await db.exec('PRAGMA encoding = "UTF-8";');
   await db.exec(`
     CREATE TABLE IF NOT EXISTS categories (
       id INTEGER PRIMARY KEY,
